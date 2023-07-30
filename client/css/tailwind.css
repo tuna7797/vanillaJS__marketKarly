@@ -1,6 +1,12 @@
 /* @import 'tailwindcss/base'; */
 
+@import "cart.css";
+@import "productDetail.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+a {
+  @apply text-6xl font-bold;
+}
