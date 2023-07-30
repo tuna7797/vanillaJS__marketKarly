@@ -1,21 +1,21 @@
 
-.registrationContainer {
+.register_container {
   @apply w-[600px] mx-auto my-0 pb-10;
   font-family: pretendard;
 }
 .register_container_form {
   @apply max-w-screen-lg w-[650px] flex flex-col mx-auto;
 }
-.registrationContainer__title {
+.register_container_title {
   @apply text-center text-[25px] pt-20 pb-[30px];
 }
-.pilsu::before {
+.register_indicator_essential::before {
   @apply content-["*"] text-[red];
 }
-.pilsu {
+.register_indicator_essential {
   @apply block text-end text-[4px];
 }
-.register__hr {
+.register_hr_line {
   @apply my-2.5;
 }
 .register_box_in_line {
