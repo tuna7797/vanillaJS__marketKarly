@@ -1,0 +1,1318 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  @apply leading-[1.15];
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  @apply m-0 leading-none bg-white;
+}
+main {
+  @apply block;
+}
+h1 {
+  @apply text-[2em] mx-0 my-[0.67em];
+}
+hr {
+  @apply box-content h-0 overflow-visible;
+}
+pre {
+  @apply text-[1em];
+  font-family: monospace, monospace;
+}
+a {
+  @apply bg-transparent text-inherit no-underline;
+}
+abbr[title] {
+  @apply underline border-b-[none];
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  @apply font-[bolder];
+}
+code,
+kbd,
+samp {
+  @apply text-[1em];
+  font-family: monospace, monospace;
+}
+small {
+  @apply text-[80%];
+}
+sub,
+sup {
+  @apply text-[75%] leading-[0] relative align-baseline;
+}
+sub {
+  @apply bottom-[-0.25em];
+}
+sup {
+  @apply top-[-0.5em];
+}
+img {
+  @apply border-none max-w-full h-auto;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  @apply text-[100%] leading-[1.15] m-0;
+  font-family: inherit;
+}
+button,
+input {
+  @apply overflow-visible;
+}
+button,
+select {
+  @apply normal-case;
+}
+button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  @apply p-0 border-none;
+}
+button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  @apply pt-[0.35em] pb-[0.625em] px-[0.75em];
+}
+legend {
+  @apply box-border text-inherit table max-w-full whitespace-normal p-0;
+}
+progress {
+  @apply align-baseline;
+}
+textarea {
+  @apply overflow-auto;
+}
+[type=checkbox],
+[type=radio] {
+  @apply box-border p-0;
+}
+[type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  @apply h-auto;
+}
+[type=search] {
+  @apply -outline-offset-2;
+  -webkit-appearance: textfield;
+}
+[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details {
+  @apply block;
+}
+summary {
+  @apply list-item;
+}
+template {
+  @apply hidden;
+}
+[hidden] {
+  @apply hidden;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  @apply text-[100%] align-baseline m-0 p-0 border-0;
+  font: inherit;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  @apply block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after {
+  @apply content-[""] content-none;
+}
+q:before,
+q:after {
+  @apply content-[""] content-none;
+}
+table {
+  @apply border-spacing-0 border-collapse;
+}
+body,
+body::before,
+body::after,
+body *,
+body *::before,
+body *::after {
+  @apply box-border;
+}
+[class] {
+  @apply m-0;
+}
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  font: inherit;
+}
+button {
+  @apply appearance-none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* 유연한 미디어 */
+video {
+  @apply w-full h-auto;
+}
+iframe {
+  @apply w-full h-full;
+}
+
+/* Accessibility Styles */
+.a11yHidden,
+legend {
+  @apply overflow-hidden absolute w-px h-px -m-px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+.headerBanner__button {
+  @apply w-[1.875rem] h-[1.875rem] block border-0;
+  background: url("../../images/Icon/Cancel.png") no-repeat;
+}
+.search__button {
+  @apply cursor-pointer;
+}
+.inquiryButton {
+  @apply cursor-pointer border w-[8.75rem] h-10 border-solid border-[#C4C4C4];
+  background: white;
+}
+.sideBar__button {
+  @apply flex justify-between items-center w-[13.75rem] h-[3.25rem] text-base font-semibold leading-[150%] text-[#333333] p-0 border-b-[#E1E1E1] border-0 border-b border-solid;
+  flex-flow: row nowrap;
+  background: #ffffff;
+}
+.reset__button {
+  @apply cursor-pointer leading-[160%] text-[0.625rem] font-semibold text-[#A6A6A6] border-0;
+  background: #ffffff;
+}
+.sideBar__button__clicked {
+  @apply flex justify-between items-center w-[13.75rem] h-[3.25rem] text-base font-semibold leading-[150%] text-[#333333] p-0 border-0;
+  flex-flow: row nowrap;
+  background: #ffffff;
+}
+.more__button {
+  @apply text-[#A6A6A6] cursor-pointer w-full text-xs font-semibold leading-[150%] p-0 border-0 after:content-[""] after:w-[1.125rem] after:h-3.5 after:inline-block;
+  background: #ffffff;
+}
+.more__button::after {
+  background: url("../../images/Icon/Arrow_right.svg") no-repeat;
+}
+.doubleRight {
+  @apply absolute w-2.5 h-2 block absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
+  background: url("../../images/Icon/doubleRight.png") no-repeat;
+}
+.right {
+  @apply absolute w-[0.3125rem] h-2 block absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
+  background: url("../../images/Icon/right.png") no-repeat;
+}
+.pageNum {
+  @apply absolute text-xs text-[#333333] absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
+  font-family: Inter;
+}
+.doubleLeft {
+  @apply absolute w-2.5 h-2 block absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
+  background: url("../../images/Icon/doubleLeft.png") no-repeat;
+}
+.left {
+  @apply absolute w-[0.3125rem] h-2 block absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
+  background: url("../../images/Icon/left.png") no-repeat;
+}
+.searchIcon {
+  @apply w-10 h-[2.1875rem] block border-0;
+  background: url("../../images/Icon/Search.png") no-repeat;
+}
+.heartIcon {
+  @apply w-8 h-[1.9375rem] block;
+  background: url("../../images/Icon/Heart.png") no-repeat;
+}
+.locationIcon {
+  @apply w-8 h-[1.9375rem] block;
+  background: url("../../images/Icon/Location.png") no-repeat;
+}
+.blackCart__Icon {
+  @apply w-8 h-[1.9375rem] block;
+  background: url("../../images/Icon/Cart-black.png") no-repeat;
+}
+.blog {
+  @apply w-[1.875rem] h-[1.875rem] block;
+  background: url("../../images/Icon/Blog.svg") no-repeat;
+}
+.facebook {
+  @apply w-[1.875rem] h-[1.875rem] block;
+  background: url("../../images/Icon/FaceBook.svg") no-repeat;
+}
+.instagram {
+  @apply w-[1.875rem] h-[1.875rem] block;
+  background: url("../../images/Icon/Instagram.svg") no-repeat;
+}
+.naverPost {
+  @apply w-[1.875rem] h-[1.875rem] block;
+  background: url("../../images/Icon/NaverPost.svg") no-repeat;
+}
+.youtube {
+  @apply w-[1.875rem] h-[1.875rem] block;
+  background: url("../../images/Icon/Youtube.svg") no-repeat;
+}
+.cartIcon {
+  @apply w-[2.8125rem] h-[2.8125rem] block absolute left-[11.8125rem] top-[16.125rem];
+  background: url("../../images/Icon/Cart_white.svg") no-repeat;
+}
+.arrowTop {
+  @apply w-[1.125rem] h-[1.125rem] block shrink-0;
+  background: url("../../images/Icon/Arrow_top.svg") no-repeat;
+}
+.arrowBottom {
+  @apply w-[1.125rem] h-[1.125rem] block shrink-0;
+  background: url("../../images/Icon/Arrow_bottom.svg") no-repeat;
+}
+.logoKarly {
+  @apply w-20 h-[2.8125rem] block;
+  background: url("../../images/logo2.svg") no-repeat;
+}
+.logoIsms {
+  @apply w-[2.1875rem] h-[2.1875rem] block;
+  background: url("../../images/logo_isms.png") no-repeat;
+}
+.logoPrivacy {
+  @apply w-[2.1875rem] h-[2.1875rem] block;
+  background: url("../../images/logo_privacy.png") no-repeat;
+}
+.logoWoori {
+  @apply w-[2.1875rem] h-[2.1875rem] block;
+  background: url("../../images/logo_wooriBank.png") no-repeat;
+}
+.logoToss {
+  @apply w-[6.5625rem] h-[2.1875rem] block;
+  background: url("../../images/logo_tosspayments.png") no-repeat;
+}
+header {
+  @apply flex justify-center items-stretch text-[#333333] shadow-[0px_0px_24px_0px_rgba(0,0,0,0.1)];
+  flex-flow: column nowrap;
+  font-family: Pretendard;
+}
+.divider {
+  @apply text-[#E1E1E1] text-xs;
+}
+.bold {
+  @apply font-[bold];
+}
+.headerContainer {
+  @apply flex justify-start items-stretch relative px-[20%];
+  flex-flow: column nowrap;
+}
+.searchContainer {
+  @apply flex justify-between items-center pt-10 pb-2.5;
+  flex-flow: row nowrap;
+}
+.logoContainer {
+  @apply flex justify-start items-center gap-3;
+  flex-flow: row nowrap;
+}
+.switchContainer {
+  @apply flex justify-start items-center font-[bold] text-lg gap-3 relative;
+  flex-flow: row nowrap;
+}
+.market__link {
+  @apply text-[#5F0080];
+}
+.beauty__link {
+  @apply text-[#898989] after:content-[""] after:block after:w-[7px] after:h-[7px] after:top-[-5px] after:right-[-15px] after:absolute;
+}
+.beauty__link::after {
+  background: url("../../images/Icon/new.svg");
+}
+.formContainer {
+  @apply mr-[120px];
+}
+.searchForm {
+  @apply w-[400px] flex justify-between items-center text-lg pl-[15px] pr-2.5 py-2.5 rounded-[3px] border-[1.5px] border-solid border-[#5F0080];
+  flex-flow: row nowrap;
+}
+.searchForm label {
+  @apply overflow-hidden absolute w-px h-px -m-px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+.searchForm__input {
+  @apply w-80 py-2.5 border-0;
+}
+.memberIcon {
+  @apply flex justify-start items-stretch gap-[30px];
+  flex-flow: row nowrap;
+}
+.nav {
+  @apply flex justify-between items-center py-5;
+  flex-flow: row nowrap;
+}
+.nav__list {
+  @apply font-semibold w-[700px] flex justify-around items-stretch;
+  flex-flow: row nowrap;
+}
+.nav__button {
+  @apply font-[bold] translate-y-px border-0 before:content-[""] before:inline-block before:w-4 before:h-3.5 before:mr-2.5;
+  background: #ffffff;
+}
+.nav__button::before {
+  background: url("../../images/Icon/Hamburger_black.png") no-repeat;
+}
+.nav__link {
+  @apply block text-xs text-[#A6A6A6] border px-2 py-1.5 rounded-[20px] border-solid border-[#A6A6A6];
+}
+.link__color {
+  @apply text-[#5F0080];
+}
+.headerBanner {
+  @apply flex justify-end items-center text-white -order-1 px-[20%] py-2;
+  flex-flow: row nowrap;
+  background: #5F0080;
+}
+.headerBanner__link {
+  @apply block text-sm text-center grow;
+}
+.memberOnly {
+  @apply flex justify-evenly items-center absolute right-[20%] top-[5%];
+  flex-flow: row nowrap;
+}
+.memberOnly__list {
+  @apply font-semibold text-xs;
+}
+.member__signUp {
+  @apply text-[#5F0080];
+}
+.member__cusCenter::after {
+  @apply content-[""] inline-block w-2 h-1.5 translate-y-[-3px] ml-[5px];
+  background: url("../../images/Icon/down.svg");
+}
+footer {
+  @apply text-[#333333] border-t-[#E1E1E1] border-t border-solid;
+  font-family: Pretendard;
+}
+.dividerCustomer {
+  @apply text-[#333333] text-base;
+}
+.dividerAbout {
+  @apply text-[#333333] text-[10px];
+}
+.a11y {
+  @apply overflow-hidden absolute w-px h-px -m-px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+.footerTop {
+  @apply flex justify-between items-stretch px-[20%];
+  flex-flow: column nowrap;
+}
+.footerInfo {
+  @apply flex justify-between items-stretch pt-7 pb-8 px-0;
+  flex-flow: row nowrap;
+}
+.customerService {
+  @apply flex justify-start items-start gap-4;
+  flex-flow: column nowrap;
+}
+.happyCenter {
+  @apply text-[21.328px] font-bold leading-[140%];
+}
+.centerNumber {
+  @apply text-[37.897px] font-bold;
+}
+.centerTime {
+  @apply text-base font-semibold;
+}
+.numberInquiry {
+  @apply flex justify-start items-center gap-2.5;
+  flex-flow: row nowrap;
+}
+.kakaoInquiry {
+  @apply flex justify-start items-center gap-2.5 leading-[26px];
+  flex-flow: row-reverse nowrap;
+}
+.oneononeInquiry {
+  @apply flex justify-start items-center gap-2.5 leading-[26px];
+  flex-flow: row-reverse nowrap;
+}
+.bulkInquiry {
+  @apply flex justify-start items-center gap-2.5 leading-[26px];
+  flex-flow: row-reverse nowrap;
+}
+.nonMember {
+  @apply text-[10px];
+}
+.about {
+  @apply flex justify-start items-start gap-7;
+  flex-flow: column nowrap;
+}
+.about__nav {
+  @apply flex justify-between items-stretch gap-2.5;
+  flex-flow: row nowrap;
+}
+.about__info {
+  @apply text-[10px] leading-[18px];
+}
+.primary {
+  @apply text-[#5F0080] font-[bold];
+}
+.snsContainer {
+  @apply flex justify-start items-stretch gap-5;
+  flex-flow: row nowrap;
+}
+.footerCompany {
+  @apply border-t-[#E1E1E1] border-t border-solid;
+}
+.companyWrap {
+  @apply flex justify-between items-start text-[0.625rem] leading-4 gap-6 pt-6 pb-8 px-0;
+  flex-flow: row nowrap;
+}
+.company__list {
+  @apply flex justify-between items-start;
+  flex-flow: row nowrap;
+}
+.isms {
+  @apply flex justify-start items-start gap-2 before:content-[""] before:block before:w-[35px] before:h-[35px] before:shrink-0;
+  flex-flow: row nowrap;
+}
+.isms::before {
+  background: url("../../images/logo_isms.png") no-repeat;
+}
+.privacy {
+  @apply flex justify-start items-start gap-2 before:content-[""] before:block before:w-[35px] before:h-[35px] before:shrink-0;
+  flex-flow: row nowrap;
+}
+.privacy::before {
+  background: url("../../images/logo_privacy.png") no-repeat;
+}
+.woori {
+  @apply flex justify-start items-start gap-2 before:content-[""] before:block before:w-[35px] before:h-[35px] before:shrink-0;
+  flex-flow: row nowrap;
+}
+.woori::before {
+  background: url("../../images/logo_wooriBank.png") no-repeat;
+}
+.toss {
+  @apply flex justify-start items-start gap-2 before:content-[""] before:block before:w-[105px] before:h-[35px] before:shrink-0;
+  flex-flow: row nowrap;
+}
+.toss::before {
+  background: url("../../images/logo_tosspayments.png") no-repeat;
+}
+.footerBottom {
+  @apply text-[0.625rem] text-[#898989] flex justify-center items-center py-[1.5625rem];
+  background: #F9F9F9;
+  flex-flow: column nowrap;
+}
+.footerBottom span {
+  @apply leading-[180%];
+}
+.footerBottom small {
+  @apply leading-[160%] py-2.5;
+}
+.mainContainer {
+  @apply flex justify-start items-center gap-12 pt-12 pb-20 px-0;
+  flex-flow: column nowrap;
+  font-family: Pretendard;
+}
+.productList__title {
+  @apply text-[1.3125rem] font-semibold leading-[150%];
+}
+.productContainer {
+  @apply w-full flex justify-start items-start px-[20%];
+  flex-flow: row nowrap;
+}
+.sideBar {
+  @apply flex justify-start items-stretch flex-[1_0_0];
+  flex-flow: column nowrap;
+}
+.brand {
+  @apply flex justify-start items-stretch;
+  flex-flow: column nowrap;
+}
+.brand__list {
+  @apply flex justify-start items-start w-[13.75rem] gap-2 px-0 py-3;
+  flex-flow: column nowrap;
+}
+.brand__list:hover {
+  background: #E1E1E1;
+}
+.brand__link {
+  @apply block w-full h-full flex justify-start items-center before:content-[""] before:w-6 before:h-6 before:mr-2;
+  flex-flow: row nowrap;
+}
+.brand__link::before {
+  background: url("../../images/Icon/Check.svg");
+}
+.grayNum {
+  @apply text-xs text-[#A6A6A6] ml-1;
+}
+.grayNum__small {
+  @apply text-xs text-[#A6A6A6] ml-2;
+}
+.btn__list {
+  @apply flex justify-center items-center gap-2 w-[13.75rem] h-[2.625rem] pt-3 pb-3.5 px-0 border-b-[#E1E1E1] border-b border-solid;
+  flex-flow: row nowrap;
+}
+.menuContainer {
+  @apply w-full flex justify-between items-center pt-0 pb-5 px-0;
+  flex-flow: row nowrap;
+}
+.bold__main {
+  @apply font-[bold] text-[#333333];
+}
+.recommend {
+  @apply flex justify-start items-center after:content-[""] after:inline-block after:w-3.5 after:h-5 after:ml-[0.3125rem];
+  flex-flow: row nowrap;
+}
+.recommend::after {
+  background: url("../../images/Icon/question.svg");
+}
+.menu__wrap {
+  @apply flex justify-start items-center text-[#A6A6A6] font-medium gap-1;
+  flex-flow: row nowrap;
+}
+.product {
+  @apply flex justify-start items-start;
+  flex-flow: column nowrap;
+}
+.product__line {
+  @apply flex justify-start items-stretch gap-6;
+  flex-flow: column nowrap;
+}
+.product__list {
+  @apply relative;
+}
+.product__wrap {
+  @apply flex justify-start items-stretch gap-4;
+  flex-flow: row nowrap;
+}
+.product__link {
+  @apply flex justify-start items-stretch gap-4;
+  flex-flow: column nowrap;
+}
+.product__info {
+  @apply flex justify-start items-stretch gap-2;
+  flex-flow: column nowrap;
+}
+.product__price {
+  @apply text-[1.3125rem] font-semibold leading-[150%];
+}
+.product__badge {
+  @apply flex justify-start items-stretch gap-1.5;
+  flex-flow: row nowrap;
+}
+.product__summary {
+  @apply text-xs text-[#898989];
+}
+.product__img {
+  @apply w-[15.5625rem] h-80;
+}
+.imgContainer {
+  @apply -order-1;
+}
+.tag {
+  @apply text-[#898989] text-xs font-semibold leading-[150%];
+}
+.discount {
+  @apply flex justify-start items-stretch gap-2;
+  flex-flow: row nowrap;
+}
+.discountRate {
+  @apply text-[1.3125rem] font-semibold leading-[150%] text-[#FA622F];
+}
+.discountPrice {
+  @apply text-[1.3125rem] font-semibold leading-[150%];
+}
+.nonDiscount {
+  @apply text-xs text-[#898989] line-through;
+}
+.karlyBadge {
+  @apply text-[#5F0080] text-sm font-[bold] rounded p-1;
+  background: #E1E1E1;
+}
+.textBadge {
+  @apply text-[#333333] text-sm font-[bold] rounded p-1;
+  background: #E1E1E1;
+}
+.movePage {
+  @apply flex justify-start items-center;
+  flex-flow: column nowrap;
+}
+.movePage__wrap {
+  @apply flex justify-start items-center pt-12 pb-0 px-0;
+  flex-flow: row nowrap;
+}
+.movePage__list {
+  @apply relative w-[2.125rem] h-[2.125rem] border border-solid border-[#E1E1E1];
+}
+.movePage__list:hover {
+  background: #E1E1E1;
+}
+.movePage__link {
+  @apply block w-full h-full;
+}
+.registrationContainer {
+  @apply w-[600px] mx-auto my-0 pb-10;
+  font-family: pretendard;
+}
+.registrationContainer__form {
+  @apply max-w-screen-lg w-[650px] flex flex-col mx-auto;
+}
+.registrationContainer__title {
+  @apply text-center text-[25px] pt-20 pb-[30px];
+}
+.pilsu::before {
+  @apply content-["*"] text-[red];
+}
+.pilsu {
+  @apply block text-end text-[4px];
+}
+.register__hr {
+  @apply my-2.5;
+}
+.register__beOneLine {
+  @apply flex h-10 gap-x-2 mx-0 my-2.5 my-5;
+}
+.register__beOneLine__term {
+  @apply flex my-[0.9375rem];
+}
+.register__label {
+  @apply flex items-center w-1/5 font-semibold after:content-["*"] after:text-[red];
+}
+.register__question {
+  @apply flex items-center w-1/5 font-semibold;
+}
+.register__question__term {
+  @apply flex w-1/5;
+}
+.register__input {
+  @apply flex rounded border w-6/12 px-5 py-0 border-solid border-[#A6A6A6];
+}
+.register__button {
+  @apply flex items-center justify-center w-1/5;
+}
+.register__label__date {
+  @apply flex items-center w-1/5 font-semibold;
+}
+.register__input__date {
+  @apply flex rounded border w-6/12 text-center px-5 py-0 border-solid border-[#A6A6A6];
+}
+.register__input__address {
+  @apply block h-10 w-80 text-base;
+}
+.register__beOneLine .addressBox {
+  @apply h-[68px] text-[4px];
+}
+.register__radioS {
+  @apply flex items-center justify-between w-3/5 gap-2.5;
+}
+.register__input__radio {
+  @apply w-[25px] h-[25px] border;
+}
+.register__inputBox {
+  @apply flex justify-start items-center gap-2;
+  flex-flow: row nowrap;
+}
+.register__checkboxS {
+  @apply text-[#333333] flex flex-col gap-5;
+}
+.register__checkbox__input {
+  @apply inline-block;
+}
+.register__checkbox__label {
+  @apply font-semibold inline-block;
+}
+.register__button,
+.register__input__address {
+  @apply rounded text-[#5F0080] bg-white font-bold border-[solid] border-[1px];
+}
+.register__submitAll {
+  @apply w-[340px] h-[54px] rounded text-white bg-[#5F0080] mx-auto my-0 my-5;
+}
+.register__listAll {
+  @apply flex justify-start items-stretch;
+  flex-flow: column nowrap;
+}
+.register__checkboxAlltitle {
+  @apply text-[21.328px] font-semibold leading-[150%];
+}
+.register__allText {
+  @apply text-[10px] block text-[#898989] pl-5;
+}
+
+/* Accessibility Styles */
+.a11yHidden {
+  @apply overflow-hidden absolute w-px h-px -m-px;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+}
+
+/* 전체 magin없애기, width 100% */
+.main__main {
+  @apply w-full relative m-0;
+  font-family: Pretendard;
+}
+.main__main .mainBanner {
+  @apply relative p-0;
+}
+.mainBanner_image {
+  @apply w-full;
+}
+.mainBanner__page {
+  @apply absolute w-[2.9375rem] h-[1.125rem] text-[0.8125rem] font-semibold text-white text-center p-[auto] rounded-xl right-[22%] top-[87%];
+  background: rgba(0, 0, 0, 0.15);
+}
+.mainBanner__button {
+  @apply cursor-pointer absolute w-[3.25rem] h-[3.25rem] rounded-[50%] border-0 top-[38%];
+  background: rgba(0, 0, 0, 0.1) url("/images/Icon/Arrow.png");
+}
+.mainBanner__rightArrow {
+  @apply -scale-x-100 right-[17%];
+}
+.mainBanner__leftArrow {
+  @apply left-[17%];
+}
+.recommendProduct {
+  @apply relative w-[65.625rem] box-border mx-auto px-0 py-[4.375rem];
+}
+.recommendProduct__title {
+  @apply text-[1.6875rem] font-bold text-center mb-[1.875rem] px-0 py-[0.9375rem];
+}
+.recommendProduct__list {
+  @apply flex justify-between items-stretch pl-0;
+  list-style: none;
+  flex-flow: row nowrap;
+}
+.recommendProduct__product {
+  @apply relative w-[15.5625rem] h-[26.625rem];
+}
+.recommendProduct__name {
+  @apply no-underline text-[#101010] text-sm block px-0 py-[1.125rem];
+}
+.recommendProduct__price {
+  @apply text-[1.375rem] font-[bold];
+}
+.recommendProduct__sale {
+  @apply text-[orangered] text-[1.375rem] font-extrabold;
+}
+.recommendProduct__beforePrice {
+  @apply block line-through text-[#A6A6A6] text-[0.8125rem] mt-4;
+}
+.recommendProduct__cart {
+  @apply cursor-pointer absolute bg-center opacity-[50%] w-[2.625rem] h-[2.625rem] rounded-[50%] border-0 right-[8%] bottom-[30%];
+  background: #2a0038 url("/images/Icon/Cart.png");
+}
+.recommendProduct__rightArrow {
+  @apply cursor-pointer w-[3.125rem] h-[3.125rem] bg-center shadow-[0_0_0.625rem_#E1E1E1] absolute right-[-2.4%] rounded-[50%] border-[none] top-[45%];
+  background: #ffffff url("/images/Icon/rightArrow_black.png") no-repeat;
+}
+.lineBanner {
+  @apply w-[65.625rem] mx-auto my-10 p-0;
+}
+.recentProduct {
+  @apply relative fixed w-[4.625rem] h-[13.9375rem] text-[0.4375rem] text-center border box-border px-0 py-[2.1875rem] border-solid border-[#C4C4C4] right-[2%] top-2/4;
+  background: #ffffff;
+}
+.recentProduct img {
+  @apply w-full;
+}
+.recentProduct__list {
+  @apply w-10 h-[8.0625rem] overflow-hidden gap-y-0.5 mt-2.5 mx-auto p-0;
+  list-style: none;
+}
+.recentProduct__sprite {
+  @apply cursor-pointer w-[1.125rem] h-[1.125rem] absolute border-[none];
+  background: url("/images/Icon/Arrow-2.png");
+}
+.recentProduct__buttonUp {
+  @apply bg-[50%_10%] right-[37%] top-[4%];
+}
+.recentProduct__buttonDown {
+  @apply bg-[50%_35%] right-[37%] bottom-[4%];
+}
+.mainPopup {
+  @apply w-[21.5625rem] h-[33.125rem] shadow-[0_0.5rem_2.25rem_0_#C4C4C4] text-[#333333] font-bold fixed rounded-2xl left-[0.4375rem] bottom-2.5 active:invisible;
+  background: #ffffff;
+}
+.mainPopup img {
+  @apply rounded-[1rem_1rem_0_0];
+}
+.mainPopup .mainPopup__closeButton {
+  @apply border-l-[solid] border-l-[#E1E1E1];
+}
+button[class*=mainPopup__close] {
+  @apply cursor-pointer h-[3.75rem] w-[49%] inline-block m-0 border-0;
+  background: transparent;
+}
+.productDetail {
+  @apply relative w-[65.625rem] text-base box-border mx-auto px-0 py-[3.75rem];
+  font-family: Pretendard;
+}
+.productDetail__titleBox {
+  @apply flex justify-start items-stretch gap-y-4;
+  flex-flow: column nowrap;
+}
+.productDetail__starDelivery {
+  @apply -order-1 text-[#6B6B6B] text-[1.3125rem] font-extrabold;
+}
+.productDetail__title {
+  @apply text-[1.6875rem] font-bold;
+}
+.productDetail__sub {
+  @apply text-[#898989] leading-[160%];
+}
+.productDetail__productcart, .productDetail__list, .productDetail__titleBox, .productDetail__productcart {
+  @apply ml-[480px];
+}
+.productDetail__image {
+  @apply absolute top-[60px];
+}
+.productDetail__fontSizeXl {
+  @apply text-[#2B2B2B] text-[1.8125rem] font-semibold leading-[150%];
+}
+.productDetail__fontSizeS {
+  @apply text-[#2B2B2B] font-bold leading-[140%];
+}
+.productDetail__PurpleSpan {
+  @apply text-[#5F0080] font-semibold leading-[150%] mb-5;
+  font-family: Pretendard;
+}
+.productDetail__item {
+  @apply flex text-xs py-4 border-t-[#E1E1E1] border-t border-solid last:border-b-[#E1E1E1] last:border-b last:border-solid;
+}
+.productDetail__item dt {
+  @apply w-32;
+}
+.productDetail__item .productDetail__fontBold {
+  @apply text-neutral-700 w-32 leading-[150%] mb-2.5;
+}
+.productDetail__item dd {
+  @apply text-[#6B6B6B];
+  display: span;
+}
+.productDetail__allegyDd {
+  @apply block w-[27rem];
+}
+.productDetail__select {
+  @apply relative w-[27rem] h-[5.1875rem] border text-[#565656] font-semibold p-3 border-solid border-[#E1E1E1];
+}
+.productDetail__selectPrice {
+  @apply absolute text-[0.9375rem] font-bold right-3 bottom-3;
+}
+.productDetail__selectBox {
+  @apply h-[1.875rem] w-[5.1875rem] border text-center mt-3 border-solid border-[#C4C4C4];
+}
+.productDetail__plus {
+  @apply cursor-pointer w-7 h-[30px] bg-[50%_17%] float-right border-[none];
+  background: url("/images/Icon/Plus.png");
+}
+.productDetail__minus {
+  @apply cursor-pointer w-7 h-[30px] bg-[50%_87%] float-left border-[none];
+  background: url("/images/Icon/Minus.png");
+}
+.productDetail__selectBoxOne {
+  @apply inline-block translate-y-2 font-extrabold px-0 py-[auto];
+}
+.productDetail__allPrice {
+  @apply flex justify-end items-center gap-x-[1.0625rem] text-base font-semibold leading-[150%] mt-7;
+  flex-flow: row nowrap;
+}
+.productDetail__point {
+  @apply text-end text-base font-semibold mt-[0.5625rem] mb-7;
+}
+.productDetail__pointIcon {
+  @apply w-[2.125rem] h-6 text-center text-white text-[10px] leading-[160%] mr-[3px] px-2 py-1 rounded-xl;
+  background: #FA622F;
+}
+.productDetail__allButton {
+  @apply flex justify-between items-stretch;
+  flex-flow: row nowrap;
+}
+.productDetail__button {
+  @apply cursor-pointer w-14 h-14 border p-1 border-solid border-[#E1E1E1];
+}
+.productDetail__heart {
+  @apply bg-[50%_89%];
+  background: url("/images/Icon/Squre.png");
+}
+.productDetail__alarm {
+  @apply bg-[55%_50%];
+  background: url("/images/Icon/bell-2.png") no-repeat;
+}
+.productDetail__cartButton {
+  @apply cursor-pointer rounded w-[26.875rem] h-[3.375rem] text-white font-semibold mb-12;
+  background: #5F0080;
+}
+.productDetail__list .productDetail__item {
+  @apply flex;
+}
+.description {
+  @apply relative w-[65.625rem] text-base flex justify-start items-stretch mx-auto;
+  font-family: Pretendard;
+  flex-flow: column-reverse nowrap;
+}
+.description__image img {
+  @apply w-full mt-10;
+}
+.description__titleBox {
+  @apply text-[#101010] flex justify-start items-stretch text-center p-[4.75rem] border-b-[#E1E1E1] border-b border-solid;
+  flex-flow: column nowrap;
+}
+.description__subTitle {
+  @apply text-[1.776875rem] font-semibold leading-[150%];
+}
+.description__title {
+  @apply text-[3.1573125rem] font-bold leading-[140%];
+}
+.description__p {
+  @apply mt-10 pb-[12.5rem] border-b-[#E1E1E1] border-b border-solid;
+}
+.description__checkPointTitle {
+  @apply block w-[32.5rem] text-[3.1573125rem] font-bold leading-[140%] bg-white -translate-y-10 mb-[4.375rem] mx-auto;
+}
+.description__descriptionImage {
+  @apply mb-24;
+}
+.description__button {
+  @apply cursor-pointer h-[3.375rem] w-3/12 float-left border text-base font-semibold leading-[150%] rounded-none border-solid border-[#C4C4C4];
+  background: #F9F9F9;
+}
+.description__button span {
+  @apply text-[0.7501875rem] leading-[160%] pl-[0.3125rem];
+}
+.description__buttonPurple {
+  @apply text-[#5F0080] border border-solid border-[#e0e0e0];
+  background: #ffffff;
+}
+.whyKarly {
+  @apply my-[5.25rem] px-3;
+}
+.whyKarly__title {
+  @apply block text-center text-[28.43px] font-bold leading-[140%] mb-[2.1875rem];
+}
+.whyKarly__sub {
+  @apply flex justify-center items-stretch mb-[8.5rem];
+  flex-flow: row wrap;
+}
+.whyKarly__item {
+  @apply text-center box-border w-[19.6875rem] pt-14;
+}
+.whyKarly__roundIcon {
+  @apply w-10 h-10 mb-4 mx-auto;
+}
+.whyKarly__check {
+  background: url("/images/Icon/check-list-purple.svg");
+}
+.whyKarly__web {
+  background: url("/images/Icon/web-purple.svg");
+}
+.whyKarly__delivery {
+  background: url("/images/Icon/delivery-purple.svg");
+}
+.whyKarly__price {
+  background: url("/images/Icon/price-plus-purple.svg");
+}
+.whyKarly__recycle {
+  background: url("/images/Icon/recycle-purple.svg");
+}
+.whyKarly__subTitle {
+  @apply text-[#5F0080] text-[1.333rem] font-semibold leading-[150%];
+}
+.whyKarly__sub p {
+  @apply leading-[160%] w-[77%] mx-auto pt-6;
+}
+.productReview {
+  @apply relative pb-[8.5rem];
+}
+.productReview__title {
+  @apply text-[1.776875rem] font-bold leading-[140%] mb-[1.875rem];
+}
+.productReview__sub {
+  @apply text-[#2B2B2B] font-semibold leading-[150%];
+}
+.productReview__descriptList {
+  @apply text-[#6B6B6B] text-xs font-semibold leading-[150%] list-disc ml-[1.5%];
+}
+.productReview__button {
+  @apply cursor-pointer absolute text-white rounded w-[155px] h-11 border-0 right-0 top-0;
+  background: #5F0080;
+}
+.main__Cart {
+  @apply flex justify-start items-center gap-11 py-20;
+  flex-flow: column nowrap;
+  font-family: pretendard;
+}
+.cart__section {
+  @apply flex justify-start items-center text-[#101010] text-[1.333rem] font-semibold leading-[150%];
+  flex-flow: column nowrap;
+}
+.cart__king {
+  @apply flex justify-between items-start w-[65.625rem];
+  flex-flow: row nowrap;
+}
+.content {
+  @apply flex-1;
+}
+.cart__button {
+  @apply flex justify-start items-center gap-2 transition-none py-4 border-b-[#101010] border-b border-solid;
+  flex-flow: row nowrap;
+}
+.cart__button__click {
+  @apply flex justify-start items-stretch text-[#333333] text-base font-semibold leading-[150%] border-[none];
+  flex-flow: row nowrap;
+  background: none;
+}
+.cart__button__img {
+  @apply block w-6 h-6 -translate-x-1 mr-2;
+  background: url("./../../images/Icon/Check_p.svg") no-repeat;
+}
+.cart__list {
+  @apply flex justify-start items-start;
+  flex-flow: column nowrap;
+}
+.cart__item {
+  @apply flex justify-between items-center w-[46.375rem] text-[#101010] text-base font-semibold leading-[150%] pl-[2.625rem] py-4 border-b-[#101010] border-b border-solid;
+  flex-flow: row nowrap;
+}
+.cart__item0 {
+  @apply bg-[0%_50%];
+  background: url(./../../images/Icon/Food_0.svg) no-repeat;
+}
+.cart__item1 {
+  @apply bg-[0%_50%];
+  background: url(./../../images/Icon/Food_1.svg) no-repeat;
+}
+.cart__item2 {
+  @apply bg-[0%_50%];
+  background: url(./../../images/Icon/Food_2.svg) no-repeat;
+}
+.left-box {
+  @apply flex justify-start items-stretch;
+  flex-flow: row nowrap;
+}
+.right-box {
+  @apply flex justify-start items-start w-[17.75rem] gap-4 shrink-0;
+  flex-flow: column nowrap;
+}
+.delivery-section {
+  @apply flex justify-start items-start gap-3 self-stretch p-5;
+  flex-flow: column nowrap;
+}
+.delivery-address {
+  @apply text-[#101010] text-base font-semibold leading-[150%];
+}
+.delivery-content {
+  @apply text-[#101010] text-base font-semibold leading-[150%];
+}
+.delivery-item {
+  @apply text-[#5F0080] text-[0.7501875rem] font-semibold leading-[150%];
+}
+.delivery-button {
+  @apply flex justify-center items-center h-11 self-stretch rounded border border-solid border-[#5F0080];
+  flex-flow: column nowrap;
+  background: #ffffff;
+}
+.delivery__button__change {
+  @apply text-[#5F0080] font-semibold leading-[150%];
+  font: 1rem bold;
+}
+.price-section {
+  @apply flex justify-center items-start self-stretch border p-5 border-solid border-[#E1E1E1];
+  flex-flow: column nowrap;
+  background: #F9F9F9;
+}
+.price__box {
+  @apply flex justify-center items-start w-[15.25rem] gap-4 pb-6 border-b-[#E1E1E1] border-b border-solid;
+  flex-flow: column nowrap;
+}
+.price__row {
+  @apply flex justify-between items-center self-stretch text-[#333333] text-base leading-[160%];
+  flex-flow: row nowrap;
+  font-family: Pretendard;
+}
+.price__rowtotal {
+  @apply flex justify-start items-end w-[15.25rem] gap-[0.6875rem] pt-6;
+  flex-flow: column nowrap;
+}
+.price__rowtotal .price__final {
+  @apply flex justify-between items-center self-stretch text-[#333333] text-base leading-[160%];
+  flex-flow: row nowrap;
+}
+.price__rowtotal .price__strong {
+  @apply text-[#101010] text-[1.776875rem] font-bold leading-[140%];
+}
+.price__save {
+  @apply flex justify-between items-start text-white text-[0.7501875rem] font-semibold leading-[150%] mr-4 px-2 rounded-[1px];
+  flex-flow: row nowrap;
+  background: #FA622F;
+}
+.price__saveinfo {
+  @apply text-[#333333] text-[0.7501875rem] font-semibold leading-[150%];
+  font-family: Pretendard;
+}
+.price__sa {
+  @apply flex justify-between items-stretch;
+  flex-flow: row nowrap;
+}
+.order__button {
+  @apply flex justify-center items-center w-[284px] h-11 self-stretch rounded text-white text-base font-semibold leading-[150%];
+  flex-flow: row nowrap;
+  background: #5F0080;
+}
+.details {
+  @apply flex justify-center items-stretch self-stretch text-[#898989] text-[0.0468867188rem] font-semibold leading-[150%];
+  flex-flow: column nowrap;
+}
+.main__box {
+  font-family: pretendard;
+}
+.hidden__label {
+  @apply whitespace-nowrap overflow-hidden;
+}
+.login {
+  @apply flex justify-start items-center gap-11 py-20;
+  flex-flow: column nowrap;
+}
+.login__main {
+  @apply text-[black] text-[1.333rem_boild] font-semibold leading-[150%] mx-auto my-0;
+}
+.form__main {
+  @apply flex justify-start items-center w-[21.25rem];
+  flex-flow: column nowrap;
+}
+.input__main {
+  @apply flex justify-start items-end self-stretch h-[3.125rem] rounded border mb-3 px-5 py-3 border-solid border-[#A6A6A6];
+  flex-flow: column nowrap;
+}
+.placeholder {
+  @apply text-[#898989] text-base leading-[160%];
+}
+.find {
+  @apply text-[#101010] text-[0.7501875rem] leading-[160%] no-underline ml-auto mb-7;
+}
+.login__button {
+  @apply flex justify-center items-center h-[3.375rem] self-stretch rounded text-white text-base font-semibold leading-[150%] mb-3;
+  flex-flow: column nowrap;
+  background: #5F0080;
+}
+.member {
+  @apply flex justify-center items-center h-[3.375rem] self-stretch rounded border text-[#5F0080] text-base font-semibold leading-[150%] no-underline border-solid border-[#5F0080];
+  flex-flow: column nowrap;
+}
+
+# sourceMappingURL=index.css.map
