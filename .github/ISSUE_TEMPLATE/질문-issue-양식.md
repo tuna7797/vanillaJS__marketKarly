@@ -2,7 +2,7 @@
 name: 질문 issue 양식
 about: 질문 시 따라야 할 양식
 title: ''
-labels: 1_HelpMe, 3_Info
+labels: 1_HelpMe, 2_Html/Css
 assignees: bigCoDult
 
 ---
