@@ -1,4 +1,4 @@
-.registrationContainer {
+.register_container {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
@@ -17,27 +17,27 @@
   flex-direction: column;
 }
 
-.registrationContainer__title {
+.register_container_title {
   padding-top: 5rem;
   padding-bottom: 30px;
   text-align: center;
   font-size: 25px;
 }
 
-.pilsu::before {
+.register_indicator_essential::before {
   --tw-text-opacity: 1;
   color: rgb(255 0 0 / var(--tw-text-opacity));
   --tw-content: "*";
   content: var(--tw-content);
 }
 
-.pilsu {
+.register_indicator_essential {
   display: block;
   text-align: end;
   font-size: 4px;
 }
 
-.register__hr {
+.register_hr_line {
   margin-top: 0.625rem;
   margin-bottom: 0.625rem;
 }
