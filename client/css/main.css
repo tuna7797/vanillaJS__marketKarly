@@ -1389,7 +1389,7 @@ footer {
   left: 17%;
 }
 
-.recommend {
+.recommend_today {
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -1401,7 +1401,7 @@ footer {
   padding-bottom: 4.375rem;
 }
 
-.recommend_title {
+.recommend_today_title {
   margin-bottom: 1.875rem;
   padding-left: 0px;
   padding-right: 0px;
@@ -1412,7 +1412,7 @@ footer {
   font-weight: 700;
 }
 
-.recommend_list {
+.recommend_today_list {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -1421,13 +1421,13 @@ footer {
   flex-flow: row nowrap;
 }
 
-.recommend_product {
+.recommend_today_product {
   position: relative;
   height: 26.625rem;
   width: 15.5625rem;
 }
 
-.recommend_name {
+.recommend_today_name {
   display: block;
   padding-left: 0px;
   padding-right: 0px;
@@ -1440,19 +1440,19 @@ footer {
   text-decoration-line: none;
 }
 
-.recommend_price {
+.recommend_today_price {
   font-family: bold;
   font-size: 1.375rem;
 }
 
-.recommend_sale {
+.recommend_today_sale {
   font-size: 1.375rem;
   font-weight: 800;
   --tw-text-opacity: 1;
   color: rgb(255 69 0 / var(--tw-text-opacity));
 }
 
-.recommend_before_price {
+.recommend_today_before_price {
   margin-top: 1rem;
   display: block;
   font-size: 0.8125rem;
@@ -1461,7 +1461,7 @@ footer {
   text-decoration-line: line-through;
 }
 
-.recommend_cart {
+.recommend_today_cart {
   position: absolute;
   right: 8%;
   bottom: 30%;
@@ -1475,7 +1475,7 @@ footer {
   background: #2a0038 url("../assets/images/Icon/Cart_white.svg");
 }
 
-.recommend_right_arrow {
+.recommend_today_right_arrow {
   position: absolute;
   right: -2.4%;
   top: 45%;
@@ -1571,13 +1571,6 @@ footer {
   --tw-shadow: 0 0.5rem 2.25rem 0 #C4C4C4;
   --tw-shadow-colored: 0 0.5rem 2.25rem 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.main_popup:active {
-  visibility: hidden;
-}
-
-.main_popup {
   background: #ffffff;
 }
 
