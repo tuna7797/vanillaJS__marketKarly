@@ -870,7 +870,7 @@ footer {
 .main__main .mainBanner {
   @apply relative p-0;
 }
-.mainBanner__image {
+.mainBanner_image {
   @apply w-full;
 }
 .mainBanner__page {

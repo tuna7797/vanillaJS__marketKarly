@@ -6,50 +6,58 @@
 
     <title>마켓칼리</title>
 
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
-    />
-    <link rel="stylesheet" href="../client/css/main.css" />
+    /> -->
+    <!-- <link rel="stylesheet" href="../client/css/main.css" /> -->
   </head>
 
   <body>
     <header>
       <div
-        class="header_container py relative flex flex-col flex-nowrap items-stretch justify-start px-[20%]"
+        class="header_container py relative flex items-stretch justify-start px-[20%]"
       >
         <!-- 서치박스 영역 -->
         <div
-          class="search_container flex flex-row flex-nowrap items-center justify-between pb-2.5 pt-10"
+          class="search_container flex items-center justify-between pb-2.5 pt-10"
         >
           <!-- logo css에서 백그라운드 이미지 처리-->
-          <div
-            class="logo_container flex flex-row flex-nowrap items-center justify-start gap-3"
-          >
+          <div class="logo_container flex items-center justify-start gap-3">
             <h1 aria-label="마켓칼리">
               <a
                 href="/"
-                class="logo_karly bg block h-[2.8125rem] w-20 bg-[url('./client/assets/images/logo2.svg')] bg-no-repeat"
+                class="logo_karly bg block h-[2.8125rem] w-20 bg-[url('../assets/images/logo2.svg')] bg-no-repeat"
               ></a>
             </h1>
             <!-- N 이미지 처리 해주어야함 -->
 
-            <div class="switch_box">
-              <a href="/" class="market_link">마켓칼리</a>
+            <div
+              class="switch_box relative flex flex-row flex-nowrap items-center justify-start gap-3 font-[bold] text-lg"
+            >
+              <a href="/" class="market_link text-[#5F0080]">마켓칼리</a>
               <span class="divider" aria-hidden="true">|</span>
-              <a href="/" class="beauty_link">뷰티칼리</a>
+              <a
+                href="/"
+                class="beauty_link text-[#898989] after:absolute after:right-[-15px] after:top-[-5px] after:block after:h-[7px] after:w-[7px] after:bg-[url('../assets/images/Icon/new.svg')] after:content-['']"
+                >뷰티칼리</a
+              >
             </div>
           </div>
           <!-- 검색 영역 -->
 
           <div class="search_form_container">
-            <form action="/" class="search_form" method="post">
-              <label for="search">검색어</label>
+            <form
+              action="/"
+              class="search_form flex w-[400px] items-center justify-between rounded-[3px] border-[1.5px] border-solid border-[#5F0080] py-2.5 pl-[15px] pr-2.5 text-lg"
+              method="post"
+            >
+              <label for="search" class="sr-only">검색어</label>
               <input
                 type="search"
                 id="search"
-                class="search_form_input"
+                class="search_form_input w-80 border-0 py-2.5"
                 required
                 placeholder="검색어를 입력해주세요"
               />
