@@ -1,6 +1,13 @@
 /* @import 'tailwindcss/base'; */
 
+
+@import "productList.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
 
