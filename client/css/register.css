@@ -3,7 +3,7 @@
   @apply w-[600px] mx-auto my-0 pb-10;
   font-family: pretendard;
 }
-.registrationContainer__form {
+.register_container_form {
   @apply max-w-screen-lg w-[650px] flex flex-col mx-auto;
 }
 .registrationContainer__title {
@@ -18,22 +18,22 @@
 .register__hr {
   @apply my-2.5;
 }
-.register__beOneLine {
+.register_box_in_line {
   @apply flex h-10 gap-x-2 mx-0 my-2.5 my-5;
 }
-.register__beOneLine__term {
+.register_term_box_in_line {
   @apply flex my-[0.9375rem];
 }
-.register__label {
+.register_question_essencial {
   @apply flex items-center w-1/5 font-semibold after:content-["*"] after:text-[red];
 }
-.register__question {
+.register_question_optional {
   @apply flex items-center w-1/5 font-semibold;
 }
 .register__question__term {
   @apply flex w-1/5;
 }
-.register__input {
+.register_text_input {
   @apply flex rounded border w-6/12 px-5 py-0 border-solid border-[#A6A6A6];
 }
 .register__button {
@@ -48,7 +48,7 @@
 .register__input__address {
   @apply block h-10 w-80 text-base;
 }
-.register__beOneLine .addressBox {
+.register_box_in_line .addressBox {
   @apply h-[68px] text-[4px];
 }
 .register__radioS {
