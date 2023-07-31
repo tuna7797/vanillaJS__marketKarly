@@ -19,7 +19,7 @@
   @apply my-2.5;
 }
 .register_box_in_line {
-  @apply flex h-10 gap-x-2 mx-0 my-2.5 my-5;
+  @apply flex h-10 gap-x-2 mx-0 my-2.5;
 }
 .register_term_box_in_line {
   @apply flex my-[0.9375rem];
@@ -75,7 +75,7 @@
   @apply rounded text-[#5F0080] bg-white font-bold border-[solid] border-[1px];
 }
 .register__submitAll {
-  @apply w-[340px] h-[54px] rounded text-white bg-[#5F0080] mx-auto my-0 my-5;
+  @apply w-[340px] h-[54px] rounded text-white bg-[#5F0080] mx-auto my-0;
 }
 .register__listAll {
   @apply flex justify-start items-stretch;
