@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="../js/productCart/productDetail.js" type="module"></script>
+    <link rel="stylesheet" href="../css/main.css" />
+    <title>상품 상세 페이지</title>
+  </head>
+
+  <body>
+    <!-- 상품 설명 페이지  -->
+    <main>
+      <section class="product_detail">
+        <!-- 상품 디테일 타이틀 상자 -->
+        <div class="product_detail_title_box">
+          <h2 class="product_detail_title" aria-label="풀무원 탱탱쫄면 네개입">
+            &#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;
+          </h2>
+          <span class="product_detail_star_delivery">샛별배송</span>
+          <span class="product_detail_sub_title"
+            >튀기지 않아 부담없는 매콤함</span
+          >
+
+          <span
+            aria-label="총 상품금액"
+            class="product_detail_total_price"
+          ></span>
+          4&#44;980 <span class="product_detail_KRW">원</span>
+          <span class="product_detail_purple_span"
+            >로그인 후&#44; 적립 혜택이 제공됩니다&#46;</span
+          >
+        </div>
+
+        <!-- 제품 디테일 이미지 -->
+        <figure class="product_detail_image">
+          <img
+            src="../assets/productDetail/product01.png"
+            alt="풀무원 탱탱쫄면 네개입 이미지"
+          />
+        </figure>
+
+        <!-- 제품 디테일 리스트 -->
+        <dl class="product_detail_list">
+          <div class="product_detail_item">
+            <dt>배송</dt>
+            <dd>
+              <span class="product_detail_font_bold">샛별배송</span><br />
+              23시 전 주문시 내일 아침 7시 전 도착<br />
+              &#40;대구 부산 울산 샛별배송 운영시&#59;간 별도 확인&#41;
+            </dd>
+          </div>
+
+          <div class="product_detail_item">
+            <dt>판매자</dt>
+            <dd class="product_detail_font_bold">칼리</dd>
+          </div>
+
+          <div class="product_detail_item">
+            <dt>포장타입</dt>
+            <dd>
+              <span class="product_detail_font_bold" aria-label="상온 종이 포함"
+                >상온 (종이 포함)</span
+              >
+              <br />택배배송은 에코 포장이 스티로폼으로 대체됩니다&#46;
+            </dd>
+          </div>
+
+          <div class="product_detail_item">
+            <dt>판매단위</dt>
+            <dd class="product_detail_font_bold" aria-label="백이십삼그램 한봉">
+              1봉
+            </dd>
+          </div>
+
+          <div class="product_detail_item">
+            <dt>중량&#47;용량</dt>
+            <dd class="product_detail_font_bold" aria-label="백이십삼그램 네봉">
+              123g&#42;4봉
+            </dd>
+          </div>
+
+          <div class="product_detail_item">
+            <dt>원산지</dt>
+            <dd class="product_detail_font_bold">상세페이지 별도표기</dd>
+          </div>
+
+          <div class="product_detail_item">
+            <dt>알레르기정보</dt>
+
+            <dd class="product_detail_allergy_info">
+              &#8208;대두&#44; 밀&#44; 쇠고기 함유<br />
+              &#8208;계란&#44; 우유&#44; 메밀&#44; 땅콩&#44; 고등어&#44; 게&#44;
+              돼지고기&#44; 새우&#44; 복숭아&#44; 토마토&#44; 아황산류&#44;
+              호두&#44; 잣&#44; 닭<br />고기&#44;오징어&#44; 조개류(굴&#44;
+              전복&#44; 홍합 포함)를 사용한 제품과 같은 제조시설에서 제조
+            </dd>
+          </div>
+
+          <!-- 수량 추가와 빼기 기능 넣는 부분 -->
+          <div class="product_detail_item">
+            <dt>상품선택</dt>
+            <dd>
+              <div class="product_detail_select">
+                <span>&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</span>
+
+                <div class="product_detail_select_box">
+                  <button type="button" class="product_detail_minus">-</button>
+                  <span class="product_detail_select_count">1</span>
+                  <button type="button" class="product_detail_plus">+</button>
+                </div>
+
+                <span
+                  class="product_detail_select_price"
+                  aria-label="사천구백팔십원"
+                  >4&#44;980원</span
+                >
+              </div>
+            </dd>
+          </div>
+        </dl>
+
+        <!-- 총 가격 알려주는 기능넣기 -->
+        <div class="product_detail_productcart">
+          <dl class="product_detail_all_price">
+            <dt>총 상품금액&#58;</dt>
+            <dd>4980 <span>원</span></dd>
+          </dl>
+
+          <div class="product_detail_point">
+            <span class="product_detail_point_icon">적립</span>
+            <span>로그인 후&#44; 적립 혜택 제공</span>
+          </div>
+
+          <div class="product_detail_all_button">
+            <button
+              class="product_detail_heart product_detail_button"
+              aria-label="상품 좋아요 버튼"
+            ></button>
+            <button
+              class="product_detail_alarm product_detail_button"
+              aria-label="상품 알림 버튼"
+            ></button>
+            <button
+              class="product_detail_cart_button"
+              aria-label="장바구니 담기 버튼"
+            >
+              장바구니 담기
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- 상품 설명 부분 -->
+      <section class="description">
+        <div class="description_content">
+          <h3 class="sr-only">상품설명</h3>
+          <figure class="description_image">
+            <img
+              src="../assets/tangtang/detail_banner.jpg"
+              alt="풀무원 탱탱 쫄면 네개입"
+            />
+          </figure>
+
+          <div class="description_title_box">
+            <span class="description_sub_title"
+              >튀기지 않아 부담없는 매콤함</span
+            >
+            <span class="description_title">&#91;풀무원&#93; 탱탱쫄면</span>
+          </div>
+
+          <p class="description_paragraph">
+            쫄면의 진가는 매콤새콤한 양념과 탱탱한 면발에서 찾을 수 있지요&#46;
+            풀무원은 이 맛을 더 부담 없이 즐길 수 있도록 튀기지 않고 만든
+            탱탱쫄면을 선보입니다&#46; 밀가루와 감자 전분을 적절히 배합해 탄력이
+            좋고&#44; 입에 넣었을 때는 찰지게 씹히죠&#46; 고추장을 넣어 숙성한
+            비빔장은 자연스럽고 깊은 맛을 냅니다&#46; 간단하게 조리해 마지막 한
+            가닥까지 탱탱한 식감을 즐겨보세요&#46; 취향에 따라 다양한 고명을
+            올려 드셔도 좋아요&#46;
+          </p>
+          <span class="description_check_point_title"
+            >Karly&#96;s Check Point</span
+          >
+          <figure class="description_detail_first_image">
+            <img
+              src="../assets/productDetail/description-1.png"
+              alt="생산 유통 과정 활용법 브랜드와 생산자 설명 이미지"
+            />
+            <figcaption class="sr-only">
+              생산 유통 과정은 튀기지 않고 바람으로 말린면이다&#46; 활용법은
+              온가족이 즐기기 좋은 4개입 포장과 간편한 조리로 완성하는
+              쫄면이다&#46; 브랜드와 생산자는 풀무원이다&#46;
+            </figcaption>
+          </figure>
+
+          <h3 class="sr-only">상세정보</h3>
+          <figure class="description_detail_second_image">
+            <img
+              src="../assets/tangtang/detail_info.jpg"
+              alt="쫄면의 영양정보 이미지"
+            />
+            <figcaption class="sr-only">
+              풀무원 탱탱 쫄면은 123그램 4개입이다&#46; 쫄면의 영양정보 이미지
+            </figcaption>
+          </figure>
+
+          <!-- 와이 칼리 -->
+          <div class="why_karly">
+            <span class="why_karly_title">WHY KARLY</span>
+
+            <div class="why_karly_description">
+              <div class="why_karly_item">
+                <div class="why_karly_round_icon why_karly_check"></div>
+                <span class="why_karly_sub_title"> 깐깐한 상품위원회 </span>
+                <p class="why_karly_paragraph">
+                  나와 내 가족이 먹고 쓸 상품을 고르는 마음으로 매주 상품을 직접
+                  먹어보고&#44; 경험해보고 성분&#44; 맛 안정성 등 다각도의
+                  기준을 통과한 상품만을 판매합니다&#46;
+                </p>
+              </div>
+
+              <div class="why_karly_item">
+                <div class="why_karly_round_icon why_karly_web"></div>
+                <span class="why_karly_sub_title">
+                  차별화된 Karly Only 상품
+                </span>
+                <p class="why_karly_paragraph">
+                  전국 각지와 해외의 훌륭한 생산자가 믿고 선택하는 파트너&#44;
+                  마켓칼리&#46; 3천여 개가 넘는 칼리 단독 브랜드&#44; 스펙의
+                  Karly Only 상품을 믿고 만나보세요&#46;
+                </p>
+              </div>
+
+              <div class="why_karly_item">
+                <div class="why_karly_round_icon whyKarly_delivery"></div>
+                <span class="why_karly_sub_title">
+                  신선한 풀콜드체인 배송
+                </span>
+                <p class="why_karly_paragraph">
+                  온라인 업계 최초로 산지에서 문 앞까지 상온&#44; 냉장&#44; 냉동
+                  상품을 분리 포장 후 최적의 온도를 유지하는 냉장 배송
+                  시스템&#44; 풀콜드체인으로 상품을 신선하게 전해드립니다&#46;
+                </p>
+              </div>
+              <div class="why_karly_item">
+                <div class="why_karly_round_icon whyKarly_price"></div>
+                <span class="why_karly_sub_title">
+                  고객&#44; 생산자를 위한 최선의 가격
+                </span>
+                <p class="why_karly_paragraph">
+                  매주 대형 마트와 주요 온라인 마트의 가격 변동 상황을 확인해
+                  신선식품은 품질을 타협하지 않는 선에서 최선의 가격으로&#44;
+                  가공식품은 언제나 합리적인 가격으로 정기 조정합니다&#46;
+                </p>
+              </div>
+
+              <div class="why_karly_item">
+                <div class="why_karly_round_icon whyKarly_recycle"></div>
+                <span class="why_karly_sub_title">
+                  환경을 생각하는 지속 가능한 유통
+                </span>
+                <p class="why_karly_paragraph">
+                  친환경 포장재부터 생산자가 상품에만 집중할 수 있는 직매입
+                  유통구조까지&#44; 지속 가능한 유통을 고민하며 컬리를 있게 하는
+                  모든 환경&#40;생산자&#44;커뮤니티&#44;직원&#41;이 더 나아질 수
+                  있도록 노력합니다&#46;
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 상품 후기 -->
+          <div class="product_review">
+            <h3 class="product_review_title">상품후기</h3>
+
+            <span class="product_review_sub_title">
+              글후기 50원 적립금 혜택이 있어요&#46;
+            </span>
+
+            <ul class="product_review_descript_list">
+              <li>
+                퍼플&#44; 더퍼플은 2배 적립 &#40;100원&#41; &#47; 주간 베스트
+                후기로 선정 시 5&#44;000원 추가 적립
+              </li>
+              <li>후기 작성은 배송완료일로부터 30일 이내 가능합니다&#46;</li>
+              <li>
+                작성하신 후기는 확인 후 적립금이 지급됩니다&#46; &#40;영업일
+                기준 평균 1~2일 소요&#41;
+              </li>
+            </ul>
+
+            <button
+              class="product_review_button"
+              aria-label="후기 작성하기 버튼"
+            >
+              후기 작성하기
+            </button>
+          </div>
+        </div>
+        <!-- 상품 설명 페이지 내의 이동 버튼들 -->
+        <div class="description_button_box">
+          <button
+            class="description_button description_button_purple"
+            type="button"
+            aria-label="상품설명 이동 버튼"
+          >
+            상품설명
+          </button>
+
+          <button
+            class="description_button"
+            type="button"
+            aria-label="상세정보 이동 버튼"
+          >
+            상세정보
+          </button>
+
+          <button
+            class="description_button"
+            type="button"
+            aria-label="상품후기 이동 버튼 후기 천개"
+          >
+            후기
+            <span class="product_detail_sub"> &#40;1,000&#41; </span>
+          </button>
+
+          <button
+            class="description_button"
+            type="button"
+            aria-label="문의 이동 버튼"
+          >
+            문의
+          </button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

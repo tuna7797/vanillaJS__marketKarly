@@ -1,0 +1,36 @@
+.main__box {
+  font-family: pretendard;
+}
+.hidden__label {
+  @apply whitespace-nowrap overflow-hidden;
+}
+.login {
+  @apply flex justify-start items-center gap-11 py-20;
+  flex-flow: column nowrap;
+}
+.login__main {
+  @apply text-[black] text-[1.333rem_boild] font-semibold leading-[150%] mx-auto my-0;
+}
+.form__main {
+  @apply flex justify-start items-center w-[21.25rem];
+  flex-flow: column nowrap;
+}
+.input__main {
+  @apply flex justify-start items-end self-stretch h-[3.125rem] rounded border mb-3 px-5 py-3 border-solid border-[#a6a6a6];
+  flex-flow: column nowrap;
+}
+.placeholder {
+  @apply text-[#898989] text-base leading-[160%];
+}
+.find {
+  @apply text-[#101010] text-[0.7501875rem] leading-[160%] no-underline ml-auto mb-7;
+}
+.login__button {
+  @apply flex justify-center items-center h-[3.375rem] self-stretch rounded text-white text-base font-semibold leading-[150%] mb-3;
+  flex-flow: column nowrap;
+  background: #5f0080;
+}
+.member {
+  @apply flex justify-center items-center h-[3.375rem] self-stretch rounded border text-[#5f0080] text-base font-semibold leading-[150%] no-underline border-solid border-[#5f0080];
+  flex-flow: column nowrap;
+}
