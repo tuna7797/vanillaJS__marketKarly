@@ -1,0 +1,134 @@
+.main_cart {
+  @apply flex items-center justify-start gap-11 py-20;
+  flex-flow: column nowrap;
+  font-family: pretendard;
+}
+.cart_section {
+  @apply flex items-center justify-start text-[1.333rem] font-semibold leading-[150%] text-[#101010];
+  flex-flow: column nowrap;
+}
+.cart_all_box {
+  @apply flex w-[65.625rem] items-start justify-between;
+  flex-flow: row nowrap;
+}
+.cart_button {
+  @apply flex items-center justify-start gap-2 border-b border-solid border-b-[#101010] py-4 transition-none;
+  flex-flow: row nowrap;
+}
+.cart_button_click {
+  @apply flex items-stretch justify-start border-[none] text-base font-semibold leading-[150%] text-[#333333];
+  flex-flow: row nowrap;
+  background: none;
+}
+.cart_button_img {
+  @apply mr-2 block h-6 w-6 -translate-x-1;
+  background: url("./../assets/images/Input/Check.png") no-repeat;
+}
+.cart_list {
+  @apply flex items-start justify-start;
+  flex-flow: column nowrap;
+}
+.cart_item {
+  @apply flex w-[46.375rem] items-center justify-between border-b border-solid border-b-[#101010] py-4 pl-[2.625rem] text-base font-semibold leading-[150%] text-[#101010];
+  flex-flow: row nowrap;
+}
+.cart_refrigerated_food_item {
+  @apply bg-[0%_50%];
+  background: url(./../../images/Icon/Food_0.svg) no-repeat;
+}
+.cart_frozen_food_item {
+  @apply bg-[0%_50%];
+  background: url(./../../images/Icon/Food_1.svg) no-repeat;
+}
+.cart_normal_temperature_food_item {
+  @apply bg-[0%_50%];
+  background: url(./../../images/Icon/Food_2.svg) no-repeat;
+}
+.left_box {
+  @apply flex items-stretch justify-start;
+  flex-flow: row nowrap;
+}
+.right_box {
+  @apply flex w-[17.75rem] shrink-0 items-start justify-start gap-4;
+  flex-flow: column nowrap;
+}
+
+/* -------------------------------- */
+.delivery_section {
+  @apply flex items-start justify-start gap-3 self-stretch p-5;
+  flex-flow: column nowrap;
+}
+.delivery_address {
+  @apply text-base font-semibold leading-[150%] text-[#101010];
+}
+.delivery_content {
+  @apply text-base font-semibold leading-[150%] text-[#101010];
+}
+.star_delivery_item {
+  @apply text-[0.7501875rem] font-semibold leading-[150%] text-[#5f0080];
+}
+.delivery_address_change_button {
+  @apply flex h-11 items-center justify-center self-stretch rounded border border-solid border-[#5f0080];
+  flex-flow: column nowrap;
+  background: #ffffff;
+}
+.delivery_address_change {
+  @apply font-semibold leading-[150%] text-[#5f0080];
+  font: 1rem bold;
+}
+
+/* -------------------------------- */
+.price_section {
+  @apply flex items-start justify-center self-stretch border border-solid border-[#e1e1e1] p-5;
+  flex-flow: column nowrap;
+  background: #f9f9f9;
+}
+.price_box {
+  @apply flex w-[15.25rem] items-start justify-center gap-4 border-b border-solid border-b-[#e1e1e1] pb-6;
+  flex-flow: column nowrap;
+}
+.price_product,
+.price_product_discount,
+.price_delivery {
+  @apply flex items-center justify-between self-stretch text-base leading-[160%] text-[#333333];
+  flex-flow: row nowrap;
+  font-family: Pretendard;
+}
+.price_total {
+  @apply flex w-[15.25rem] items-end justify-start gap-[0.6875rem] pt-6;
+  flex-flow: column nowrap;
+}
+.price_total .price_final {
+  @apply flex items-center justify-between self-stretch text-base leading-[160%] text-[#333333];
+  flex-flow: row nowrap;
+}
+.price_total .price_total_final {
+  @apply text-[1.776875rem] font-bold leading-[140%] text-[#101010];
+}
+.price_save {
+  @apply mr-4 flex items-start justify-between rounded-[1px] px-2 text-[0.7501875rem] font-semibold leading-[150%] text-white;
+  flex-flow: row nowrap;
+  background: #fa622f;
+}
+.point_save_info {
+  @apply text-[0.7501875rem] font-semibold leading-[150%] text-[#333333];
+  font-family: Pretendard;
+}
+.point_contents {
+  @apply flex items-stretch justify-between;
+  flex-flow: row nowrap;
+}
+
+/* -------------------------------- */
+.order {
+  @apply border-black;
+}
+
+/* 주문하기 글자색 하양으로 변경하기 */
+.order_button {
+  @apply flex h-11 w-[284px] flex-row flex-nowrap items-center justify-center self-stretch rounded bg-[#5f0080] text-base font-semibold leading-[150%] text-black;
+}
+.order_details {
+  @apply flex items-stretch justify-center self-stretch text-[0.0468867188rem] font-semibold leading-[150%] text-[#898989];
+  flex-flow: column nowrap;
+}
