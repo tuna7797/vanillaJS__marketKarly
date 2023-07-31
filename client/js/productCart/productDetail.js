@@ -4,7 +4,7 @@ import {
   clearContents,
   getNode,
   insertLast,
-} from "../lib/index.js";
+} from "../../lib/index.js";
 
 // 상품 선택 카운트 기능
 const selectCount = getNode(".product_detail_select_count");
