@@ -8,35 +8,35 @@ footer {
 
 /* icon */
 .blog {
-  background: url("../../images/Icon/Blog.svg") no-repeat;
+  background: url("../assets/images/Icon/Blog.svg") no-repeat;
   width: 1.875rem;
   height: 1.875rem;
   display: block;
 }
 
 .facebook {
-  background: url("../../images/Icon/FaceBook.svg") no-repeat;
+  background: url("../assets/images/Icon/FaceBook.svg") no-repeat;
   width: 1.875rem;
   height: 1.875rem;
   display: block;
 }
 
 .instagram {
-  background: url("../../images/Icon/Instagram.svg") no-repeat;
+  background: url("../assets/images/Icon/Instagram.svg") no-repeat;
   width: 1.875rem;
   height: 1.875rem;
   display: block;
 }
 
 .naverPost {
-  background: url("../../images/Icon/NaverPost.svg") no-repeat;
+  background: url("../assets/images/Icon/NaverPost.svg") no-repeat;
   width: 1.875rem;
   height: 1.875rem;
   display: block;
 }
 
 .youtube {
-  background: url("../../images/Icon/Youtube.svg") no-repeat;
+  background: url("../assets/images/Icon/Youtube.svg") no-repeat;
   width: 1.875rem;
   height: 1.875rem;
   display: block;
@@ -44,7 +44,7 @@ footer {
 
 /* button */
 
-.inquiryButton {
+.inquiry_button {
   cursor: pointer;
   background: white;
   border: 1px solid #C4C4C4;
@@ -54,27 +54,18 @@ footer {
 
 /* footer */
 
-.dividerCustomer {
+.divider_inquiry {
   color: #333333;
   font-size: 16px;
 }
 
-.dividerAbout {
+.divider_about {
   color: #333333;
   font-size: 10px;
 }
 
-.a11y {
-  overflow: hidden;
-  position: absolute !important;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
 
-.footerTop {
+.footer_top {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
@@ -83,7 +74,7 @@ footer {
   padding-right: 20%;
 }
 
-.footerInfo {
+.footer_info {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -91,7 +82,7 @@ footer {
   padding: 28px 0px 32px 0px;
 }
 
-.customerService {
+.customer_service {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -99,23 +90,23 @@ footer {
   gap: 16px;
 }
 
-.happyCenter {
+.customer_center {
   font-size: 21.328px;
   font-weight: 700;
   line-height: 140%;
 }
 
-.centerNumber {
+.center_number {
   font-size: 37.897px;
   font-weight: 700;
 }
 
-.centerTime {
+.center_time {
   font-size: 16px;
   font-weight: 600;
 }
 
-.numberInquiry {
+.number_inquiry {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -123,7 +114,7 @@ footer {
   gap: 10px;
 }
 
-.kakaoInquiry {
+.kakao_inquiry {
   display: flex;
   flex-flow: row-reverse nowrap;
   justify-content: flex-start;
@@ -132,7 +123,7 @@ footer {
   line-height: 26px;
 }
 
-.oneononeInquiry {
+.one_on_one_inquiry {
   display: flex;
   flex-flow: row-reverse nowrap;
   justify-content: flex-start;
@@ -141,7 +132,7 @@ footer {
   line-height: 26px;
 }
 
-.bulkInquiry {
+.bulk_inquiry {
   display: flex;
   flex-flow: row-reverse nowrap;
   justify-content: flex-start;
@@ -150,7 +141,7 @@ footer {
   line-height: 26px;
 }
 
-.nonMember {
+.non_member {
   font-size: 10px;
 }
 
@@ -161,14 +152,14 @@ footer {
   align-items: flex-start;
   gap: 28px;
 }
-.about__nav {
+.about_nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: stretch;
   gap: 10px;
 }
-.about__info {
+.about_info {
   font-size: 10px;
   line-height: 18px;
 }
@@ -178,7 +169,7 @@ footer {
   font-weight: bold;
 }
 
-.snsContainer {
+.sns_box {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -186,11 +177,11 @@ footer {
   gap: 20px;
 }
 
-.footerCompany {
+.company {
   border-top: 1px solid #E1E1E1;
 }
 
-.companyWrap {
+.company_wrap {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -201,7 +192,7 @@ footer {
   gap: 24px;
 }
 
-.company__list {
+.company_list {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -218,7 +209,7 @@ footer {
 .isms::before {
   content: "";
   display: block;
-  background: url("../../images/logo_isms.png") no-repeat;
+  background: url("../assets/images/logo_isms.png") no-repeat;
   width: 35px;
   height: 35px;
   flex-shrink: 0;
@@ -234,7 +225,7 @@ footer {
 .privacy::before {
   content: "";
   display: block;
-  background: url("../../images/logo_privacy.png") no-repeat;
+  background: url("../assets/images/logo_privacy.png") no-repeat;
   width: 35px;
   height: 35px;
   flex-shrink: 0;
@@ -250,7 +241,7 @@ footer {
 .woori::before {
   content: "";
   display: block;
-  background: url("../../images/logo_wooriBank.png") no-repeat;
+  background: url("../assets/images/logo_wooriBank.png") no-repeat;
   width: 35px;
   height: 35px;
   flex-shrink: 0;
@@ -266,13 +257,13 @@ footer {
 .toss::before {
   content: "";
   display: block;
-  background: url("../../images/logo_tosspayments.png") no-repeat;
+  background: url("../assets/images/logo_tosspayments.png") no-repeat;
   width: 105px;
   height: 35px;
   flex-shrink: 0;
 }
 
-.footerBottom {
+.footer_bottom {
   background: #F9F9F9;
   font-size: 0.625rem;
   color: #898989;
@@ -283,10 +274,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
-.footerBottom span {
+.footer_bottom span {
   line-height: 180%;
 }
-.footerBottom small {
+.footer_bottom small {
   line-height: 160%;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
