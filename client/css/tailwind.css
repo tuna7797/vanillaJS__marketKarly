@@ -1,14 +1,12 @@
-
 @import 'register.css';
 @import 'login.css';
 
 @import './cart.css';
 @import './productDetail.css';
 
-
-@import './footer copy.css';
+@import './footer.css';
 @import './mainPage.css';
-/* @import './headerCopy.css'; */
+@import './header.css';
 
 @tailwind base;
 @tailwind components;
@@ -28,7 +26,7 @@
 
 /* header */
 
-header {
+/* header {
   @apply flex items-stretch justify-center text-[#333333] shadow-[0px_0px_24px_0px_rgba(0,0,0,0.1)];
   flex-flow: column nowrap;
   font-family: Pretendard;
@@ -158,7 +156,7 @@ header {
 .member_custermer_center::after {
   @apply ml-[5px] inline-block h-1.5 w-2 translate-y-[-3px] content-[""];
   background: url("../assets/images/Icon/down.svg");
-}
+} */
 
 /* footer */
 
