@@ -22,7 +22,7 @@
 }
 .cart_button_img {
   @apply mr-2 block h-6 w-6 -translate-x-1;
-  background: url("./../../images/Icon/Check_p.svg") no-repeat;
+  background: url("./../assets/images/Input/Check.png") no-repeat;
 }
 .cart_list {
   @apply flex items-start justify-start;
@@ -102,7 +102,7 @@
   @apply flex items-center justify-between self-stretch text-base leading-[160%] text-[#333333];
   flex-flow: row nowrap;
 }
-.price_total .price_strong {
+.price_total .price_total_final {
   @apply text-[1.776875rem] font-bold leading-[140%] text-[#101010];
 }
 .price_save {
@@ -120,10 +120,13 @@
 }
 
 /* -------------------------------- */
+.order {
+  @apply border-black;
+}
+
+/* 주문하기 글자색 하양으로 변경하기 */
 .order_button {
-  @apply flex h-11 w-[284px] items-center justify-center self-stretch rounded text-base font-semibold leading-[150%] text-white;
-  flex-flow: row nowrap;
-  background: #5f0080;
+  @apply flex h-11 w-[284px] flex-row flex-nowrap items-center justify-center self-stretch rounded bg-[#5f0080] text-base font-semibold leading-[150%] text-black;
 }
 .order_details {
   @apply flex items-stretch justify-center self-stretch text-[0.0468867188rem] font-semibold leading-[150%] text-[#898989];

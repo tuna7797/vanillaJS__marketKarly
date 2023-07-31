@@ -1,14 +1,9 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 .product_detail {
   @apply relative mx-auto box-border w-[65.625rem] px-0 py-[3.75rem] text-base;
   font-family: Pretendard;
 }
 .product_detail_title_box {
-  @apply flex items-stretch justify-start gap-y-4;
-  flex-flow: column nowrap;
+  @apply ml-[480px] flex flex-col flex-nowrap items-stretch justify-start gap-y-4;
 }
 .product_detail_star_delivery {
   @apply -order-1 text-[1.3125rem] font-extrabold text-[#6b6b6b];
@@ -25,11 +20,9 @@
   @apply ml-[480px];
 }
 .product_detail_image {
-  @apply absolute top-[60px];
+  @apply absolute top-[60px] ml-0;
 }
-.product_detail_price {
-  @apply text-[1.8125rem] font-semibold leading-[150%] text-[#2b2b2b];
-}
+
 .product_detail_KRW {
   @apply font-bold leading-[140%] text-[#2b2b2b];
 }
@@ -63,14 +56,14 @@
   @apply mt-3 h-[1.875rem] w-[5.1875rem] border border-solid border-[#c4c4c4] text-center;
 }
 .product_detail_plus {
-  @apply float-right h-[30px] w-7 cursor-pointer border-[none] bg-[50%_17%];
-  background: url("/images/Icon/Plus.png");
+  @apply float-right h-[30px] w-7 cursor-pointer bg-[50%_17%];
+  background: url("./../assets/cartIcons/plus_icon.png");
 }
 .product_detail_minus {
   @apply float-left h-[30px] w-7 cursor-pointer border-[none] bg-[50%_87%];
-  background: url("/images/Icon/Minus.png");
+  background: url("../assets/cartIcons/minus_icon.png");
 }
-.product_detail_select_box_one {
+.product_detail_select_count {
   @apply inline-block translate-y-2 px-0 py-[auto] font-extrabold;
 }
 .product_detail_all_price {
@@ -129,7 +122,7 @@
 .description_paragraph {
   @apply mt-10 border-b border-solid border-b-[#e1e1e1] pb-[12.5rem];
 }
-.description_check_pointitle {
+.description_check_point_title {
   @apply mx-auto mb-[4.375rem] block w-[32.5rem] -translate-y-10 bg-white text-[3.1573125rem] font-bold leading-[140%];
 }
 .description__detail_first_image {
@@ -202,4 +195,9 @@
 .product_review_button {
   @apply absolute right-0 top-0 h-11 w-[155px] cursor-pointer rounded border-0 text-white;
   background: #5f0080;
+}
+
+button[class*="mainPopup__close"] {
+  @apply m-0 inline-block h-[3.75rem] w-[49%] cursor-pointer border-0;
+  background: transparent;
 }

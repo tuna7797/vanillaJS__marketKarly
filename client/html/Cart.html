@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css//main.css" />
+    <script src="../js/cart.js" type="module"></script>
     <title>카트 페이지</title>
   </head>
   <body>
@@ -25,7 +26,7 @@
                 name="selectall"
               >
                 <span class="cart_button_img"></span>
-                전체선택(3/3)&#166;선택삭제
+                전체선택(3/3) &#124; 선택삭제
               </button>
             </div>
 
@@ -43,7 +44,7 @@
                 name="selectall"
               >
                 <span class="cart_button_img"></span>
-                전체선택(3/3)&#166;선택삭제
+                전체선택(3/3) &#124; 선택삭제
               </button>
             </div>
           </div>
@@ -73,24 +74,26 @@
             <div class="price_box">
               <div class="price_product">
                 <span>상품금액</span>
-                <span>40&#44;680 원</span>
+                <span class="show_price_product">40&#44;680 원</span>
               </div>
 
               <div class="price_product_discount">
                 <span>상품할인금액</span>
-                <span>&#45;4&#44;651원</span>
+                <span class="show_price_product_discount"
+                  >&#45;4&#44;651원</span
+                >
               </div>
 
               <div class="price_delivery">
                 <span>배송비</span>
-                <span>&#43;3&#44;000 원</span>
+                <span class="show_price_delivery">&#43;3&#44;000 원</span>
               </div>
             </div>
 
             <div class="price_total">
               <div class="price_final">
                 <span>결제예정금액</span>
-                <strong class="price_strong">40&#44;680원</strong>
+                <strong class="price_total_final">40&#44;680원</strong>
               </div>
 
               <div class="point_contents">
