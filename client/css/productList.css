@@ -20,6 +20,12 @@
 .brand {
   @apply flex justify-start items-stretch;
   flex-flow: column nowrap;
+  height: 522px;
+  overflow: hidden;
+  transition: .4s;
+}
+.brand_list_hide{
+  height: 0;
 }
 .brand_list {
   @apply flex justify-start items-start w-[13.75rem] gap-2 px-0 py-3;
@@ -176,6 +182,12 @@
 .arrow_top {
   @apply w-[1.125rem] h-[1.125rem] block shrink-0;
   background: url("../assets/icon/Arrow_top.svg") no-repeat;
+}
+.arrow_top_rotate{
+  transform: rotate(180deg);
+}
+.current_brand{
+  color: #5F0080;
 }
 .badge_karly{
   padding: 0.25rem;
