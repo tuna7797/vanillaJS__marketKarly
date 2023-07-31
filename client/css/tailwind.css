@@ -1,7 +1,7 @@
 /* @import 'tailwindcss/base'; */
 
-@import "cart.css";
-@import "productDetail.css";
+@import "./cart.css";
+@import "./productDetail.css";
 
 @tailwind base;
 @tailwind components;
