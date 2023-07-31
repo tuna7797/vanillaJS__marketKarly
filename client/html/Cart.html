@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+    <script src="../js/productCart/cart.js" type="module"></script>
+    <title>카트 페이지</title>
+  </head>
+  <body>
+    <!-- 상품 카드 페이지 -->
+    <main class="main_cart">
+      <h2 class="cart_section">장바구니</h2>
+
+      <div class="cart_all_box">
+        <!-- 왼쪽 박스 -->
+        <div class="left_box">
+          <div class="cart_contents">
+            <div class="cart_button">
+              <button
+                aria-label="상품 전체 선택버튼과 선택 삭제버튼"
+                class="cart_button_click"
+                type="button"
+                name="selectall"
+              >
+                <span class="cart_button_img"></span>
+                전체선택(3/3) &#124; 선택삭제
+              </button>
+            </div>
+
+            <ul class="cart_list">
+              <li class="cart_refrigerated_food_item">냉장 식품</li>
+              <li class="cart_frozen_food_item">냉동 식품</li>
+              <li class="cart_normal_temperature_food_item">상온 식품</li>
+            </ul>
+
+            <div class="cart_button">
+              <button
+                aria-label="상품 전체 선택버튼과 선택 삭제버튼"
+                class="cart_button_click"
+                type="button"
+                name="selectall"
+              >
+                <span class="cart_button_img"></span>
+                전체선택(3/3) &#124; 선택삭제
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- 오른쪽 박스 -->
+        <div class="right_box">
+          <!-- 배송지 -->
+          <div class="delivery_contents">
+            <h3 class="delivery_address">배송지</h3>
+            <div class="delivery_address_paragraph">
+              <p>서울 중랑구 면목로 42길 11 &#40;행운빌딩&#41; 603호</p>
+              <span class="star_delivery_item">샛별배송</span>
+            </div>
+
+            <button
+              aria-label="배송지 변경 버튼"
+              class="delivery_address_change_button"
+              type="button"
+            >
+              <span class="delivery_address_change">배송지 변경</span>
+            </button>
+          </div>
+
+          <!-- 결제금액 -->
+          <div class="price_contents">
+            <div class="price_box">
+              <div class="price_product">
+                <span>상품금액</span>
+                <span class="show_price_product">40&#44;680 원</span>
+              </div>
+
+              <div class="price_product_discount">
+                <span>상품할인금액</span>
+                <span class="show_price_product_discount"
+                  >&#45;4&#44;651원</span
+                >
+              </div>
+
+              <div class="price_delivery">
+                <span>배송비</span>
+                <span class="show_price_delivery">&#43;3&#44;000 원</span>
+              </div>
+            </div>
+
+            <div class="price_total">
+              <div class="price_final">
+                <span>결제예정금액</span>
+                <strong class="price_total_final">40&#44;680원</strong>
+              </div>
+
+              <div class="point_contents">
+                <span class="point_save">적립</span>
+                <span class="point_save_info"
+                  >최대 36원 적립 일반0&#44;1&#37;</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- 주문하기 -->
+          <div class="order">
+            <button class="order_button" type="button">주문하기</button>
+          </div>
+
+          <div class="order_details">
+            <span>쿠폰&#47;적립금은 주문서에서 사용 가능합니다&#46;</span>
+            <span
+              >&#91;주문완료&#93; 상태일 경우에만 주문 취소
+              가능합니다&#46;</span
+            >
+            <span
+              >&#91;마이컬리 &#62; 주문내역 상세페이지&#93; 에서 직접 취소하실
+              수 있습니다&#46;</span
+            >
+            <span
+              >쿠폰&#44; 적립금 사용 금액을 제외한 실 결제 금액 기준으로 최종
+              산정됩니다&#46;</span
+            >
+            <span
+              >상품별로 적립금 지급 기준이 다를 수 있습니다&#46; &#40;상품 상세
+              페이지에서 확인 가능합니다&#41;</span
+            >
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
