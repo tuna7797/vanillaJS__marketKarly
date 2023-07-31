@@ -46,3 +46,5 @@ async function handler_usedId(e) {
 export function event_check_usedId(){
   bindEvent(button_check_usedId, "click", handler_usedId);
 }
+
+//카멜+케밥으로 고치기
