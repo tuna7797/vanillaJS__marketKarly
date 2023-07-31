@@ -1,5 +1,4 @@
 module.exports = {
-  semi: true,
-
-  singleQuote: true,
+  extends: ["airbnb", "plugin:prettier/recommended"],
+  plugins: ["prettier"],
 };
