@@ -1,6 +1,6 @@
-/* @import 'tailwindcss/base'; */
+@import 'register.css';
+@import 'login.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-

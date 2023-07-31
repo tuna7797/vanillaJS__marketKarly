@@ -1,6 +1,350 @@
-/* @import 'tailwindcss/base'; */
+.register_container {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  width: 600px;
+  padding-bottom: 2.5rem;
+  font-family: pretendard;
+}
 
-/* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
+.register_container_form {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 650px;
+  max-width: 1024px;
+  flex-direction: column;
+}
+
+.register_container_title {
+  padding-top: 5rem;
+  padding-bottom: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.register_indicator_essential::before {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
+  --tw-content: "*";
+  content: var(--tw-content);
+}
+
+.register_indicator_essential {
+  display: block;
+  text-align: end;
+  font-size: 4px;
+}
+
+.register_hr_line {
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.register_box_in_line {
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+  display: flex;
+  height: 2.5rem;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+
+.register_term_box_in_line {
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  display: flex;
+}
+
+.register_question_essencial {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  font-weight: 600;
+}
+
+.register_question_essencial::after {
+  --tw-text-opacity: 1;
+  color: rgb(255 0 0 / var(--tw-text-opacity));
+  --tw-content: "*";
+  content: var(--tw-content);
+}
+
+.register_question_optional {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  font-weight: 600;
+}
+
+.register__question__term {
+  display: flex;
+  width: 20%;
+}
+
+.register_text_input {
+  display: flex;
+  width: 50%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(166 166 166 / var(--tw-border-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.register__button {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  justify-content: center;
+}
+
+.register__label__date {
+  display: flex;
+  width: 20%;
+  align-items: center;
+  font-weight: 600;
+}
+
+.register__input__date {
+  display: flex;
+  width: 50%;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(166 166 166 / var(--tw-border-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+}
+
+.register__input__address {
+  display: block;
+  height: 2.5rem;
+  width: 20rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.register_box_in_line .addressBox {
+  height: 68px;
+  font-size: 4px;
+}
+
+.register__radioS {
+  display: flex;
+  width: 60%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.625rem;
+}
+
+.register__input__radio {
+  height: 25px;
+  width: 25px;
+  border-width: 1px;
+}
+
+.register__inputBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  flex-flow: row nowrap;
+}
+
+.register__checkboxS {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
+.register__checkbox__input {
+  display: inline-block;
+}
+
+.register__checkbox__label {
+  display: inline-block;
+  font-weight: 600;
+}
+
+.register__button,
+.register__input__address {
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-color: solid;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(95 0 128 / var(--tw-text-opacity));
+}
+
+.register__submitAll {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  height: 54px;
+  width: 340px;
+  border-radius: 0.25rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(95 0 128 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.register__listAll {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+}
+
+.register__checkboxAlltitle {
+  font-size: 21.328px;
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.register__allText {
+  display: block;
+  padding-left: 1.25rem;
+  font-size: 10px;
+  --tw-text-opacity: 1;
+  color: rgb(137 137 137 / var(--tw-text-opacity));
+}
+
+.main__box {
+  font-family: pretendard;
+}
+
+.hidden__label {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2.75rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  flex-flow: column nowrap;
+}
+
+.login__main {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight: 600;
+  line-height: 150%;
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: 1.333rem boild;
+}
+
+.form__main {
+  display: flex;
+  width: 21.25rem;
+  align-items: center;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+}
+
+.input__main {
+  margin-bottom: 0.75rem;
+  display: flex;
+  height: 3.125rem;
+  align-items: flex-end;
+  justify-content: flex-start;
+  align-self: stretch;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(166 166 166 / var(--tw-border-opacity));
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  flex-flow: column nowrap;
+}
+
+.placeholder {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  line-height: 160%;
+  --tw-text-opacity: 1;
+  color: rgb(137 137 137 / var(--tw-text-opacity));
+}
+
+.find {
+  margin-left: auto;
+  margin-bottom: 1.75rem;
+  font-size: 0.7501875rem;
+  line-height: 160%;
+  --tw-text-opacity: 1;
+  color: rgb(16 16 16 / var(--tw-text-opacity));
+  text-decoration-line: none;
+}
+
+.login__button {
+  margin-bottom: 0.75rem;
+  display: flex;
+  height: 3.375rem;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  flex-flow: column nowrap;
+  background: #5f0080;
+}
+
+.member {
+  display: flex;
+  height: 3.375rem;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  border-style: solid;
+  --tw-border-opacity: 1;
+  border-color: rgb(95 0 128 / var(--tw-border-opacity));
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  line-height: 150%;
+  --tw-text-opacity: 1;
+  color: rgb(95 0 128 / var(--tw-text-opacity));
+  text-decoration-line: none;
+  flex-flow: column nowrap;
+}
+
+/*
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
+*/
 
 /*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
@@ -539,11 +883,6 @@ video {
   margin-right: auto;
 }
 
-.bg-sky-700 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(3 105 161 / var(--tw-bg-opacity));
-}
-
 .bg-gradient-to-r {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
 }
@@ -561,16 +900,6 @@ video {
 .bg-clip-text {
   -webkit-background-clip: text;
           background-clip: text;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .text-7xl {
@@ -591,30 +920,7 @@ video {
   color: transparent;
 }
 
-.text-white {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
 .drop-shadow-lg {
   --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
-
-.hover\:bg-sky-800:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 89 133 / var(--tw-bg-opacity));
-}
-
-@media (min-width: 640px) {
-  .sm\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .sm\:py-3 {
-    padding-top: 0.75rem;
-    padding-bottom: 0.75rem;
-  }
-}
-
