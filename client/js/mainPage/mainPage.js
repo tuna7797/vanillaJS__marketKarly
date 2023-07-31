@@ -8,7 +8,7 @@ import {
   clearContents,
   tiger,
   insertLast,
-} from '../lib/index.js';
+} from '../../lib/index.js';
 
 const bannerData = (await tiger.get('http://localhost:3000/banner')).data;
 const [closeNotToday, close] = getNodes('.main_popup > button');
