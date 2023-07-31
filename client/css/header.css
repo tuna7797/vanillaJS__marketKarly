@@ -20,41 +20,42 @@ header {
 /* button */
 
 .header_banner_button {
-  background: url("../assets/images/Icon/") no-repeat;
+  background: url("../assets/images/Icon/Cancel.svg") no-repeat;
   width: 1.875rem;
   height: 1.875rem;
   display: block;
   border: 0;
+  
 }
 
-.search__button {
+.search_button {
   cursor: pointer;
 }
 
-.searchIcon {
-  background: url("../../images/Icon/Search.png") no-repeat;
-  width: 2.5rem;
+.search_icon {
+  background: url("client/assets/images/Icon/Search.png") no-repeat;
+  width: 2.5rem; 
   height: 2.1875rem;
   display: block;
   border: 0;
 }
 
-.heartIcon {
+.heart_icon {
   width: 2rem;
   height: 1.9375rem;
   display: block;
-  background: url("../../images/Icon/Heart.png") no-repeat;
+  background: url("../assets/images/Icon/Heart.png") no-repeat;
 }
 
-.locationIcon {
-  background: url("../../images/Icon/Location.png") no-repeat;
+.location_icon {
+  background: url("../assets/images/Icon/Location.png") no-repeat;
   width: 2rem;
   height: 1.9375rem;
   display: block;
 }
 
-.blackCart__Icon {
-  background: url("../../images/Icon/Cart-black.png") no-repeat;
+.black_cart_icon {
+  background: url("../assets/images/Icon/Cart-black.png") no-repeat;
   width: 2rem;
   height: 1.9375rem;
   display: block;
@@ -71,7 +72,7 @@ header {
   font-weight: bold;
 }
 
-.headerContainer {
+.header_container {
   display: flex;
   flex-flow: column nowrap;
   justify-content: flex-start;
@@ -81,7 +82,7 @@ header {
   position: relative;
 }
 
-.searchContainer {
+.search_container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -90,7 +91,7 @@ header {
   padding-bottom: 10px;
 }
 
-.logoContainer {
+.logo_container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -98,7 +99,7 @@ header {
   gap: 12px;
 }
 
-.switchContainer {
+.switch_box {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -109,17 +110,17 @@ header {
   position: relative;
 }
 
-.market__link {
+.market_link {
   color: #5F0080;
 }
 
-.beauty__link {
+.beauty_link {
   color: #898989;
 }
-.beauty__link::after {
+.beauty_link::after {
   content: "";
   display: block;
-  background: url("../../images/Icon/new.svg");
+  background: url("../assets/images/Icon/new.svg");
   width: 7px;
   height: 7px;
   top: -5px;
@@ -127,11 +128,11 @@ header {
   position: absolute;
 }
 
-.formContainer {
+.search_form_container {
   margin-right: 120px;
 }
 
-.searchForm {
+.search_form {
   width: 400px;
   border: 1.5px solid #5F0080;
   border-radius: 3px;
@@ -142,23 +143,14 @@ header {
   align-items: center;
   font-size: 18px;
 }
-.searchForm label {
-  overflow: hidden;
-  position: absolute !important;
-  clip: rect(0, 0, 0, 0);
-  clip-path: inset(50%);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-.searchForm__input {
+.search_form_input {
   width: 320px;
   border: 0;
   padding-top: 0.625rem;
   padding-bottom: 0.625rem;
 }
 
-.memberIcon {
+.member_icon {
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
@@ -166,7 +158,7 @@ header {
   gap: 30px;
 }
 
-.nav {
+.header_nav {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -174,7 +166,7 @@ header {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
 }
-.nav__list {
+.header_nav_list {
   font-weight: 600;
   width: 700px;
   display: flex;
@@ -183,22 +175,22 @@ header {
   align-items: stretch;
 }
 
-.nav__button {
+.header_nav_button {
   border: 0;
   background: #ffffff;
   font-weight: bold;
   transform: translateY(1px);
 }
-.nav__button::before {
+.header_nav_button::before {
   content: "";
   display: inline-block;
-  background: url("../../images/Icon/Hamburger_black.png") no-repeat;
+  background: url("../assets/images/Icon/Hamburger_black.png") no-repeat;
   width: 16px;
   height: 14px;
   margin-right: 10px;
 }
 
-.nav__link {
+.morning_star_delivery {
   display: block;
   font-size: 12px;
   color: #A6A6A6;
@@ -207,7 +199,7 @@ header {
   border-radius: 20px;
 }
 
-.link__color {
+.morning_star_delivery_color {
   color: #5F0080;
 }
 
@@ -231,7 +223,7 @@ header {
   flex-grow: 1;
 }
 
-.memberOnly {
+.member_only {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-evenly;
@@ -240,19 +232,19 @@ header {
   top: 5%;
   right: 20%;
 }
-.memberOnly__list {
+.member_only_list {
   font-weight: 600;
   font-size: 12px;
 }
 
-.member__signUp {
+.member_sign_up {
   color: #5F0080;
 }
 
-.member__cusCenter::after {
+.member_custermer_center::after {
   content: "";
   display: inline-block;
-  background: url("../../images/Icon/down.svg");
+  background: url("../assets/images/Icon/down.svg");
   width: 8px;
   height: 6px;
   transform: translateY(-3px);
