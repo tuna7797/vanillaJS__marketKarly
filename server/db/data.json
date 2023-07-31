@@ -84,28 +84,59 @@
 
   "banner": [
     {
-      "id": 1,
-      "src": "../assets/images/banner01.png",
-      "alt": "칼리 과일 가게 배너",
-      "figcaption": "부드러운 달콤함, 컬리 과일 가게, 앵콜 특가 : 멜론 9900원"
+      "src": "../assets/images/banner/banner06.jpg",
+      "alt": "CJ 빅세일 위크 배너",
+      "figcaption": "장바구니 단골 브랜드 CJ 빅세일 위크 배너"
     },
     {
-      "id": 2,
-      "src": "../assets/images/banner02.png",
-      "alt": "이달의 카트 혜택 배너",
-      "figcaption": "한눈에 보는 이달의 카드 혜택"
+      "src": "../assets/images/banner/banner07.jpg",
+      "alt": "뷰티 컬리 배너",
+      "figcaption": "헤어, 바디, 구강 할인! 뷰티컬리에서 만나요"
     },
     {
-      "id": 3,
-      "src": "../assets/images/banner03.png",
-      "alt": "칼리 퍼플 위크 배너",
-      "figcaption": "칼리 퍼플 위크, 적립률 업 플러스 3종 쿠폰팩, 더 풍성해진 혜택"
+      "src": "../assets/images/banner/banner08.jpg",
+      "alt": "SNS 핫아이템 배너",
+      "figcaption": "SNS 핫아이템 칙뽈로 닭마카세"
     },
     {
-      "id": 4,
-      "src": "../assets/images/banner05.png",
-      "alt": "이 주의 특가 한 눈에 보기 배너",
-      "figcaption": "컬리 장보기의 특권, 이 주의 특가 한 눈에 보기, 우측 상단 특가 혜택에서 확인하세요"
+      "src": "../assets/images/banner/banner09.jpg",
+      "alt": "미식 취향 찾기 배너",
+      "figcaption": "미식 취향 찾기 복숭아, 아디까지 먹어봤나요?"
+    },
+    {
+      "src": "../assets/images/banner/banner10.jpg",
+      "alt": "컬리 X 메가박스 위크 배너",
+      "figcaption": "컬리 X 메가박스 위크 영화관으로 떠나는 바캉스"
+    },
+    {
+      "src": "../assets/images/banner/banner11.png",
+      "alt": "갤럭시 사전 예약 배너",
+      "figcaption": "8월 1일 00시 갤럭시 사전 예약"
+    },
+    {
+      "src":"../assets/images/banner/banner12.jpg",
+      "alt": "매일 23시 한정 수량 오픈 배너",
+      "figcaption": "매일 23시 한정 수량 오픈, 무항생제 대한 30구"
+    },
+    {
+      "src": "../assets/images/banner/banner13.jpg",
+      "alt": "고민별 맞춤 뷰티 배너",
+      "figcaption": "치아부터 두피까지 고민별 맞춤 뷰티"
+    },
+    {
+      "src": "../assets/images/banner/banner14.jpg",
+      "alt": "한정수량 희소가치 프로젝트 상품 배너",
+      "figcaption": "에어룸부터 마틸다 토마토까지 서둘러야 하는 희소가치 상품"
+    },
+    {
+      "src": "../assets/images/banner/banner15.jpg",
+      "alt": "주문별 맞춤 포장 배너",
+      "figcaption": "주문별 맞춤 포장으로 상품을 안전하게"
+    },
+    {
+      "src": "../assets/images/banner/banner16.jpg",
+      "alt": "7월 결제 혜택 배너",
+      "figcaption": "한눈에 보는 7월 결제 혜택"
     }
   ]
 }

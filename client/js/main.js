@@ -10,14 +10,29 @@ import {
   insertLast,
 } from '../lib/index.js';
 
+const bannerData = (await tiger.get('http://localhost:3000/banner')).data;
 const [closeNotToday, close] = getNodes('.main_popup > button');
 const bannerClose = getNode('.header_banner_button');
-const bannerData = (await tiger.get('http://localhost:3000/banner')).data;
+const bannerWrap = getNode('.swiper-wrapper');
+
+const mainBanner = getNode('.main_banner');
+
+function fadeIn() {
+  const node = getNodes('.main_banner_button');
+  gsap.to(node, { duration: 1, opacity: 1, ease: 'expo.out' });
+}
+function fadeout() {
+  const node = getNodes('.main_banner_button');
+  gsap.to(node, { duration: 1, opacity: 0, ease: 'expo.out' });
+}
+
+mainBanner.addEventListener('mouseenter', fadeIn);
+
+mainBanner.addEventListener('mouseleave', fadeout);
 
 // 스와이퍼
 
-const bannerWrap = getNode('.swiper-wrapper');
-bannerData.forEach(({ id, src, alt, figcaption }) => {
+bannerData.forEach(({src, alt, figcaption }) => {
   const templete = /*html*/ `
       <figure class="main_banner_image_box swiper-slide">
       
@@ -36,11 +51,6 @@ bannerData.forEach(({ id, src, alt, figcaption }) => {
   insertLast(bannerWrap, templete);
 });
 
-// function slideNum() {
-//   console.log(this.activeIndex);
-// }
-
-// let slideChanged = false;
 
 function CurrentSlideIndex(swiper) {
   // console.log('현재 슬라이드 번호:', swiper.realIndex + 1); // 현재 슬라이드 번호 출력
@@ -56,8 +66,8 @@ function slideNum(curNum, length) {
   insertLast(slide, templete);
 }
 
-// JS 코드
-const mySwiper = new Swiper('.swiper-container', {
+// 배너 스와이퍼
+const bannerSwiper = new Swiper('.swiper-container', {
   direction: 'horizontal', // 가로 슬라이드
   loop: true, // 슬라이드 루프
   autoplay: {
@@ -91,80 +101,32 @@ const mySwiper = new Swiper('.swiper-container', {
   },
 });
 
-// 버튼
 
-const arrowButton = getNode('.main_banner_button');
 
-arrowButton.addEventListener('mouseenter', () => {
-  arrowButton.to(button, { duration: 1, opacity: 1, ease: 'expo.out' });
-});
-
-arrowButton.addEventListener('mouseleave', () => {
-  gsap.to(arrowButton, { duration: 1, opacity: 0.3, ease: 'expo.out' });
-});
-
+//팝업 닫기
 const handlePopupClose = (e) => {
   const popup = getNode('.main_popup');
 
-  // console.log(typeof popup);
-  // console.popup(popup);
-  // console.log(e.target);
   invisibleElement(popup);
 };
 
+
+//배너 닫기
 const handleBannerClose = (e) => {
   const banner = getNode('.header_banner');
 
   gsap.to(banner, {
     y: -100,
     opacity: 0,
-    // duration:0.5,
+
     onComplete: function () {
       banner.remove();
     },
   });
 
-  addClass(banner, 'hide');
-  addClass(banner, 'hide_banner');
-  // clearContents(banner);
-  // invisibleElement(banner);
 };
 
 close.addEventListener('click', handlePopupClose);
 bannerClose.addEventListener('click', handleBannerClose);
 
 // 스와이퍼 사용하기
-
-// let templete = /*html*/ `
-// <div class="swiper-container">
-//   <div class="swiper-wrapper">
-//     <div class="swiper-slide" data-imgurl="image1.jpg">
-//       Slide 1
-//     </div>
-//     <div class="swiper-slide" data-imgurl="image2.jpg">
-//       Slide 2
-//     </div>
-//     <div class="swiper-slide" data-imgurl="image3.jpg">
-//       Slide 3
-//     </div>
-//   </div>
-
-//   <div class="swiper-button-prev"></div>
-//   <div class="swiper-button-next"></div>
-// </div>
-
-// `;
-
-// const swiper = new Swiper('.swiper-container', {
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   loop: true,
-//   navigation: {
-//     nextEl: '.swiper-button-next',
-//     prevEl: '.swiper-button-prev',
-//   },
-//   autoplay: {
-//     delay: 2500,
-//     disableOnInteraction: false,
-//   },
-// });

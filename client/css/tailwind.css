@@ -319,7 +319,7 @@ footer {
   background: rgba(0, 0, 0, 0.15);
 }
 .main_banner_button {
-  @apply cursor-pointer absolute w-[3.25rem] h-[3.25rem] rounded-[50%] border-0 top-[38%] z-20;
+  @apply cursor-pointer absolute w-[3.25rem] h-[3.25rem] rounded-[50%] border-0 top-[38%] z-20 opacity-0 transition duration-100 ease-in-out;
   background: rgba(0, 0, 0, 0.1) url("../assets/images/Icon/Arrow.png");
 }
 .main_banner_right_arrow {
