@@ -6,6 +6,42 @@ footer {
   border-top: 1px solid #E1E1E1;
 }
 
+/* icon */
+.blog {
+  background: url("../../images/Icon/Blog.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+}
+
+.facebook {
+  background: url("../../images/Icon/FaceBook.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+}
+
+.instagram {
+  background: url("../../images/Icon/Instagram.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+}
+
+.naverPost {
+  background: url("../../images/Icon/NaverPost.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+}
+
+.youtube {
+  background: url("../../images/Icon/Youtube.svg") no-repeat;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: block;
+}
+
 /* button */
 
 .inquiryButton {

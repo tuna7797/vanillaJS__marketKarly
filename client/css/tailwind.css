@@ -309,17 +309,17 @@ footer {
   font-family: Pretendard;
 }
 .main_page_container .main_banner {
-  @apply relative p-0;
+  @apply relative p-0 overflow-hidden;
 }
 .main_banner_image {
   @apply w-full;
 }
 .main_banner_page {
-  @apply absolute w-[2.9375rem] h-[1.125rem] text-[0.8125rem] font-semibold text-white text-center p-[auto] rounded-xl right-[22%] top-[87%];
+  @apply absolute w-[2.9375rem] h-[1.125rem] text-[0.8125rem] font-semibold text-white text-center p-[auto] rounded-xl right-[22%] top-[87%] z-20;
   background: rgba(0, 0, 0, 0.15);
 }
 .main_banner_button {
-  @apply cursor-pointer absolute w-[3.25rem] h-[3.25rem] rounded-[50%] border-0 top-[38%];
+  @apply cursor-pointer absolute w-[3.25rem] h-[3.25rem] rounded-[50%] border-0 top-[38%] z-20;
   background: rgba(0, 0, 0, 0.1) url("../assets/images/Icon/Arrow.png");
 }
 .main_banner_right_arrow {
@@ -387,7 +387,7 @@ footer {
   @apply bg-[50%_35%] right-[37%] bottom-[4%];
 }
 .main_popup {
-  @apply w-[21.5625rem] h-[33.125rem] shadow-[0_0.5rem_2.25rem_0_#C4C4C4] text-[#333333] font-bold fixed rounded-2xl left-[0.4375rem] bottom-2.5;
+  @apply w-[21.5625rem] h-[33.125rem] shadow-[0_0.5rem_2.25rem_0_#C4C4C4] text-[#333333] font-bold fixed rounded-2xl left-[0.4375rem] bottom-2.5 z-50;
   background: #ffffff;
 }
 .main_popup img {
