@@ -1,6 +1,6 @@
 /* @import 'tailwindcss/base'; */
 
-.main_container {
+.main_container{
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -11,40 +11,48 @@
   padding-bottom: 5rem;
   flex-flow: column nowrap;
   font-family: Pretendard;
+  width: 1050px;
+  margin: 0 auto;
 }
 
-.product_list_title {
+.product_list_title{
   font-size: 1.3125rem;
   font-weight: 600;
   line-height: 150%;
 }
 
-.product_container {
+.product_container{
   display: flex;
   width: 100%;
   align-items: flex-start;
   justify-content: flex-start;
-  padding-left: 20%;
-  padding-right: 20%;
   flex-flow: row nowrap;
 }
 
-.side_bar {
+.side_bar{
   display: flex;
   flex: 1 0 0;
   align-items: stretch;
   justify-content: flex-start;
   flex-flow: column nowrap;
+  margin-right: 47px;
 }
 
-.brand {
+.brand{
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
   flex-flow: column nowrap;
+  height: 522px;
+  overflow: hidden;
+  transition: .4s;
 }
 
-.brand_list {
+.brand_list_hide{
+  height: 0;
+}
+
+.brand_list{
   display: flex;
   width: 13.75rem;
   align-items: flex-start;
@@ -59,9 +67,10 @@
 
 .brand_list:hover {
   background: #E1E1E1;
+  transition: 0.3s;
 }
 
-.brand_link {
+.brand_link{
   display: block;
   display: flex;
   height: 100%;
@@ -71,7 +80,7 @@
   flex-flow: row nowrap;
 }
 
-.gray_num {
+.gray_num{
   margin-left: 0.25rem;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -79,7 +88,7 @@
   color: rgb(166 166 166 / var(--tw-text-opacity));
 }
 
-.gray_num_small {
+.gray_num_small{
   margin-left: 0.5rem;
   font-size: 0.75rem;
   line-height: 1rem;
@@ -87,7 +96,7 @@
   color: rgb(166 166 166 / var(--tw-text-opacity));
 }
 
-.button_list {
+.button_list{
   display: flex;
   height: 2.625rem;
   width: 13.75rem;
@@ -105,7 +114,7 @@
   flex-flow: row nowrap;
 }
 
-.menu_container {
+.menu_container{
   display: flex;
   width: 100%;
   align-items: center;
@@ -117,27 +126,27 @@
   flex-flow: row nowrap;
 }
 
-.bold_main {
+.bold_main{
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
-.divider {
+.divider{
   font-size: 0.75rem;
   line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(225 225 225 / var(--tw-text-opacity));
 }
 
-.recommend {
+.recommend{
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-flow: row nowrap;
 }
 
-.menu_wrap {
+.menu_wrap{
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -148,15 +157,14 @@
   flex-flow: row nowrap;
 }
 
-.product {
+.product{
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
   flex-flow: column nowrap;
-  min-width: 780px;
 }
 
-.product_line {
+.product_line{
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
@@ -164,19 +172,20 @@
   flex-flow: column nowrap;
 }
 
-.product_list {
+.product_list{
   position: relative;
 }
 
 .product_wrap {
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-start;
-  gap: 1rem;
-  flex-flow: row nowrap;
+  /* @apply flex justify-start items-stretch gap-4;
+  flex-flow: row nowrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 249px);
+  gap: 31px 18px;
+  width: 783px;
 }
 
-.product_link {
+.product_link{
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
@@ -184,7 +193,7 @@
   flex-flow: column nowrap;
 }
 
-.product_info {
+.product_info{
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
@@ -192,13 +201,13 @@
   flex-flow: column nowrap;
 }
 
-.product_price {
+.product_price{
   font-size: 1.3125rem;
   font-weight: 600;
   line-height: 150%;
 }
 
-.product_badge {
+.product_badge{
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
@@ -206,23 +215,24 @@
   flex-flow: row nowrap;
 }
 
-.product_summary {
+.product_summary{
   font-size: 0.75rem;
   line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(137 137 137 / var(--tw-text-opacity));
 }
 
-.product_img {
+.product_img{
   height: 20rem;
   width: 15.5625rem;
 }
 
-.img_box {
+.img_box{
   order: -1;
+  overflow: hidden;
 }
 
-.tag {
+.tag{
   font-size: 0.75rem;
   line-height: 1rem;
   font-weight: 600;
@@ -231,7 +241,7 @@
   color: rgb(137 137 137 / var(--tw-text-opacity));
 }
 
-.discount {
+.discount{
   display: flex;
   align-items: stretch;
   justify-content: flex-start;
@@ -239,7 +249,7 @@
   flex-flow: row nowrap;
 }
 
-.discount_rate {
+.discount_rate{
   font-size: 1.3125rem;
   font-weight: 600;
   line-height: 150%;
@@ -247,13 +257,13 @@
   color: rgb(250 98 47 / var(--tw-text-opacity));
 }
 
-.discount_price {
+.discount_price{
   font-size: 1.3125rem;
   font-weight: 600;
   line-height: 150%;
 }
 
-.non_discount {
+.non_discount{
   font-size: 0.75rem;
   line-height: 1rem;
   --tw-text-opacity: 1;
@@ -261,14 +271,14 @@
   text-decoration-line: line-through;
 }
 
-.move_page {
+.move_page{
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-flow: column nowrap;
 }
 
-.move_page_wrap {
+.move_page_wrap{
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -279,7 +289,7 @@
   flex-flow: row nowrap;
 }
 
-.move_page_list {
+.move_page_list{
   position: relative;
   height: 2.125rem;
   width: 2.125rem;
@@ -293,13 +303,13 @@
   background: #E1E1E1;
 }
 
-.move_page_link {
+.move_page_link{
   display: block;
   height: 100%;
   width: 100%;
 }
 
-.side_bar_button {
+.side_bar_button{
   display: flex;
   height: 3.25rem;
   width: 13.75rem;
@@ -321,7 +331,7 @@
   background: #ffffff;
 }
 
-.reset_button {
+.reset_button{
   cursor: pointer;
   border-width: 0px;
   font-size: 0.625rem;
@@ -332,7 +342,7 @@
   background: #ffffff;
 }
 
-.side_bar_button_clicked {
+.side_bar_button_clicked{
   display: flex;
   height: 3.25rem;
   width: 13.75rem;
@@ -350,7 +360,7 @@
   background: #ffffff;
 }
 
-.page_num {
+.page_num{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -364,7 +374,7 @@
   font-family: Inter;
 }
 
-.a11y {
+.a11y{
   position: absolute;
   margin: -1px;
   height: 1px;
@@ -384,7 +394,7 @@
   margin-right: 0.5rem;
 }
 
-.arrow_bottom {
+.arrow_bottom{
   display: block;
   height: 1.125rem;
   width: 1.125rem;
@@ -392,12 +402,20 @@
   background: url("../assets/icon/Arrow_bottom.svg") no-repeat;
 }
 
-.arrow_top {
+.arrow_top{
   display: block;
   height: 1.125rem;
   width: 1.125rem;
   flex-shrink: 0;
   background: url("../assets/icon/Arrow_top.svg") no-repeat;
+}
+
+.arrow_top_rotate{
+  transform: rotate(180deg);
+}
+
+.current_brand{
+  color: #5F0080;
 }
 
 .badge_karly{
@@ -418,7 +436,7 @@
   border-radius: 0.25rem;
 }
 
-.cart_icon {
+.cart_icon{
   position: absolute;
   left: 11.8125rem;
   top: 16.125rem;
@@ -432,7 +450,7 @@
   background: #E1E1E1;
 }
 
-.double_right {
+.double_right{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -445,7 +463,7 @@
   background: url("../assets/icon/doubleRight.png") no-repeat;
 }
 
-.right {
+.right{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -458,7 +476,7 @@
   background: url("../assets/icon/right.png") no-repeat;
 }
 
-.page_num {
+.page_num{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -472,8 +490,7 @@
   font-family: Inter;
 }
 
-assets
-.double_left {
+.double_left{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -486,7 +503,7 @@ assets
   background: url("../assets/icon/doubleLeft.png") no-repeat;
 }
 
-.left {
+.left{
   position: absolute;
   left: 50%;
   top: 50%;
@@ -521,7 +538,7 @@ assets
   background: url("../assets/icon/Arrow_right.svg") no-repeat;
 }
 
-.more_button {
+.more_button{
   width: 100%;
   cursor: pointer;
   border-width: 0px;
@@ -533,6 +550,14 @@ assets
   --tw-text-opacity: 1;
   color: rgb(166 166 166 / var(--tw-text-opacity));
   background: #ffffff;
+}
+
+.img_box img {
+  transition: .8s;
+}
+
+.img_box:hover img {
+  transform: scale(1.04);
 }
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -969,7 +994,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -1019,7 +1044,7 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
