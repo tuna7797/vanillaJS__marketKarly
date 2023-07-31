@@ -5,10 +5,14 @@
 @import './productDetail.css';
 @import './header.css';
 
+
+@import "productList.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+<<<<<<< HEAD
 @layer utilities {
   /* .headerContainer {
     flex-flow: column nowrap;
@@ -304,9 +308,13 @@
 .footer_bottom small {
   @apply py-2.5 leading-[160%];
 } */
+=======
 
-/* main_page */
 
+>>>>>>> 8505643f108a9cdae823e54a260d5dd5bf19afeb
+
+
+<<<<<<< HEAD
 /* .main_page_container {
   @apply w-full relative m-0;
   font-family: Pretendard;
@@ -403,3 +411,5 @@ button[class*=main_popup_close] {
   @apply cursor-pointer h-[3.75rem] w-[49%] inline-block m-0 border-0;
   background: transparent;
 } */
+=======
+>>>>>>> 8505643f108a9cdae823e54a260d5dd5bf19afeb
