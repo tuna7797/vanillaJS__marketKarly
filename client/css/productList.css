@@ -2,17 +2,20 @@
   @apply flex justify-start items-center gap-12 pt-12 pb-20 px-0;
   flex-flow: column nowrap;
   font-family: Pretendard;
+  width: 1050px;
+  margin: 0 auto;
 }
 .product_list_title {
   @apply text-[1.3125rem] font-semibold leading-[150%];
 }
 .product_container {
-  @apply w-full flex justify-start items-start px-[20%];
+  @apply w-full flex justify-start items-start;
   flex-flow: row nowrap;
 }
 .side_bar {
   @apply flex justify-start items-stretch flex-[1_0_0];
   flex-flow: column nowrap;
+  margin-right: 47px
 }
 .brand {
   @apply flex justify-start items-stretch;
@@ -24,6 +27,7 @@
 }
 .brand_list:hover {
   background: #E1E1E1;
+  transition: 0.3s;
 }
 .brand_link {
   @apply block w-full h-full flex justify-start items-center;
@@ -60,7 +64,6 @@
 .product {
   @apply flex justify-start items-start;
   flex-flow: column nowrap;
-  min-width: 780px
 }
 .product_line {
   @apply flex justify-start items-stretch gap-6;
@@ -70,8 +73,12 @@
   @apply relative;
 }
 .product_wrap {
-  @apply flex justify-start items-stretch gap-4;
-  flex-flow: row nowrap;
+  /* @apply flex justify-start items-stretch gap-4;
+  flex-flow: row nowrap; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 249px);
+  gap: 31px 18px;
+  width: 783px;
 }
 .product_link {
   @apply flex justify-start items-stretch gap-4;
@@ -95,7 +102,7 @@
   @apply w-[15.5625rem] h-80;
 }
 .img_box {
-  @apply -order-1;
+  @apply -order-1 overflow-hidden;
 }
 .tag {
   @apply text-[#898989] text-xs font-semibold leading-[150%];
@@ -204,7 +211,7 @@
 .page_num {
   @apply absolute text-xs text-[#333333] absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
   font-family: Inter;
-}assets
+}
 .double_left {
   @apply absolute w-2.5 h-2 block absolute -translate-x-2/4 -translate-y-2/4 left-2/4 top-2/4;
   background: url("../assets/icon/doubleLeft.png") no-repeat;
@@ -235,4 +242,10 @@
 .more_button {
   @apply text-[#A6A6A6] cursor-pointer w-full text-xs font-semibold leading-[150%] p-0 border-0 ;
   background: #ffffff;
+}
+.img_box img {
+  transition: .8s;
+}
+.img_box:hover img {
+  transform: scale(1.04);
 }
