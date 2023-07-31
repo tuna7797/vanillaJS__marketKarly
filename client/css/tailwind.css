@@ -1,8 +1,10 @@
-/* @import 'tailwindcss/base'; */
+@import 'register.css';
+@import 'login.css';
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+<<<<<<< HEAD
 
 @layer utilities {
   /* .headerContainer {
@@ -400,3 +402,5 @@ button[class*=main_popup_close] {
   @apply cursor-pointer h-[3.75rem] w-[49%] inline-block m-0 border-0;
   background: transparent;
 }
+=======
+>>>>>>> ecb4d717db96b09ffaaec18c7d28a6f928d9e903
