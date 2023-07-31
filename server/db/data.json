@@ -114,7 +114,7 @@
       "figcaption": "8월 1일 00시 갤럭시 사전 예약"
     },
     {
-      "src":"../assets/images/banner/banner12.jpg",
+      "src": "../assets/images/banner/banner12.jpg",
       "alt": "매일 23시 한정 수량 오픈 배너",
       "figcaption": "매일 23시 한정 수량 오픈, 무항생제 대한 30구"
     },
@@ -137,6 +137,26 @@
       "src": "../assets/images/banner/banner16.jpg",
       "alt": "7월 결제 혜택 배너",
       "figcaption": "한눈에 보는 7월 결제 혜택"
+    }
+  ],
+  "registered_users": [
+    {
+      "id": "id_sample",
+      "pw": "pw_sample",
+      "uniqueId": "uniqueId_sample",
+      "description": "유저 데이터 스키마"
+    },
+    {
+      "id": "usedId00",
+      "pw": "pw_sample",
+      "uniqueId": "uniqueId_sample",
+      "description": "유저 데이터 스키마"
+    },
+    {
+      "id": "usedId01",
+      "pw": "pw_sample",
+      "uniqueId": "uniqueId_sample",
+      "description": "유저 데이터 스키마"
     }
   ]
 }
