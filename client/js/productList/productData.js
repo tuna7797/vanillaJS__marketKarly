@@ -1,4 +1,4 @@
-import { insertLast } from "./insert.js";
+import { insertLast } from "../../lib/dom/insert.js";
 
 
 
