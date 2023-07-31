@@ -13,7 +13,7 @@ const plusButton = getNode(".product_detail_plus");
 
 const minusButton = getNode(".product_detail_minus");
 
-const productTotalPrice = getNode(".product_detail_total_price");
+const productTotalPrice = getNode(".product_detail_all_price");
 
 // + 버튼을 누르면 카운트값이 증가하는 기능
 function handlerPlus(e) {
@@ -29,6 +29,15 @@ function countPlusNumber() {
   }
   clearContents(selectCount);
   insertLast(selectCount, `${countNumber}`);
+
+  // 총 상품금액
+  function totalPrice(countNumber) {
+    let totalProductPrice = countNumber * 4980;
+
+    clearContents(productTotalPrice);
+    insertLast(productTotalPrice, `총 상품금액: ${totalProductPrice} 원`);
+  }
+  totalPrice(countNumber);
 }
 
 bindEvent(plusButton, "click", handlerPlus);
@@ -46,6 +55,17 @@ function countMiusNumber() {
   }
   clearContents(selectCount);
   insertLast(selectCount, `${countNumber}`);
+
+  // 총 상품금액
+  function totalPrice(countNumber) {
+    let totalProductPrice = countNumber * 4980;
+
+    clearContents(productTotalPrice);
+    insertLast(productTotalPrice, `총 상품금액: ${totalProductPrice} 원`);
+  }
+  totalPrice(countNumber);
 }
 
 bindEvent(minusButton, "click", handlerMinus);
+
+/* ------------------------------------- */
