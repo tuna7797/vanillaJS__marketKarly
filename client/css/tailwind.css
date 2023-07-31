@@ -1,8 +1,9 @@
 @import 'register.css';
 @import 'login.css';
 
-@import "./cart.css";
-@import "./productDetail.css";
+@import './cart.css';
+@import './productDetail.css';
+@import './header.css';
 
 @tailwind base;
 @tailwind components;
@@ -22,7 +23,7 @@
 
 /* header */
 
-header {
+/* header {
   @apply flex items-stretch justify-center text-[#333333] shadow-[0px_0px_24px_0px_rgba(0,0,0,0.1)];
   flex-flow: column nowrap;
   font-family: Pretendard;
@@ -152,11 +153,11 @@ header {
 .member_custermer_center::after {
   @apply ml-[5px] inline-block h-1.5 w-2 translate-y-[-3px] content-[""];
   background: url("../assets/images/Icon/down.svg");
-}
+} */
 
 /* footer */
 
-footer {
+/* footer {
   @apply border-t border-solid border-t-[#E1E1E1] text-[#333333];
   font-family: Pretendard;
 }
@@ -302,13 +303,11 @@ footer {
 }
 .footer_bottom small {
   @apply py-2.5 leading-[160%];
-}
-
-
+} */
 
 /* main_page */
 
-.main_page_container {
+/* .main_page_container {
   @apply w-full relative m-0;
   font-family: Pretendard;
 }
@@ -403,4 +402,4 @@ footer {
 button[class*=main_popup_close] {
   @apply cursor-pointer h-[3.75rem] w-[49%] inline-block m-0 border-0;
   background: transparent;
-}
+} */
