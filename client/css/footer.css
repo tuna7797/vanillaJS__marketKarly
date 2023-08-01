@@ -40,9 +40,11 @@ footer {
   @apply text-[#333333] text-[10px];
 }
 .footer_top {
-  @apply flex justify-between items-stretch px-[20%];
   flex-flow: column nowrap;
+  width: 1050px;
+  margin: 0px auto;
 }
+
 .footer_info {
   @apply flex justify-between items-stretch pt-7 pb-8 px-0;
   flex-flow: row nowrap;

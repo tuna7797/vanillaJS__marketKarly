@@ -6,21 +6,25 @@ header {
 }
 .divider {
   @apply text-xs text-[#E1E1E1];
+  padding: 0 6px;
 }
 .bold {
   @apply font-bold;
 }
 .header_container {
-  @apply relative flex items-stretch justify-start px-[20%];
+  @apply relative;
   flex-flow: column nowrap;
+  width: 1050px;
+  margin: 0px auto;
 }
 .search_container {
   @apply flex items-center justify-between pb-2.5 pt-10;
   flex-flow: row nowrap;
 }
 .logo_container {
-  @apply flex items-center justify-start gap-3;
+  @apply flex items-center justify-start;
   flex-flow: row nowrap;
+  gap: 1.85rem;
 }
 .logo_karly {
   @apply block h-[2.8125rem] w-20;
@@ -28,8 +32,9 @@ header {
 }
 
 .switch_box {
-  @apply relative flex items-center justify-start gap-3 text-lg font-bold;
+  @apply relative flex items-center justify-start text-lg font-bold;
   flex-flow: row nowrap;
+  gap: 0.45rem;
 }
 .market_link {
   @apply text-[#5F0080];
@@ -45,7 +50,7 @@ header {
   @apply mr-[120px];
 }
 .search_form {
-  @apply flex w-[400px] items-center justify-between rounded-[3px] border-[1.5px] border-solid border-[#5F0080] py-2.5 pl-[15px] pr-2.5 text-lg;
+  @apply flex w-[400px] items-center justify-between rounded-[6px] border-[1.5px] border-solid border-[#5F0080] pl-[15px] text-lg;
   flex-flow: row nowrap;
 }
 
@@ -114,7 +119,7 @@ header {
 }
 
 .member_only {
-  @apply absolute right-[20%] top-[5%] flex items-center justify-evenly;
+  @apply absolute right-[0%] top-[5%] flex items-center justify-evenly;
   flex-flow: row nowrap;
 }
 .member_only_list {
@@ -126,4 +131,7 @@ header {
 .member_custermer_center::after {
   @apply ml-[5px] inline-block h-1.5 w-2 translate-y-[-3px] content-[""];
   background: url("../assets/images/Icon/down.svg");
+}
+.best_link{
+  color: rgb(95, 0, 128);;
 }
