@@ -1,79 +1,112 @@
-import { getNode, bindEvent, tiger, insertLast } from "./../../lib/index.js";
+import { getNode, bindEvent, tiger, insertLast } from './../../lib/index.js';
 
-const inputId = getNode("#login_inputId");
-const inputPw = getNode("#login_inputPw");
-const login_button= getNode("#login_button_submit");
+const inputId = getNode('#login_inputId');
+const inputPw = getNode('#login_inputPw');
+const login_button = getNode('#login_button_submit');
 
 //data.json 가져오기
 async function getUserDate() {
-  const response = await tiger.get("http://localhost:3000/registered_users");
+  const response = await tiger.get('http://localhost:3000/registered_users');
 
   const objUsers = response.data;
   return objUsers;
 }
 
 //등록된 id배열 가져오기
-async function getIds() {
-  const objUser = await getUserDate()
+async function getIdArr() {
+  const objUser = await getUserDate();
   const arrId = [];
   objUser.map((item) => {
     arrId.push(item.id);
   });
   return arrId;
 }
-console.log(await getIds())
+// console.log(await getIdArr());
 
 //등록된  pw배열 가져오기
-async function getPws() {
-  const objUser = await getUserDate()
+async function getPwArr() {
+  const objUser = await getUserDate();
   const arrPw = [];
   objUser.map((item) => {
     arrPw.push(item.pw);
   });
   return arrPw;
 }
-console.log(await getPws())
+// console.log(await getPwArr());
 
 //등록된 uniqueId배열 가져오기
-async function getUniqueIds() {
-  const objUser = await getUserDate()
+async function getUniqueIdArr() {
+  const objUser = await getUserDate();
   const arrUniqueId = [];
   objUser.map((item) => {
     arrUniqueId.push(item.uniqueId);
   });
   return arrUniqueId;
 }
-console.log(await getUniqueIds())
+// console.log(await getUniqueIdArr());
 
 //id입력을 가져오기
-function getInputId(){
+function getInputId() {
   return inputId.value;
 }
 // console.log(getInputId())
 
+//pw입력을 가져오기
+function getInputPw() {
+  return inputPw.value;
+}
 
-
-
-//입력id와 일치하는, 등록된 id배열의 인덱스 반환
+//id input과 일치하는, id배열의 인덱스 반환
 async function get_idIndex() {
-  const arrIds = await getIds();
+  const arrIds = await getIdArr();
   let inputId = getInputId();
-  
+
   let index_foundId = arrIds.findIndex((item) => {
     return item === inputId;
   });
-  console.log(index_foundId);
+
+  // console.log(index_foundId);
   return index_foundId;
+}
+
+//배열에서 인덱스의 아이템 가져오기
+// function getArrItem(arr,index){
+//   return arr[index];
+// }
+
+//id배열 index에 해당하는 pw인지 확인
+async function check_registeredPw(indexId) {
+  const arrPw = await getPwArr();
+  let inputPw = getInputPw();
+
+  return inputPw === arrPw[indexId];
+}
+
+//indexId에 해당하는 uniqueId를 반환
+function getUniqueId(indexId) {
+  let arrUniqueId = getUniqueIdArr();
+  return arrUniqueId[indexId];
+}
+
+//로컬 스토리지에 로그인 상태를 저장
+function localStorage_login(is_registered_user, indexId) {
+  if (is_registered_user) {
+    let uniqueId = getUniqueId(indexId);
+    localStorage.setItem(uniqueId);
+  }
 }
 
 //중복검사 버튼 클릭시 이벤트 생성
 async function handler_login(e) {
   e.preventDefault();
-  get_idIndex();
+  let indexId = await get_idIndex();
+  let is_registered_user = await check_registeredPw(indexId);
+  localStorage_login(is_registered_user, indexId);
 }
 
-function event_check_usedId(){
-  bindEvent(login_button, "click", handler_login);
+function event_login() {
+  bindEvent(login_button, 'click', handler_login);
 }
 
+event_login();
 //카멜+케밥으로 고치기
