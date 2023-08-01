@@ -21,6 +21,24 @@ await fetch('http://localhost:3000/db')
     clearContents(titleNode);
     insertLast(titleNode, products.name);
 
+    // 상품 상세페이지에 타이틀 설정
+    const descriptionTitleNode = getNode('.description_title');
+
+    clearContents(descriptionTitleNode);
+    insertLast(descriptionTitleNode, products.name);
+
+    // 상품 서브 타이틀 설정
+    const subTitle = getNode('.product_detail_sub_title');
+
+    clearContents(subTitle);
+    insertLast(subTitle, products.description);
+
+    // 상품 상세에 서브 타이틀 설정
+    const descriptionSubTitle = getNode('.description_sub_title');
+
+    clearContents(descriptionSubTitle);
+    insertLast(descriptionSubTitle, products.description);
+
     // 썸네일 이미지 경로 설정
     const thumbnailImageNode = getNode('.product_detail_image');
 
@@ -164,9 +182,9 @@ const selectProductPrice = parseInt(
 const addToCartButton = document.getElementById('addToCartButton');
 
 addToCartButton.addEventListener('click', () => {
-  const productName = selectProductName.innerText;
-  const productPrice = selectProductPrice + '';
-  const quantity = countNumber.textContent;
+  const productName = selectProductName.innerText; // 상품 이름
+  const productPrice = selectProductPrice + ''; // 상품 가격
+  const quantity = countNumber.textContent; // 상품 갯수
 
   // 로컬 스토리지에 상품 정보를 저장
   saveProductToLocalStorage(productName, productPrice, quantity);
