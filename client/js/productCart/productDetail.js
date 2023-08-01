@@ -1,33 +1,72 @@
 import {
+  attr,
   bindEvent,
   clearContents,
   getNode,
   insertLast,
 } from '../../lib/index.js';
 
-// url에 id값을 가져와서 data.json에서 id에 해당하는 객체를 가져와서 초기화하는 기능
-const titleNode = getNode('.product_detail_title');
-
-fetch('../../../server/db/data.json')
-  .then((response) => response.json())
+await fetch('http://localhost:3000/db')
+  .then((response) => {
+    return response.json();
+  })
   .then((data) => {
     // JSON 파일 내용을 JavaScript 객체로 변환한 데이터 사용
     const productId = getQueryStringValue('id');
-    const product = data.products.find((item) => item.id === productId);
+    const products = data.products.find((item) => item.id === productId);
+
+    // 상품 타이틀 설정
+    const titleNode = getNode('.product_detail_title');
 
     clearContents(titleNode);
-    insertLast(titleNode, product.name);
+    insertLast(titleNode, products.name);
 
-    if (product) {
-      console.log(product);
-    } else {
-      console.log(`"${productId}" 아이디의 상품이 없습니다.`);
-    }
+    // 썸네일 이미지 경로 설정
+    const thumbnailImageNode = getNode('.product_detail_image');
+
+    thumbnailImageNode.src = `/assets/${products.image.thumbnail}`;
+    thumbnailImageNode.alt = products.image.alt;
+
+    // 상품 디테일 이미지
+    const descriptionImageNode = getNode('.description_image');
+
+    descriptionImageNode.src = `/assets/${products.image.banner}`;
+    descriptionImageNode.alt = products.image.alt;
+
+    // 상품 설명 이미지
+
+    const productInfoImageNode = getNode('.description_detail_second_image');
+
+    productInfoImageNode.src = `/assets/${products.image.info}`;
+    productInfoImageNode.alt = `${products.image.alt}의 영양정보 이미지`;
+
+    // 상품 가격 설정
+    const productPriceNode = getNode('.product_detail_price');
+
+    clearContents(productPriceNode);
+    insertLast(productPriceNode, `${products.price} 원`);
+
+    // 상품선택칸의 네임 설정
+    const selectTitleNode = getNode('.product_select_title');
+
+    clearContents(selectTitleNode);
+    insertLast(selectTitleNode, products.name);
+
+    // 상품선택칸의 가격 설정
+    const selectProductPriceNode = getNode('.product_detail_select_price');
+
+    clearContents(selectProductPriceNode);
+    insertLast(selectProductPriceNode, `${products.price} 원`);
+
+    // 상품 선택 후 총 금액의 기본 가격 설정
+    const selectTotalPriceNode = getNode('.product_total_price');
+
+    clearContents(selectTotalPriceNode);
+    insertLast(selectTotalPriceNode, `${products.price} 원`);
   })
   .catch((error) => {
     console.error('JSON 데이터를 가져오는 도중 오류가 발생했습니다.', error);
   });
-
 /* ------------------------------------- */
 
 // 상품 선택 카운트 기능
@@ -38,6 +77,14 @@ const plusButton = getNode('.product_detail_plus');
 const minusButton = getNode('.product_detail_minus');
 
 const productTotalPrice = getNode('.product_detail_all_price');
+
+const selectPrice = getNode('.product_total_price');
+const productPrice = parseInt(
+  selectPrice.textContent
+    .split('')
+    .filter((char) => !isNaN(char))
+    .join(''),
+);
 
 // + 버튼을 누르면 카운트값이 증가하는 기능
 function handlerPlus(e) {
@@ -57,7 +104,7 @@ function countPlusNumber() {
 
   // 총 상품금액
   function totalPrice(countNumber) {
-    let totalProductPrice = countNumber * 4980;
+    let totalProductPrice = countNumber * productPrice;
 
     clearContents(productTotalPrice);
     insertLast(productTotalPrice, `총 상품금액: ${totalProductPrice} 원`);
@@ -84,7 +131,7 @@ function countMiusNumber() {
 
   // 총 상품금액
   function totalPrice(countNumber) {
-    let totalProductPrice = countNumber * 4980;
+    let totalProductPrice = countNumber * productPrice;
 
     clearContents(productTotalPrice);
     insertLast(productTotalPrice, `총 상품금액: ${totalProductPrice} 원`);
@@ -95,13 +142,46 @@ function countMiusNumber() {
 bindEvent(minusButton, 'click', handlerMinus);
 
 /* ------------------------------------- */
-
-// 장바구니 담기를 누르면 로컬스토리지에 상품명, 갯수, 상품가격이 들어감
-
-/* ------------------------------------- */
-
 // 현재 URL에서 쿼리 문자열을 가져오는 함수
 function getQueryStringValue(key) {
   const urlParams = new URLSearchParams(window.location.search);
   return urlParams.get(key);
+}
+
+/* ------------------------------------- */
+// 장바구니 담기를 누르면 로컬스토리지에 상품명, 갯수, 상품가격이 들어감
+
+const selectProductName = getNode('.product_select_title');
+const countNumber = getNode('.product_detail_select_count');
+const selectTotalPrice = getNode('.product_total_price');
+const selectProductPrice = parseInt(
+  selectTotalPrice.textContent
+    .split('')
+    .filter((char) => !isNaN(char))
+    .join(''),
+);
+
+const addToCartButton = document.getElementById('addToCartButton');
+
+addToCartButton.addEventListener('click', () => {
+  const productName = selectProductName.innerText;
+  const productPrice = selectProductPrice + '';
+  const quantity = countNumber.textContent;
+
+  // 로컬 스토리지에 상품 정보를 저장
+  saveProductToLocalStorage(productName, productPrice, quantity);
+
+  alert('장바구니에 추가되었습니다.');
+});
+
+function saveProductToLocalStorage(name, price, quantity) {
+  // 이전에 저장된 상품 정보가 있다면 가져옴
+  let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+  // 새로운 상품을 추가
+  const newItem = { name, price, quantity };
+  cartItems.push(newItem);
+
+  // 로컬 스토리지에 업데이트된 상품 정보를 저장
+  localStorage.setItem('cartItems', JSON.stringify(cartItems));
 }
