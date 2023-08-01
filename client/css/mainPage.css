@@ -39,7 +39,7 @@
   @apply w-[15.5rem] h-[20rem] overflow-hidden
 }
 .recommend_today_product {
-  @apply relative h-[26.625rem] w-[15.5625rem];
+  @apply relative h-[27.625rem] w-[15.5625rem];
 }
 .recommend_today_name {
   @apply block px-0 py-[1.125rem] text-sm text-[#101010] no-underline;
@@ -52,6 +52,24 @@
 }
 .recommend_today_before_price {
   @apply mt-4 block text-[0.8125rem] text-[#a6a6a6] line-through;
+}
+
+/* .recommend_today_cart{
+
+} */
+
+.recommend_today_cart {
+  cursor: pointer;
+  position: absolute;
+  bottom: 30%;
+  right: 8%;
+  background: #2a0038 url("../assets/icon/Cart_white.svg");
+  background-position: center;
+  opacity: 50%;
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 50%;
+  border: 0;
 }
 
 .recommend_left_arrow {
