@@ -29,7 +29,7 @@ async function getIdArr() {
   });
   return arrId;
 }
-console.log(await getIdArr());
+// console.log(await getIdArr());
 
 //등록된  pw배열 가져오기
 async function getPwArr() {
@@ -40,7 +40,7 @@ async function getPwArr() {
   });
   return arrPw;
 }
-console.log(await getPwArr());
+// console.log(await getPwArr());
 
 //등록된 uniqueId배열 가져오기
 async function getUniqueIdArr() {
@@ -51,11 +51,7 @@ async function getUniqueIdArr() {
   });
   return arrUniqueId;
 }
-console.log(await getUniqueIdArr());
-
-
-
-
+// console.log(await getUniqueIdArr());
 
 
 //id입력을 가져오기
@@ -70,11 +66,6 @@ function getInputPw() {
 }
 
 
-
-
-
-
-
 //id input과 일치하는, id배열의 인덱스 반환
 async function get_idIndex() {
   const arrIds = await getIdArr();
@@ -84,7 +75,6 @@ async function get_idIndex() {
     return item === inputId;
   });
 
-  // console.log(index_foundId);
   return index_foundId;
 }
 
@@ -110,11 +100,9 @@ async function getUniqueId(indexId) {
 
 //로컬 스토리지에 로그인 상태를 저장
 async function localStorage_login(is_registered_user, indexId) {
-  // if (is_registered_user) {
-    let uniqueId = await getUniqueId();
-    localStorage.setItem('currentUser_uniqueId', uniqueId);
+    let uniqueId = await getUniqueId(indexId);
     console.log(uniqueId);
-  // }
+    localStorage.setItem('currentUser_uniqueId', uniqueId);
 }
 
 
@@ -130,8 +118,12 @@ async function handler_login(e) {
   e.preventDefault();
   let indexId = await get_idIndex();
   let is_registered_user = await check_registeredPw(indexId);
-  // console.log(indexId);
-  localStorage_login(is_registered_user, indexId);
+  console.log(indexId);
+  console.log(is_registered_user);
+  if(is_registered_user){
+    localStorage_login(is_registered_user, indexId);
+
+  }
 }
 
 function event_login() {
