@@ -291,6 +291,7 @@
 
 .recent_product_viewed_box{
   overflow: hidden;
+  margin-top: 2px;
 }
 
 .recent_product_viewed_list {
