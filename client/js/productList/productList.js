@@ -71,7 +71,7 @@ productLinks.forEach((link) => {
 
 // 이미지를 최근 본 상품 목록에 추가
 function addImageViewedList(src) {
-  const recentlyViewedList = $('.recent_viewed_list');
+  const recentlyViewedList = $('.recent_product_viewed_list');
   const listItem = document.createElement('li');
   const listLink = document.createElement('a');
   const listImage = document.createElement('img');
@@ -79,8 +79,8 @@ function addImageViewedList(src) {
   listLink.appendChild(listImage);
   listItem.appendChild(listLink);
   recentlyViewedList.appendChild(listItem);
-  listItem.className = 'recent_viewed_item';
-  listLink.className = 'recent_viewed_link';
+  listItem.className = 'recent_product_viewed_item';
+  listLink.className = 'recent_product_viewed_link';
 
   // 이미지를 목록의 첫번째 위치에 추가하기 전에, 목록 길이가 10개인지 확인
   if (recentlyViewedList.children.length >= 10) {
@@ -117,16 +117,16 @@ loadStorage('imageSrc')
 
   /* 최근 본 상품 slide */
   
-  $('.recent_viewed_up').addEventListener('click',(e)=>{
-    const currentTop = parseInt(getCss($('.recent_viewed_list'), 'top'));
+  $('.recent_product_viewed_up').addEventListener('click',(e)=>{
+    const currentTop = parseInt(getCss($('.recent_product_viewed_list'), 'top'));
     if (currentTop === 0) return;
     const newTop = currentTop + 88;
-    setCss($('.recent_viewed_list'),'top', newTop + 'px')
+    setCss($('.recent_product_viewed_list'),'top', newTop + 'px')
 
   })
-  $('.recent_viewed_down').addEventListener('click',()=>{
-    const currentTop = parseInt(getCss($('.recent_viewed_list'), 'top'));
+  $('.recent_product_viewed_down').addEventListener('click',()=>{
+    const currentTop = parseInt(getCss($('.recent_product_viewed_list'), 'top'));
     if (currentTop === -616) return;
     const newTop = currentTop - 88;
-    setCss($('.recent_viewed_list'),'top', newTop + 'px')
+    setCss($('.recent_product_viewed_list'),'top', newTop + 'px')
   })

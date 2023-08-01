@@ -1751,7 +1751,7 @@ button[class*="mainPopup__close"] {
 
 /*최근 본 상품*/
 
-.recent_viewed {
+.recent_product_viewed {
   position: relative;
   position: fixed;
   top: 50%;
@@ -1767,16 +1767,16 @@ button[class*="mainPopup__close"] {
   z-index: 20;
 }
 
-.recent_viewed img {
+.recent_product_viewed img {
   width: 60px;
   height: 80px;
 }
 
-.recent_viewed_box{
+.recent_product_viewed_box{
   overflow: hidden;
 }
 
-.recent_viewed_list {
+.recent_product_viewed_list {
   max-height: 209px;
   margin-top: 6px;
   display: flex;
@@ -1786,7 +1786,7 @@ button[class*="mainPopup__close"] {
   top: 0px;
 }
 
-.recent_viewed_sprite {
+.recent_product_viewed_sprite {
   cursor: pointer;
   width: 1.125rem;
   height: 1.125rem;
@@ -1795,18 +1795,18 @@ button[class*="mainPopup__close"] {
   background: url('../assets/icon/Arrow_top.svg');
 }
 
-.recent_viewed_up {
+.recent_product_viewed_up {
   top: 4%;
   right: 37%;
 }
 
-.recent_viewed_down {
+.recent_product_viewed_down {
   transform: rotate(180deg);
   bottom: 4%;
   right: 37%;
 }
 
-.recent_viewed_link{
+.recent_product_viewed_link{
   margin: 2px 0px;
   display: block;
   cursor: pointer;
