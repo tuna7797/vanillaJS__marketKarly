@@ -1,213 +1,109 @@
 .main_page_container {
-  margin: 0;
-  width: 100%;
+  @apply relative m-0 w-full;
   font-family: Pretendard;
-  position: relative;
 }
 .main_page_container .main_banner {
-  position: relative;
-  overflow: hidden;
-  padding: 0;
+  @apply relative overflow-hidden p-0;
 }
-
 .main_banner_image {
-  width: 100%;
+  @apply w-full;
 }
 .main_banner_page {
-  position: absolute;
-  top: 87%;
-  right: 22%;
+  @apply absolute right-[22%] top-[87%] z-20 h-5 w-[60px] rounded-xl p-[auto] text-center text-[0.8125rem] font-semibold text-white;
   background: rgba(0, 0, 0, 0.15);
-  width: 60px;
-  height: 20px;
-  font-size: 0.8125rem;
-  font-weight: 600;
-  color: #ffffff;
-  border-radius: 0.75rem;
-  padding: auto;
-  text-align: center;
-  z-index: 20;
 }
-.main_banner_button {
-  cursor: pointer;
-  position: absolute;
-  top: 40%;
-  width: 3.25rem;
-  height: 3.25rem;
-  border-radius: 50%;
-  border: 0;
+/* .main_banner_button {
+  @apply cursor-pointer absolute w-[3.25rem] h-[3.25rem] z-20 opacity-0 transition-opacity duration-[50ms] ease-[ease-in-out] rounded-[50%] border-0 top-[40%];
   background: rgba(0, 0, 0, 0.1) url('../assets/images/Icon/Arrow.png');
-  z-index: 20;
-  opacity: 0;
-  transition: opacity 50ms ease-in-out;
-}
+} */
 .main_banner_right_arrow {
-  transform: scaleX(-1);
-  right: 17%;
+  @apply right-[17%] -scale-x-100;
 }
 .main_banner_left_arrow {
-  left: 17%;
+  @apply left-[17%];
 }
-
 .recommend_today {
-  position: relative;
-  width: 65.625rem;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 4.375rem 0;
-  box-sizing: border-box;
+  @apply relative mx-auto box-border w-[65.625rem] px-0 py-[4.375rem];
 }
 .recommend_today_title {
-  font-size: 1.6875rem;
-  font-weight: 700;
-  padding: 0.9375rem 0;
-  text-align: center;
-  margin-bottom: 1.875rem;
+  @apply mb-[1.875rem] px-0 py-[0.9375rem] text-center text-[1.6875rem] font-bold;
 }
 .recommend_today_list {
+  @apply flex items-stretch justify-between overflow-hidden pl-0;
   list-style: none;
-  padding-left: 0;
-  display: flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: stretch;
+}
+
+
+.recommend_today_image{
+  @apply w-[15.5rem] h-[20rem] overflow-hidden
 }
 .recommend_today_product {
-  position: relative;
-  width: 15.5625rem;
-  height: 26.625rem;
+  @apply relative h-[26.625rem] w-[15.5625rem];
 }
 .recommend_today_name {
-  text-decoration: none;
-  color: #101010;
-  font-size: 0.875rem;
-  padding: 1.125rem 0;
-  display: block;
+  @apply block px-0 py-[1.125rem] text-sm text-[#101010] no-underline;
 }
 .recommend_today_price {
-  font-size: 1.375rem;
-  font-weight: bold;
+  @apply text-[1.375rem] font-semibold;
 }
 .recommend_today_sale {
-  color: orangered;
-  font-size: 1.375rem;
-  font-weight: 800;
+  @apply text-[1.375rem] font-bold text-[orangered];
 }
 .recommend_today_before_price {
-  display: block;
-  text-decoration: line-through;
-  color: #a6a6a6;
-  font-size: 0.8125rem;
-  margin-top: 1rem;
+  @apply mt-4 block text-[0.8125rem] text-[#a6a6a6] line-through;
 }
-.recommend_today_cart {
-  cursor: pointer;
-  position: absolute;
-  bottom: 30%;
-  right: 8%;
-  background: #2a0038 url('../assets/images/Icon/Cart.png');
-  background-position: center;
-  opacity: 50%;
-  width: 2.625rem;
-  height: 2.625rem;
-  border-radius: 50%;
-  border: 0;
+
+.recommend_left_arrow {
+  @apply left-[-2.5%] -scale-x-100;
 }
-.recommend_today_right_arrow {
-  cursor: pointer;
-  background: #ffffff url('../assets/images/Icon/rightArrow_black.png')
-    no-repeat;
-  width: 3.125rem;
-  height: 3.125rem;
-  border-radius: 50%;
-  border: none;
-  background-position: center;
-  box-shadow: 0 0 0.625rem #e1e1e1;
-  position: absolute;
-  top: 45%;
-  right: -2.4%;
+.recommend_right_arrow {
+  @apply right-[17%];
+}
+
+.good_price_left_arrow {
+  @apply left-[-2.5%] -scale-x-100;
+}
+.good_price_right_arrow {
+  @apply right-[17%];
 }
 
 .line_banner {
-  width: 65.625rem;
-  margin: 2.5rem auto;
-  padding: 0;
+  @apply mx-auto my-10 w-[65.625rem] p-0;
 }
-
 .recent_viewed {
-  position: relative;
-  position: fixed;
-  top: 50%;
-  right: 2%;
-  width: 4.625rem;
-  height: 13.9375rem;
-  font-size: 0.4375rem;
-  text-align: center;
-  padding: 2.1875rem 0;
-  border: 1px solid #c4c4c4;
-  box-sizing: border-box;
+  @apply fixed right-[2%] top-2/4 z-20 box-border h-[13.9375rem] w-[4.625rem] border border-solid border-[#c4c4c4] px-0 py-[2.1875rem] text-center text-[0.4375rem];
+  /* position: relative; */
   background: #ffffff;
-  z-index: 20;
 }
 .recent_viewed img {
-  width: 100%;
+  @apply w-full;
 }
 .recent_viewed_list {
+  @apply mx-auto mt-2.5 h-[8.0625rem] w-10 gap-y-0.5 overflow-hidden p-0;
   list-style: none;
-  padding: 0;
-  width: 2.5rem;
-  height: 8.0625rem;
-  overflow: hidden;
-  row-gap: 0.125rem;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 0.625rem;
 }
 .recent_viewed_sprite {
-  cursor: pointer;
-  width: 1.125rem;
-  height: 1.125rem;
-  background: url('../assets/images/Icon/Arrow-2.png');
-  position: absolute;
-  border: none;
+  @apply absolute h-[1.125rem] w-[1.125rem] cursor-pointer border-[none];
+  background: url("../assets/images/Icon/Arrow-2.png");
 }
 .recent_viewed_up {
-  background-position: 50% 10%;
-  top: 4%;
-  right: 37%;
+  @apply right-[37%] top-[4%] bg-[50%_10%];
 }
 .recent_viewed_down {
-  background-position: 50% 35%;
-  bottom: 4%;
-  right: 37%;
+  @apply bottom-[4%] right-[37%] bg-[50%_35%];
 }
-
 .main_popup {
-  width: 21.5625rem;
-  height: 33.125rem;
-  border-radius: 1rem;
+  @apply fixed bottom-2.5 left-[0.4375rem] z-20 h-[33.125rem] w-[21.5625rem] rounded-2xl font-bold text-[#333333] shadow-[0_0.5rem_2.25rem_0_#c4c4c4];
   background: #ffffff;
-  box-shadow: 0 0.5rem 2.25rem 0 #c4c4c4;
-  color: #333333;
-  font-weight: 700;
-  position: fixed;
-  bottom: 0.625rem;
-  left: 0.4375rem;
-  z-index: 20;
 }
 .main_popup img {
-  border-radius: 1rem 1rem 0 0;
+  @apply rounded-[1rem_1rem_0_0];
 }
 .main_popup .main_popup_close_button {
-  border-left: solid 0.0625rem #e1e1e1;
+  @apply border-l-[#e1e1e1] border-l-[solid];
 }
-
-button[class*='main_popup_close'] {
-  cursor: pointer;
-  height: 3.75rem;
+button[class*="main_popup_close"] {
+  @apply m-0 inline-block h-[3.75rem] w-[49%] cursor-pointer border-0;
   background: transparent;
-  width: 49%;
-  display: inline-block;
-  margin: 0;
-  border: 0;
 }

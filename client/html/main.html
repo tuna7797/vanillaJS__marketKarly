@@ -19,6 +19,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
     <script type="module" src="../js/mainPage/mainPage.js"></script>
     <!-- <script type="module" src="./js/main.js"></script> -->
   </head>
@@ -126,8 +127,8 @@
       <section class="main_banner">
         <h2 class="sr-only">메인 배너</h2>
 
-        <div class="swiper-container">
-          <div class="swiper-wrapper"></div>
+        <div class="swiper-container swiper_banner">
+          <div class="swiper-wrapper swiper_banner_wrap"></div>
         </div>
         <div class="main_banner_page"></div>
 
@@ -147,118 +148,23 @@
 
       <!-- recommendProduct => recommend_today , 이유 : recommend_todayProduct__product 클래스 네임에 product가 중복되서 적합하지 않다고 판단 -->
       <!-- bem; 패턴 :  __  => _ 변경 (언더바 2개에서 1개로 변경)-->
-      <section class="recommend_today">
+      <section class="recommend_today" id="today_recommend">
         <h2 class="recommend_today_title" aria-label="오늘 추천 상품">
           이 상품 어때요?
         </h2>
-        <ul class="recommend_today_list">
-          <li class="recommend_today_product" aria-label="상품 일번">
-            <a href="/">
-              <figure class="recommend_today_image">
-                <img
-                  src="../assets/images/product01.png"
-                  alt="풀무원 탱탱쫄면 네개입 이미지"
-                />
-              </figure>
-            </a>
-            <a
-              class="recommend_today_name"
-              href="/"
-              aria-label="풀무원 탱탱쫄면 네개입"
-              >&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</a
-            >
-            <span
-              class="recommend_today_price"
-              aria-label="가격 사만구천팔십 원"
-              >4&#44;980 원</span
-            >
-            <button
-              class="recommend_today_cart"
-              aria-label="장바구니 버튼"
-            ></button>
-          </li>
-          <li class="recommend_today_product" aria-label="상품 이번">
-            <a href="/">
-              <figure class="recommend_today_image">
-                <img
-                  src="../assets/images/product02.png"
-                  alt="온더바디 죠르디 시카 자석 선쿠션 이미지"
-                />
-              </figure>
-            </a>
-            <a
-              class="recommend_today_name"
-              href="/"
-              aria-label="온더바디 죠르디 시카 자석 선쿠션"
-              >&#91;온더바디&#93; 죠르디 시카 자석 선쿠션</a
-            >
-            <span
-              class="recommend_today_price"
-              aria-label="가격 삼만이천오백 원"
-              >32&#44;500 원</span
-            >
-            <button
-              class="recommend_today_cart"
-              aria-label="장바구니 버튼"
-            ></button>
-          </li>
-          <li class="recommend_today_product" aria-label="상품 삼번">
-            <a href="/">
-              <figure class="recommend_today_image">
-                <img
-                  src="../assets/images/product03.png"
-                  alt="유기농 밀키퀀 현미 이미지"
-                />
-              </figure>
-            </a>
-            <a
-              class="recommend_today_name"
-              href="/"
-              aria-label="유기농 밀키퀀 현미 사 키로그램"
-              >유기농 밀키퀀 현미 4kg</a
-            >
-            <span class="recommend_today_price" aria-label="가격 이만오천 원"
-              >25&#44;000 원</span
-            >
-            <button
-              class="recommend_today_cart"
-              aria-label="장바구니 버튼"
-            ></button>
-          </li>
-          <li class="recommend_today_product" aria-label="상품 사번">
-            <a href="/">
-              <figure class="recommend_today_image">
-                <img
-                  src="../assets/images/product04.png"
-                  alt="프로쉬 베이비 세탁세 이미지"
-                />
-              </figure>
-            </a>
-            <a
-              class="recommend_today_name"
-              href="/"
-              aria-label="프로쉬 베이비 세탁세"
-              >&#91;프로쉬&#93; 베이비 세탁세</a
-            >
-            <span class="recommend_today_sale" aria-label="세일 이십사 퍼센트"
-              >24&#37;</span
-            >
-            <span class="recommend_today_price" aria-label="가격 만팔천구백 원"
-              >18&#44;900 원</span
-            >
-            <span class="recommend_today_before_price" aria-hidden="true"
-              >24&#44;000 원</span
-            >
-            <button
-              class="recommend_today_cart"
-              aria-label="장바구니 버튼"
-            ></button>
-          </li>
+        <ul class="swiper-container recommend_today_list today_recommend">
+          <div class="swiper-wrapper recommend_today_list_wrap"></div>
         </ul>
-        <button
-          class="recommend_today_right_arrow"
-          aria-label="추천상품 더보기 버튼"
-        ></button>
+        <div>
+          <button
+            class="recommend_today_button recommend_left_arrow"
+            aria-label="추천상품 더보기 왼쪽 버튼"
+          ></button>
+          <button
+            class="recommend_today_button recommend_right_arrow"
+            aria-label="추천상품 더보기 오른쪽 버튼"
+          ></button>
+        </div>
       </section>
 
       <!-- 중간 서브 라인 배너 섹션-->
@@ -279,114 +185,23 @@
       </section>
       <!-- 오늘 추천상품 '놓치면 후회할 가격' 섹션 -->
 
-      <section class="recommend_today">
+      <section class="recommend_today" id="good_price">
         <h2 class="recommend_today_title" aria-label="좋은 가격 상품">
           놓치면 후회할 가격
         </h2>
-        <ul class="recommend_today_list">
-          <li class="recommend_today_product" aria-label="상품 일번">
-            <a href="/">
-              <figure class="recommend_today_image">
-                <img
-                  src="../assets/images/product01.png"
-                  alt="풀무원 탱탱쫄면 네개입 이미지"
-                />
-              </figure>
-            </a>
-            <a
-              class="recommend_today_name"
-              href="/"
-              aria-label="풀무원 탱탱쫄면 네개입"
-              >&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</a
-            >
-            <span
-              class="recommend_today_price"
-              aria-label="가격 사천구백팔십 원"
-              >4&#44;980 원</span
-            >
-            <button
-              class="recommend_today_cart"
-              aria-label="장바구니 버튼"
-            ></button>
-          </li>
-          <li class="recommend_today_product" aria-label="상품 이번">
-            <a href="/">
-              <figure class="recommend_today_image">
-                <img
-                  src="../assets/images/product02.png"
-                  alt="온더바디 죠르디 시카 자석 선쿠션 이미지"
-                />
-              </figure>
-            </a>
-            <a
-              class="recommend_today_name"
-              href="/"
-              aria-label="온더바디 죠르디 시카 자석 선쿠션"
-              >&#91;온더바디&#93; 죠르디 시카 자석 선쿠션</a
-            >
-            <span class="recommend_today_price" aria-label="가격 삼이천오백 원"
-              >32&#44;500 원</span
-            >
-            <button
-              class="recommend_today_cart"
-              aria-label="장바구니 버튼"
-            ></button>
-          </li>
-          <li class="recommend_today_product" aria-label="상품 삼번">
-            <a href="/">
-              <figure class="recommend_today_image">
-                <img
-                  src="../assets/images/product03.png"
-                  alt="유기농 밀키퀀 현미 이미지"
-                />
-              </figure>
-            </a>
-            <a
-              class="recommend_today_name"
-              href="/"
-              aria-label="유기농 밀키퀀 현미 4키로그램"
-              >유기농 밀키퀀 현미 4kg</a
-            >
-            <span class="recommend_today_price" aria-label="가격 이만오천 원"
-              >25&#44;000 원</span
-            >
-            <button
-              class="recommend_today_cart"
-              aria-label="장바구니 버튼"
-            ></button>
-          </li>
-          <li class="recommend_today_product" aria-label="상품 사번">
-            <figure class="recommend_today_image">
-              <img
-                src="../assets/images/product04.png"
-                alt="프로쉬 베이비 세탁세 이미지"
-              />
-            </figure>
-            <a
-              class="recommend_today_name"
-              href="/"
-              aria-label="프로쉬 베이비 세탁세"
-              >&#91;프로쉬&#93; 베이비 세탁세</a
-            >
-            <span class="recommend_today_sale" aria-label="세일 이십사 퍼센트"
-              >24&#37;</span
-            >
-            <span class="recommend_today_price" aria-label="가격 만팔천구백 원"
-              >18&#44;900 원</span
-            >
-            <span class="recommend_today_before_price" aria-hidden="true"
-              >24&#44;000 원</span
-            >
-            <button
-              class="recommend_today_cart"
-              aria-label="장바구니 버튼"
-            ></button>
-          </li>
+        <ul class="swiper-container recommend_today_list good_price">
+          <div class="swiper-wrapper recommend_today_list_wrap"></div>
         </ul>
-        <button
-          class="recommend_today_right_arrow"
-          aria-label="추천상품 더보기 버튼"
-        ></button>
+        <div>
+          <button
+            class="recommend_today_button good_price_left_arrow"
+            aria-label="좋은 가격 상품 더보기 왼쪽 버튼"
+          ></button>
+          <button
+            class="recommend_today_button good_price_right_arrow"
+            aria-label="좋은 가격 상품 더보기 오른쪽 버튼"
+          ></button>
+        </div>
       </section>
       <!-- 최근 본 상품 오른쪽 사이드바 -->
       <aside>
