@@ -271,19 +271,25 @@
       "id": "id_sample",
       "pw": "pw_sample",
       "uniqueId": "uniqueId_sample",
-      "description": "유저 데이터 스키마"
+      "description": "유저 데이터 스키마",
+      "shoppingBasket": [],
+      "recentlyViewed_products": []
     },
     {
       "id": "usedId00",
-      "pw": "pw_sample",
-      "uniqueId": "uniqueId_sample",
-      "description": "유저 데이터 스키마"
+      "pw": "BBB",
+      "uniqueId": "bbbbbbbbbb",
+      "description": "유저 데이터 스키마",
+      "shoppingBasket": [],
+      "recentlyViewed_products": []
     },
     {
       "id": "usedId01",
-      "pw": "pw_sample",
-      "uniqueId": "uniqueId_sample",
-      "description": "유저 데이터 스키마"
+      "pw": "CCC",
+      "uniqueId": "cccccccccc",
+      "description": "유저 데이터 스키마",
+      "shoppingBasket": [],
+      "recentlyViewed_products": []
     }
   ]
 }
