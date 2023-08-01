@@ -6,7 +6,6 @@
 @tailwind components;
 @tailwind utilities;
 
-<<<<<<< HEAD
 @layer utilities {
   /* header */
   .search_icon {
@@ -70,9 +69,3 @@
   }
 
 }
-=======
-
-
-
-
->>>>>>> develop
