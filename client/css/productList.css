@@ -56,8 +56,9 @@
 .bold_main {
   @apply font-semibold text-[#333333];
 }
-.divider {
+.list_divider {
   @apply text-[#E1E1E1] text-xs;
+  margin: 0 -1px;
 }
 .recommend {
   @apply flex justify-start items-center ;
@@ -136,6 +137,7 @@
 }
 .move_page_list {
   @apply relative w-[2.125rem] h-[2.125rem] border border-solid border-[#E1E1E1];
+  cursor: pointer;
 }
 .move_page_list:hover {
   background: #E1E1E1;
@@ -261,8 +263,14 @@
 .img_box:hover img {
   transform: scale(1.04);
 }
-
-
+.pagination-button-active{
+  font-weight: bold;
+  background-color: #ececec;
+}
+.disabled button{
+  opacity: .5;
+  cursor: default;
+}
 
 
 
@@ -310,18 +318,22 @@
   height: 1.125rem;
   position: absolute;
   border: none;
-  background: url('../assets/icon/Arrow_top.svg');
+  background: url('../assets/icon/Arrow_top.svg') no-repeat center;
 }
 
 .recent_product_viewed_up {
-  top: 4%;
-  right: 37%;
+  top: 2%;
+  right: 10%;
+  width: 65px;
+  height: 30px;
 }
 
 .recent_product_viewed_down {
   transform: rotate(180deg);
-  bottom: 4%;
-  right: 37%;
+  bottom: 1%;
+  right: 7%;
+  width: 65px;
+  height: 30px;
 }
 
 .recent_product_viewed_link{

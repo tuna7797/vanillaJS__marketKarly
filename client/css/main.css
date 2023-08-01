@@ -1300,11 +1300,12 @@ button[class*="mainPopup__close"] {
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
-.divider {
+.list_divider {
   font-size: 0.75rem;
   line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(225 225 225 / var(--tw-text-opacity));
+  margin: 0 -1px;
 }
 
 .recommend {
@@ -1465,6 +1466,7 @@ button[class*="mainPopup__close"] {
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(225 225 225 / var(--tw-border-opacity));
+  cursor: pointer;
 }
 
 .move_page_list:hover {
@@ -1728,6 +1730,16 @@ button[class*="mainPopup__close"] {
   transform: scale(1.04);
 }
 
+.pagination-button-active{
+  font-weight: bold;
+  background-color: #ececec;
+}
+
+.disabled button{
+  opacity: .5;
+  cursor: default;
+}
+
 /*최근 본 상품*/
 
 .recent_product_viewed {
@@ -1772,18 +1784,22 @@ button[class*="mainPopup__close"] {
   height: 1.125rem;
   position: absolute;
   border: none;
-  background: url('../assets/icon/Arrow_top.svg');
+  background: url('../assets/icon/Arrow_top.svg') no-repeat center;
 }
 
 .recent_product_viewed_up {
-  top: 4%;
-  right: 37%;
+  top: 2%;
+  right: 10%;
+  width: 65px;
+  height: 30px;
 }
 
 .recent_product_viewed_down {
   transform: rotate(180deg);
-  bottom: 4%;
-  right: 37%;
+  bottom: 1%;
+  right: 7%;
+  width: 65px;
+  height: 30px;
 }
 
 .recent_product_viewed_link{
@@ -1868,12 +1884,9 @@ footer {
 }
 
 .footer_top {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  padding-left: 20%;
-  padding-right: 20%;
   flex-flow: column nowrap;
+  width: 1050px;
+  margin: 0px auto;
 }
 
 .footer_info {
@@ -2670,6 +2683,10 @@ header {
   background: url("../assets/images/Icon/down.svg");
 }
 
+.best_link{
+  color: rgb(95, 0, 128);
+}
+
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
@@ -3306,8 +3323,4 @@ video {
   z-index: 20;
   opacity: 0;
   transition: opacity 50ms ease-in-out;
-}
-
-.product_best{
-  color: rgb(95, 0, 128);;
 }
