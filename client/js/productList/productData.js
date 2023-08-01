@@ -27,7 +27,7 @@ function createProductList(
                   <span class="discount_rate" aria-label="할인율">${saleRatio}%</span>
                   <span class="discount_price" aria-label="할인된 가격">${salePrice} 원</span>
                 </span>
-                <span class="non_discount" aria-label="할인전 가격">24,900 원</span>`
+                <span class="non_discount" aria-label="할인전 가격">${price} 원</span>`
               : `<span class="product_price" aria-label="${price}">${price} 원</span>`
           }
           <span class="product_summary">${description}</span>
