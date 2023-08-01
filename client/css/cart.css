@@ -46,6 +46,10 @@
 .cart_normal_temperature_food_item {
   @apply bg-[0%_50%];
 }
+
+.product_info {
+  @apply flex;
+}
 .left_box {
   @apply flex items-stretch justify-start;
   flex-flow: row nowrap;
