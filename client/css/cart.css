@@ -39,15 +39,12 @@
 }
 .cart_refrigerated_food_item {
   @apply bg-[0%_50%];
-  background: url(./../../images/Icon/Food_0.svg) no-repeat;
 }
 .cart_frozen_food_item {
   @apply bg-[0%_50%];
-  background: url(./../../images/Icon/Food_1.svg) no-repeat;
 }
 .cart_normal_temperature_food_item {
   @apply bg-[0%_50%];
-  background: url(./../../images/Icon/Food_2.svg) no-repeat;
 }
 .left_box {
   @apply flex items-stretch justify-start;
