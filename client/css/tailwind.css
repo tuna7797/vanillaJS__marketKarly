@@ -1,16 +1,15 @@
-@import './pure_login.css';
-@import './register.css';
+@import "./pure_login.css";
+@import "./register.css";
 
 @import "./cart.css";
 @import "./productDetail.css";
 
 @import "./productList.css";
 
-
 @import "footer.css";
 @import "mainPage.css";
 @import "header.css";
-@import "productList.css"; 
+@import "productList.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -27,19 +26,7 @@
     background: url("../assets/images/Icon/Cancel.svg") no-repeat;
   }
   /* mainPage */
-  .recommend_today_cart {
-    cursor: pointer;
-    position: absolute;
-    bottom: 30%;
-    right: 8%;
-    background: #2a0038 url("../assets/images/Icon/Cart.png");
-    background-position: center;
-    opacity: 50%;
-    width: 2.625rem;
-    height: 2.625rem;
-    border-radius: 50%;
-    border: 0;
-  }
+
   .recommend_today_button {
     cursor: pointer;
     background: #ffffff url("../assets/images/Icon/rightArrow_black.png")
@@ -75,5 +62,19 @@
     color: #a6a6a6;
     font-size: 0.8125rem;
     margin-top: 1rem;
+  }
+
+  .recommend_today_cart {
+    cursor: pointer;
+    position: absolute;
+    bottom: 30%;
+    right: 8%;
+    background: #2a0038 url("../assets/icon/Cart_white.svg");
+    background-position: center;
+    opacity: 50%;
+    width: 2.625rem;
+    height: 2.625rem;
+    border-radius: 50%;
+    border: 0;
   }
 }

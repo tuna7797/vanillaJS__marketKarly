@@ -1,18 +1,19 @@
-import {getNode} from "../../../lib/index.js"
+import {invisibleElement } from "../../../lib/index.js";
 
 //팝업 닫기
 export const handlePopupClose = (e) => {
-  const popup = getNode(".main_popup");
-
-  invisibleElement(popup);
+  
+  const target = e.target.closest(".main_popup");
+  
+  invisibleElement(target);
 };
-
 
 //배너 닫기
 export const handleBannerClose = (e) => {
-  const banner = getNode(".header_banner");
 
+  const banner = e.target.closest(".header_banner");
   
+
   gsap.to(banner, {
     marginTop: -banner.clientHeight,
     opacity: 0,
@@ -23,5 +24,4 @@ export const handleBannerClose = (e) => {
       banner.style.display = "none";
     },
   });
-
 };
