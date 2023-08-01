@@ -61,7 +61,7 @@ productLinks.forEach((link) => {
     updateStorage('imageSrc', imgSrc)
       .then(() => {
         console.log('이미지 src가 저장되었습니다.');
-        addImageToRecentlyViewedList(imgSrc);
+        addImageViewedList(imgSrc);
       })
       .catch((error) => {
         console.error(`Error: ${error.message}`);
@@ -70,7 +70,7 @@ productLinks.forEach((link) => {
 });
 
 // 이미지를 최근 본 상품 목록에 추가
-function addImageToRecentlyViewedList(src) {
+function addImageViewedList(src) {
   const recentlyViewedList = $('.recent_viewed_list');
   const listItem = document.createElement('li');
   const listLink = document.createElement('a');
@@ -83,13 +83,13 @@ function addImageToRecentlyViewedList(src) {
   listLink.className = 'recent_viewed_link';
 
   // 이미지를 목록의 첫번째 위치에 추가하기 전에, 목록 길이가 10개인지 확인
-  if (recentlyViewedList.children.length >= 11) {
-    recentlyViewedList.removeChild(recentlyViewedList.firstElementChild); // 가장 처음에 있는 항목을 삭제
+  if (recentlyViewedList.children.length >= 10) {
+    recentlyViewedList.removeChild(recentlyViewedList.lastElementChild); // 가장 끝에 있는 항목을 삭제
   }
 
-  // 가장 최근에 본 상품 이미지가 최상단에 위치하도록
-  if (recentlyViewedList.firstChild) {
-    recentlyViewedList.insertBefore(listItem, recentlyViewedList.firstChild);
+  // 이미지를 목록의 첫번째 위치에 추가
+  if (recentlyViewedList.lastChild) {
+    recentlyViewedList.insertBefore(listItem, recentlyViewedList.lastChild);
   } else {
     recentlyViewedList.appendChild(listItem);
   }
@@ -102,9 +102,9 @@ loadStorage('imageSrc')
   .then((imageSrcArray) => {
     // 이미지 src로 최근 본 상품 목록에 이미지를 추가
     if (imageSrcArray && Array.isArray(imageSrcArray)) {
-      imageSrcArray.forEach((imageSrc) => {
-        addImageToRecentlyViewedList(imageSrc);
-      });
+      for (let i = imageSrcArray.length - 1; i >= 0; i--) {
+        addImageViewedList(imageSrcArray[i]);
+      }
     }
   })
   .catch((error) => {
