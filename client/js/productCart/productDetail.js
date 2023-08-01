@@ -196,10 +196,38 @@ function saveProductToLocalStorage(name, price, quantity) {
   // 이전에 저장된 상품 정보가 있다면 가져옴
   let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
 
-  // 새로운 상품을 추가
-  const newItem = { name, price, quantity };
-  cartItems.push(newItem);
+  // 동일한 상품이 있는지 확인
+  const existingProductIndex = cartItems.findIndex(
+    (item) => item.name === name && item.price === price,
+  );
+
+  if (existingProductIndex !== -1) {
+    // 이미 존재하는 상품이면 수량을 합침
+    cartItems[existingProductIndex].quantity = (
+      parseInt(cartItems[existingProductIndex].quantity) + parseInt(quantity)
+    ).toString();
+  } else {
+    // 새로운 상품을 추가
+    const newItem = { name, price, quantity };
+    cartItems.push(newItem);
+  }
+
+  // 중복된 상품을 합친 후, 새로운 배열에 저장
+  const mergedItems = [];
+  for (const item of cartItems) {
+    const existingItemIndex = mergedItems.findIndex(
+      (i) => i.name === item.name && i.price === item.price,
+    );
+    if (existingItemIndex !== -1) {
+      mergedItems[existingItemIndex].quantity = (
+        parseInt(mergedItems[existingItemIndex].quantity) +
+        parseInt(item.quantity)
+      ).toString();
+    } else {
+      mergedItems.push(item);
+    }
+  }
 
   // 로컬 스토리지에 업데이트된 상품 정보를 저장
-  localStorage.setItem('cartItems', JSON.stringify(cartItems));
+  localStorage.setItem('cartItems', JSON.stringify(mergedItems));
 }
