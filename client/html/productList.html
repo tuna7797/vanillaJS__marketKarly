@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>마켓칼리 베스트</title>
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
+  <link rel="stylesheet" href="../css/main.css" />
+  <script src="../js/productList/productList.js" type="module"></script>
+</head>
+
+<body>
+
+  <main class="main_container">
+
+    <h2 class="a11y">main</h2>
+
+    <h3 class="product_list_title">베스트</h3>
+
+    <div class="product_container">
+
+      <!-- 사이드바 -->
+
+      <div class="side_bar" role="gro_up" aria-label="사이드바 메뉴">
+
+        <div class="side_bar_button" aria-label="사이드바 필터">
+          <span>필터</span>
+          <a href="" class="reset_button">초기화</a>
+        </div>
+
+        <button class="side_bar_button" type="button">
+          <span>카테고리<span class="gray_num_small" aria-hidden="true">1</span></span>
+          <span class="arrow_bottom"></span>
+        </button>
+
+        <button class="side_bar_button side_bar_button_clicked" type="button">
+          <span class="current_brand">브랜드</span>
+          <span class="arrow_top"></span>
+        </button>
+        <ul class="brand" aria-label="브랜드별 상품 보기">
+          <li class="brand_list"><a href="" class="brand_link">감자밭<span class="gray_num"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="" class="brand_link">강남면옥<span class="gray_num"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="" class="brand_link">경남제약<span class="gray_num"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="" class="brand_link">경복궁<span class="gray_num"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="" class="brand_link">고래사<span class="gray_num"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="" class="brand_link">고메공방<span class="gray_num"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="" class="brand_link">고온어다이어트<span class="gray_num"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="" class="brand_link">교토마블<span class="gray_num"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="" class="brand_link">그래놀라 하우스<span class="gray_num"
+                aria-hidden="true">1</span></a></li>
+          <li class="brand_list"><a href="" class="brand_link">그리츠 시그니처 램<span class="gray_num"
+                aria-hidden="true">1</span></a></li>
+          <li class="button_list"><button type="button" class="more_button">브랜드 더보기</button></li>
+        </ul>
+
+        <button class="side_bar_button" type="button">
+          <span>가격</span>
+          <span class="arrow_bottom"></span>
+        </button>
+
+        <button class="side_bar_button" type="button">
+          <span>혜택</span>
+          <span class="arrow_bottom"></span>
+        </button>
+
+        <button class="side_bar_button" type="button">
+          <span>유형</span>
+          <span class="arrow_bottom"></span>
+        </button>
+
+        <button class="side_bar_button" type="button">
+          <span>특정상품 제외</span>
+          <span class="arrow_bottom"></span>
+        </button>
+
+      </div>
+
+
+
+      <!-- 프로덕트 영역 -->
+      <div class="product">
+
+        <div class="menu_container" role="menu" aria-label="베스트 상품 메뉴바">
+          <span class="bold_main">총 284건</span>
+          <ul class="menu_wrap">
+            <li><a href="" class="recommend"><span class="bold_main">추천순</span></a></li>
+            <li><span class="divider" aria-hidden="true">ㅣ</span>
+              <a href="/" class="/">신상품순</a>
+            </li>
+            <li><span class="divider" aria-hidden="true">ㅣ</span>
+              <a href="/" class="/">판매량순</a>
+            </li>
+            <li><span class="divider" aria-hidden="true">ㅣ</span>
+              <a href="/" class="/">혜택순</a>
+            </li>
+            <li><span class="divider" aria-hidden="true">ㅣ</span>
+              <a href="/" class="/">낮은 가격순</a>
+            </li>
+            <li><span class="divider" aria-hidden="true">ㅣ</span>
+              <a href="/" class="/">높은 가격순</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="product_line" aria-label="상품정보" role="gro_up">
+          <ul class="product_wrap">
+          </ul>
+          <div class="move_page">
+            <ul class="move_page_wrap">
+              <li class="move_page_list"><a href="/" class="move_page_link">
+                  <span class="double_left"></span>
+                  <span class="a11y">처음 페이지로 가기 버튼</span>
+                </a></li>
+              <li class="move_page_list"><a href="/" class="move_page_link">
+                  <span class="left"></span>
+                  <span class="a11y">이전 페이지로 가기 버튼</span>
+                </a></li>
+              <li class="move_page_list"><a href="/" class="move_page_link">
+                  <span class="page_num">1</span>
+                  <span class="a11y">페이지</span>
+                </a></li>
+              <li class="move_page_list"><a href="/" class="move_page_link">
+                  <span class="page_num">2</span>
+                  <span class="a11y">페이지</span>
+                </a></li>
+
+              <li class="move_page_list"><a href="/" class="move_page_link">
+                  <span class="page_num">3</span>
+                  <span class="a11y">페이지</span>
+                </a></li>
+              <li class="move_page_list"><a href="/" class="move_page_link">
+                  <span class="right"></span>
+                  <span class="a11y">다음 페이지로 가기 버튼</span>
+                </a></li>
+              <li class="move_page_list"><a href="/" class="move_page_link">
+                  <span class="double_right"></span>
+                  <span class="a11y">맨 뒤 페이지로 가기 버튼</span>
+                </a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+          <!-- 최근 본 상품 오른쪽 사이드바 -->
+          <aside>
+            <!-- recentProduct => recent_viewed : 최근 본 상품이기 때문에 봤다는 것을 명시적으로 알려줄 수 있는 class 명으로 변경 -->
+            <section class="recent_viewed">
+              <h2>최근 본 상품</h2>
+              <div class="recent_viewed_box">
+                <ul class="recent_viewed_list"></ul>
+              </div>
+    
+              <!--recent_viewed_button_up => recent_viewed_up  -->
+              <!--recent_viewed_button_down => recent_viewed_down  -->
+              <button class="recent_viewed_up recent_viewed_sprite" aria-label="최근 본 상품 위로가기 버튼"></button>
+              <button class="recent_viewed_down recent_viewed_sprite" aria-label="최근 본 상품 아래로가기 버튼" ></button>
+            </section>
+          </aside>
+  </main>
+
+</body>
