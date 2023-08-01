@@ -1868,9 +1868,12 @@ footer {
 }
 
 .footer_top {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding-left: 20%;
+  padding-right: 20%;
   flex-flow: column nowrap;
-  width: 1050px;
-  margin: 0px auto;
 }
 
 .footer_info {
@@ -2667,10 +2670,6 @@ header {
   background: url("../assets/images/Icon/down.svg");
 }
 
-.best_link{
-  color: rgb(95, 0, 128);
-}
-
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
 
 /*
@@ -3307,4 +3306,8 @@ video {
   z-index: 20;
   opacity: 0;
   transition: opacity 50ms ease-in-out;
+}
+
+.product_best{
+  color: rgb(95, 0, 128);;
 }
