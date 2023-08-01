@@ -16,29 +16,33 @@
       <section class="product_detail">
         <!-- 상품 디테일 타이틀 상자 -->
         <div class="product_detail_title_box">
-          <h2 class="product_detail_title" aria-label="풀무원 탱탱쫄면 네개입">
-            &#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;
+          <!-- titleNode -->
+          <h2 class="product_detail_title">
           </h2>
           <span class="product_detail_star_delivery">샛별배송</span>
           <span class="product_detail_sub_title"
             >튀기지 않아 부담없는 매콤함</span
           >
 
-          <span
-            aria-label="총 상품금액"
-            class="product_detail_total_price"
-          ></span>
-          4&#44;980 <span class="product_detail_KRW">원</span>
+          <!-- productPriceNode -->
+          <p
+            aria-label="상품금액"
+            class="product_detail_price">
+            <span class="product_detail_KRW">원</span>
+          </p>
+        
+          
           <span class="product_detail_purple_span"
             >로그인 후&#44; 적립 혜택이 제공됩니다&#46;</span
           >
         </div>
 
         <!-- 제품 디테일 이미지 -->
-        <figure class="product_detail_image">
-          <img
-            src="../assets/productDetail/product01.png"
-            alt="풀무원 탱탱쫄면 네개입 이미지"
+        <figure>
+          <!-- thumbnailImageNode -->
+          <img class="product_detail_image"
+            src=" "
+            alt=" "
           />
         </figure>
 
@@ -78,7 +82,7 @@
           <div class="product_detail_item">
             <dt>중량&#47;용량</dt>
             <dd class="product_detail_font_bold" aria-label="백이십삼그램 네봉">
-              123g&#42;4봉
+              123g &#42; 4봉
             </dd>
           </div>
 
@@ -104,7 +108,8 @@
             <dt>상품선택</dt>
             <dd>
               <div class="product_detail_select">
-                <span>&#91;풀무원&#93; 탱탱쫄면 &#40;4개입&#41;</span>
+                <!-- selectTitleNode -->
+                <p class="product_select_title"></p>
 
                 <div class="product_detail_select_box">
                   <button type="button" class="product_detail_minus">-</button>
@@ -112,11 +117,10 @@
                   <button type="button" class="product_detail_plus">+</button>
                 </div>
 
-                <span
+                <!-- selectProductPriceNode -->
+                <p
                   class="product_detail_select_price"
-                  aria-label="사천구백팔십원"
-                  >4&#44;980원</span
-                >
+                  ></p>
               </div>
             </dd>
           </div>
@@ -124,10 +128,9 @@
 
         <!-- 총 가격 알려주는 기능넣기 -->
         <div class="product_detail_productcart">
-          <dl class="product_detail_all_price">
-            <dt>총 상품금액&#58;</dt>
-            <dd>4980 <span>원</span></dd>
-          </dl>
+          <div class="product_detail_all_price">
+            <!-- selectTotalPriceNode -->
+            총 상품금액&#58;<p class="product_total_price"></p></div>
 
           <div class="product_detail_point">
             <span class="product_detail_point_icon">적립</span>
@@ -135,17 +138,22 @@
           </div>
 
           <div class="product_detail_all_button">
-            <button
+            <img class="product_detail_heart" src="../assets/productDetail/like_icon.png" alt="상품 좋아요 버튼" />
+            <!-- <button
               class="product_detail_heart product_detail_button"
               aria-label="상품 좋아요 버튼"
-            ></button>
-            <button
+            ></button> -->
+
+            <img class="product_detail_alarm" src="../assets/productDetail/ball_icon.png" alt="상품 알림 버튼" />
+            <!-- <button
               class="product_detail_alarm product_detail_button"
               aria-label="상품 알림 버튼"
-            ></button>
-            <button
-              class="product_detail_cart_button"
-              aria-label="장바구니 담기 버튼"
+            ></button> -->
+         <button
+            id="addToCartButton"
+            class="product_detail_cart_button"
+            aria-label="장바구니 담기 버튼"
+            type="button"
             >
               장바구니 담기
             </button>
@@ -156,11 +164,12 @@
       <!-- 상품 설명 부분 -->
       <section class="description">
         <div class="description_content">
-          <h3 class="sr-only">상품설명</h3>
-          <figure class="description_image">
+          <!-- <h3 class="sr-only">상품설명</h3> -->
+          <figure >
             <img
-              src="../assets/tangtang/detail_banner.jpg"
-              alt="풀무원 탱탱 쫄면 네개입"
+              class="description_image"
+              src=" "
+              alt=" "
             />
           </figure>
 
@@ -188,31 +197,35 @@
               src="../assets/productDetail/description-1.png"
               alt="생산 유통 과정 활용법 브랜드와 생산자 설명 이미지"
             />
-            <figcaption class="sr-only">
+            <!-- <figcaption class="sr-only">
               생산 유통 과정은 튀기지 않고 바람으로 말린면이다&#46; 활용법은
               온가족이 즐기기 좋은 4개입 포장과 간편한 조리로 완성하는
               쫄면이다&#46; 브랜드와 생산자는 풀무원이다&#46;
-            </figcaption>
+            </figcaption> -->
           </figure>
 
-          <h3 class="sr-only">상세정보</h3>
-          <figure class="description_detail_second_image">
+          <!-- <h3 class="sr-only">상세정보</h3> -->
+          <figure>
             <img
-              src="../assets/tangtang/detail_info.jpg"
-              alt="쫄면의 영양정보 이미지"
+            class="description_detail_second_image"
+              src=" "
+              alt=" "
             />
-            <figcaption class="sr-only">
+            <!-- <figcaption class="sr-only">
               풀무원 탱탱 쫄면은 123그램 4개입이다&#46; 쫄면의 영양정보 이미지
-            </figcaption>
+            </figcaption> -->
           </figure>
 
           <!-- 와이 칼리 -->
-          <div class="why_karly">
+          <img src="../assets/productDetail/whyKarly.png" alt="why_karly_info" />
+          <!-- <div class="why_karly">
             <span class="why_karly_title">WHY KARLY</span>
 
             <div class="why_karly_description">
               <div class="why_karly_item">
-                <div class="why_karly_round_icon why_karly_check"></div>
+                <div class="why_karly_round_icon why_karly_check">
+                  <img src="/client/assets/cartIcons/check.png" alt="" />
+                </div>
                 <span class="why_karly_sub_title"> 깐깐한 상품위원회 </span>
                 <p class="why_karly_paragraph">
                   나와 내 가족이 먹고 쓸 상품을 고르는 마음으로 매주 상품을 직접
@@ -269,10 +282,11 @@
                 </p>
               </div>
             </div>
-          </div>
+          </div> -->
 
           <!-- 상품 후기 -->
-          <div class="product_review">
+          <img src="../assets/productDetail/Product_review.png" alt="상품 후기 이미지" />
+          <!-- <div class="product_review">
             <h3 class="product_review_title">상품후기</h3>
 
             <span class="product_review_sub_title">
@@ -297,7 +311,7 @@
             >
               후기 작성하기
             </button>
-          </div>
+          </div> -->
         </div>
         <!-- 상품 설명 페이지 내의 이동 버튼들 -->
         <div class="description_button_box">

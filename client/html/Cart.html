@@ -20,20 +20,27 @@
           <div class="cart_contents">
             <div class="cart_button">
               <button
-                aria-label="상품 전체 선택버튼과 선택 삭제버튼"
-                class="cart_button_click"
-                type="button"
-                name="selectall"
+              aria-label="상품 전체 선택버튼과 선택 삭제버튼"
+              class="cart_button_click"
+              type="button"
+              name="selectall"
+              onclick="toggleImage()"
               >
-                <span class="cart_button_img"></span>
-                전체선택(3/3) &#124; 선택삭제
-              </button>
+              <span id="buttonImage" class="cart_button_img"></span>
+              전체선택(0/0) &#124; 선택삭제
+            </button>
             </div>
 
             <ul class="cart_list">
-              <li class="cart_refrigerated_food_item">냉장 식품</li>
-              <li class="cart_frozen_food_item">냉동 식품</li>
-              <li class="cart_normal_temperature_food_item">상온 식품</li>
+              <li class="cart_refrigerated_food_item">
+                <img src="../assets/productDetail/refrigerated.png" alt=" 냉장 식품" />
+               </li>
+              <li class="cart_frozen_food_item">
+                <img src="../assets/productDetail/frozen.png" alt=" 냉동 식품" />
+                </li>
+              <li class="cart_normal_temperature_food_item">
+                <img src="../assets/productDetail/normal_temperature.png" alt=" 상온 식품" />
+                </li>
             </ul>
 
             <div class="cart_button">
@@ -44,7 +51,7 @@
                 name="selectall"
               >
                 <span class="cart_button_img"></span>
-                전체선택(3/3) &#124; 선택삭제
+                전체선택(0/0) &#124; 선택삭제
               </button>
             </div>
           </div>
@@ -74,26 +81,26 @@
             <div class="price_box">
               <div class="price_product">
                 <span>상품금액</span>
-                <span class="show_price_product">40&#44;680 원</span>
+                <span class="show_price_product">0 원</span>
               </div>
 
               <div class="price_product_discount">
                 <span>상품할인금액</span>
                 <span class="show_price_product_discount"
-                  >&#45;4&#44;651원</span
+                  >0 원</span
                 >
               </div>
 
               <div class="price_delivery">
                 <span>배송비</span>
-                <span class="show_price_delivery">&#43;3&#44;000 원</span>
+                <span class="show_price_delivery">3&#44;000 원</span>
               </div>
             </div>
 
             <div class="price_total">
               <div class="price_final">
                 <span>결제예정금액</span>
-                <strong class="price_total_final">40&#44;680원</strong>
+                <strong class="price_total_final">0 원</strong>
               </div>
 
               <div class="point_contents">

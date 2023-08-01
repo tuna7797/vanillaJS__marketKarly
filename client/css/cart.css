@@ -22,8 +22,13 @@
 }
 .cart_button_img {
   @apply mr-2 block h-6 w-6 -translate-x-1;
-  background: url("./../assets/images/Input/Check.png") no-repeat;
+  background: url('./../assets/productDetail/isChecked=false.png') no-repeat;
 }
+
+.new_image_class {
+  background: url('../assets/productDetail/isChecked=true.png');
+}
+
 .cart_list {
   @apply flex items-start justify-start;
   flex-flow: column nowrap;
