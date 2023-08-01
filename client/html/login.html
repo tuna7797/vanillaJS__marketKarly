@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>login</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="stylesheet" href="./../css/login.css" />
+  </head>
+
+  <body>
+    <main class="login_main_container">
+      <div class="login_container">
+        <h2 class="login_title">로그인</h2>
+        <form class="login_container_form">
+          <label for="idInput"></label>
+          <input
+            class="login_input"
+            type="text"
+            id="idInput"
+            name="username"
+            hidden
+            aria-hidden="true"
+            placeholder="아이디를 입력해주세요"
+            required
+          />
+          <label for="passwordInput"></label>
+          <input
+            class="login_input"
+            type="password"
+            id="passwordInput"
+            name="password"
+            hidden
+            aria-hidden="true"
+            placeholder="비밀번호를 입력해주세요"
+            required
+          />
+          <a class="login_link_find" href="/" aria-label="아이디 찾기"
+            >아이디 찾기</a
+          >
+          <a class="login_link_find" href="/" aria-label="아이디 찾기"
+            >비밀번호 찾기</a
+          >
+          <button class="login_button_submit" type="submit">로그인</button>
+          <a class="login_link_register" href="/" aria-label="회원가입"
+            >회원가입</a
+          >
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
