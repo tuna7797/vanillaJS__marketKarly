@@ -11,6 +11,8 @@
       href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
     />
     <link rel="stylesheet" href="./../css/login.css" />
+    <!-- <link rel="stylesheet" href="./../css/main.css" /> -->
+    <script type="module" src="./../js/login/checkRegistered.js"></script>
   </head>
 
   <body>
@@ -18,27 +20,23 @@
       <div class="login_container">
         <h2 class="login_title">로그인</h2>
         <form class="login_container_form">
-          <label for="idInput"></label>
+          <label for="inputId"></label>
           <input
             class="login_input"
             type="text"
-            id="idInput"
+            id="login_inputId"
             name="username"
-            hidden
             aria-hidden="true"
             placeholder="아이디를 입력해주세요"
-            required
           />
-          <label for="passwordInput"></label>
+          <label for="inputPw"></label>
           <input
             class="login_input"
             type="password"
-            id="passwordInput"
+            id="login_inputPw"
             name="password"
-            hidden
             aria-hidden="true"
             placeholder="비밀번호를 입력해주세요"
-            required
           />
           <a class="login_link_find" href="/" aria-label="아이디 찾기"
             >아이디 찾기</a
@@ -46,7 +44,13 @@
           <a class="login_link_find" href="/" aria-label="아이디 찾기"
             >비밀번호 찾기</a
           >
-          <button class="login_button_submit" type="submit">로그인</button>
+          <button
+            class="login_button_submit"
+            id="login_button_submit"
+            type="button"
+          >
+            로그인
+          </button>
           <a class="login_link_register" href="/" aria-label="회원가입"
             >회원가입</a
           >
