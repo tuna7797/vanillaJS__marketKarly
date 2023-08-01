@@ -2,12 +2,13 @@ header {
   @apply flex items-stretch justify-center text-[#333333] shadow-[0px_0px_24px_0px_rgba(0,0,0,0.1)];
   flex-flow: column nowrap;
   font-family: Pretendard;
+  overflow: hidden;
 }
 .divider {
   @apply text-xs text-[#E1E1E1];
 }
 .bold {
-  @apply font-[bold];
+  @apply font-bold;
 }
 .header_container {
   @apply relative flex items-stretch justify-start px-[20%];
@@ -27,7 +28,7 @@ header {
 }
 
 .switch_box {
-  @apply relative flex items-center justify-start gap-3 font-[bold] text-lg;
+  @apply relative flex items-center justify-start gap-3 text-lg font-bold;
   flex-flow: row nowrap;
 }
 .market_link {
@@ -52,11 +53,8 @@ header {
   @apply w-80 border-0 py-2.5;
 }
 .search_icon {
-  @apply block h-[2.1875rem] w-10 border-0;
-  background: url("../assets/images/Icon/Search.svg") no-repeat;
-}
-.search_button {
-  @apply cursor-pointer;
+  @apply block h-[2.1875rem] w-10 cursor-pointer border-0;
+  background: url("/client/assets/images/Icon/Search.svg") no-repeat;
 }
 
 .member_icon {
@@ -88,7 +86,7 @@ header {
   flex-flow: row nowrap;
 }
 .header_nav_button {
-  @apply translate-y-px border-0 font-[bold] before:mr-2.5 before:inline-block before:h-3.5 before:w-4 before:content-[""];
+  @apply translate-y-px border-0 font-bold before:mr-2.5 before:inline-block before:h-3.5 before:w-4 before:content-[""];
   background: #ffffff;
 }
 .header_nav_button::before {
@@ -111,8 +109,8 @@ header {
 }
 
 .header_banner_button {
+  background: url("../assets/images/Icon/Close.png") no-repeat;
   @apply block h-[1.875rem] w-[1.875rem] border-0;
-  background: url("../assets/images/Icon/Cancel.svg") no-repeat;
 }
 
 .member_only {
