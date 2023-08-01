@@ -13,7 +13,6 @@ import {
 import { bannerData, productsData } from "./useData.js";
 // import {} from "./recommend.js";
 
-// const bannerData = (await tiger.get("http://localhost:3000/banner")).data;
 
 // 팝업 버튼
 const [closeNotToday, close] = getNodes(".main_popup > button");
@@ -139,9 +138,40 @@ productsData.forEach(
   },
 );
 
+//팝업 닫기
+const handlePopupClose = (e) => {
+  const popup = getNode(".main_popup");
 
+  invisibleElement(popup);
+};
+
+//배너 닫기
+const handleBannerClose = (e) => {
+  const banner = getNode(".header_banner");
+
+  
+  gsap.to(banner, {
+    marginTop: -banner.clientHeight,
+    opacity: 0,
+    maxHeight: 1,
+    duration: 0.5, // 애니메이션 지속 시간을 설정합니다(옵션).
+
+    onComplete: function () {
+      banner.style.display = "none";
+    },
+  });
+
+};
 
 // 호버 함수
+function fadeIn() {
+  const node = getNodes(".main_banner_button");
+  gsap.to(node, { duration: 1, opacity: 1, ease: "expo.out" });
+}
+function fadeout() {
+  const node = getNodes(".main_banner_button");
+  gsap.to(node, { duration: 1, opacity: 0, ease: "expo.out" });
+}
 
 function CurrentSlideIndex(swiper) {
   // console.log('현재 슬라이드 번호:', swiper.realIndex + 1); // 현재 슬라이드 번호 출력

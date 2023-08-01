@@ -1,7 +1,7 @@
 @import "footer.css";
 @import "mainPage.css";
 @import "header.css";
-
+@import "productList.css"; 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -67,5 +67,4 @@
     font-size: 0.8125rem;
     margin-top: 1rem;
   }
-
 }
