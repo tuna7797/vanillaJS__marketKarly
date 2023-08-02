@@ -53,7 +53,6 @@ function handlerButtonDoubleCheckPw(e) {
   } else {
     globalThis.alert('비밀번호가 일치합니다');
   }
-
 }
 export function eventDoubleCheckPw() {
   bindEvent(buttonDoubleCheck, 'click', handlerButtonDoubleCheckPw);

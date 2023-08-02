@@ -1,11 +1,11 @@
-import { getNode, bindEvent, tiger, insertLast } from "../../lib/index.js";
+import { getNode, bindEvent, tiger, insertLast } from '../../lib/index.js';
 
-const buttonCheckUsedId = getNode("#button_check_usedId");
-const textInputUserId = getNode("#register_user_id");
+const buttonCheckUsedId = getNode('#button_check_usedId');
+const textInputUserId = getNode('#register_user_id');
 
 //data.json에서 id배열 가져오기
 async function getUsersDate() {
-  const response = await tiger.get("http://localhost:3000/registered_users");
+  const response = await tiger.get('http://localhost:3000/registered_users');
 
   const arrUsers = response.data;
   const arrId = [];
@@ -29,9 +29,9 @@ async function checkUsedId() {
 //id 사용가능/불가능 alert
 function createMessageUsableId(boolean) {
   if (!boolean) {
-    globalThis.alert("사용 가능한 id 입니다");
+    globalThis.alert('사용 가능한 id 입니다');
   } else {
-    globalThis.alert("이미 사용된 id 입니다");
+    globalThis.alert('이미 사용된 id 입니다');
   }
 }
 
@@ -43,8 +43,8 @@ async function handlerUsedId(e) {
   createMessageUsableId(booleanUsedId);
 }
 
-export function eventCheckUsedId(){
-  bindEvent(buttonCheckUsedId, "click", handlerUsedId);
+export function eventCheckUsedId() {
+  bindEvent(buttonCheckUsedId, 'click', handlerUsedId);
 }
 
 //카멜+케밥으로 고치기
