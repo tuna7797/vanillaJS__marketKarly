@@ -60,7 +60,7 @@ function renderProductPrice() {
   const showPriceProductElement = getNode(".show_price_product");
 
   // 상품금액 업데이트
-  showPriceProductElement.textContent = `${totalPrice} 원`;
+  showPriceProductElement.textContent = `${totalPrice.toLocaleString()} 원`;
 }
 
 // 페이지가 로드되면 상품금액을 랜더링
@@ -102,7 +102,7 @@ function renderTotalPrice() {
     showPaymentPriceValue = showProductPriceValue + deliveryPriceValue;
   }
 
-  showPaymentPrice.textContent = `${showPaymentPriceValue} 원`;
+  showPaymentPrice.textContent = `${showPaymentPriceValue.toLocaleString()} 원`;
 }
 
 // 페이지가 로드되면 총 금액을 랜더링
