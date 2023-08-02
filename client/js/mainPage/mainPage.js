@@ -14,6 +14,7 @@ import {
   todayRecommendSlide,
   onMouseEnter,
   onMouseLeave,
+  handelScrollPopup,
   // productImages,
 } from "./index.js";
 
@@ -34,11 +35,14 @@ bannerSlide();
 goodPriceSlide();
 todayRecommendSlide();
 
+
+//함수 실행
+handelScrollPopup();
+
 // 이벤트
 
 close.addEventListener("click", handlePopupClose);
 bannerClose.addEventListener("click", handleBannerClose);
-
 
 images.forEach((img) => {
   img.addEventListener("mouseenter", onMouseEnter);

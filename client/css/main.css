@@ -2268,8 +2268,8 @@ footer {
 .recommend_today_cart {
   cursor: pointer;
   position: absolute;
-  bottom: 30%;
-  right: 8%;
+  bottom: 31%;
+  right: 5%;
   background: #2a0038 url("../assets/icon/Cart_white.svg");
   background-position: center;
   opacity: 50%;
@@ -2368,9 +2368,9 @@ footer {
 }
 
 .main_popup {
-  position: fixed;
-  bottom: 0.625rem;
-  left: 0.4375rem;
+  position: absolute;
+  top: -0.25rem;
+  left: 6rem;
   z-index: 20;
   height: 33.125rem;
   width: 21.5625rem;
