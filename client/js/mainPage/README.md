@@ -26,9 +26,13 @@ js를 활용한 마켓칼리 홈페이지 만들기
 <br>
 
 ## 1. 개발 환경
+---
+### ⚙️ 기술 스택
+
+### Front-end
 
 - Front : HTML, CSS, Tailwind, JavaScript
-- Back-end : 주어진 DATA 활용
+
 - 버전 및 이슈관리 : Github, Github Issues, Github Project
 - 협업 툴 : Discord, Notion, Github Wiki
 

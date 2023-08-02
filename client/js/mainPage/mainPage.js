@@ -1,6 +1,6 @@
 /* global gsap */
 
-import { getNode, getNodes } from "../../lib/index.js";
+import { getNode, getNodes } from '../../lib/index.js';
 
 import {
   handleBannerClose,
@@ -10,28 +10,30 @@ import {
   fadeIn,
   fadeout,
   bannerSlide,
-  goodPriceSlide,
   todayRecommendSlide,
+  goodPriceSlide,
   onMouseEnter,
   onMouseLeave,
-  handelScrollPopup,
+
   // productImages,
-} from "./index.js";
+} from './index.js';
 
 // 변수 지정
-const [closeNotToday, close] = getNodes(".main_popup > button");
+const [closeNotToday, close] = getNodes('.main_popup > button');
 
-const bannerClose = getNode(".header_banner_button");
+const bannerClose = getNode('.header_banner_button');
 
-const mainBanner = getNode(".main_banner");
+const mainBanner = getNode('.main_banner');
+
+const mainBannerContainer = getNode('.swiper_banner');
 
 //렌더링
 renderBanner();
 renderProductImage();
 
-const images = getNodes(".recommend_today_image img");
+const images = getNodes('.recommend_today_image img');
 
-handelScrollPopup();
+
 //스와이퍼
 bannerSlide();
 todayRecommendSlide();
@@ -39,18 +41,18 @@ goodPriceSlide();
 
 
 
-//함수 실행
 
+//함수 실행
 
 // 이벤트
 
-close.addEventListener("click", handlePopupClose);
-bannerClose.addEventListener("click", handleBannerClose);
+close.addEventListener('click', handlePopupClose);
+bannerClose.addEventListener('click', handleBannerClose);
 
 images.forEach((img) => {
-  img.addEventListener("mouseenter", onMouseEnter);
-  img.addEventListener("mouseleave", onMouseLeave);
+  img.addEventListener('mouseenter', onMouseEnter);
+  img.addEventListener('mouseleave', onMouseLeave);
 });
 
-mainBanner.addEventListener("mouseenter", fadeIn);
-mainBanner.addEventListener("mouseleave", fadeout);
+mainBanner.addEventListener('mouseenter', fadeIn);
+mainBanner.addEventListener('mouseleave', fadeout);
