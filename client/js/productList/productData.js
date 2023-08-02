@@ -1,23 +1,18 @@
 import { insertLast } from "../../lib/dom/insert.js";
 
-
-
-function createProductList(
-  {
-    name,
-    description,
-    price,
-    saleRatio,
-    salePrice,
-    image,
-    badge_karly,
-    badge_text
-  }
-){
-
-  
-    const template = /* html */`
-      <li class="product_list"><a href="../../html/ProductDetail.html" class="product_link">
+function createProductList({
+  id,
+  name,
+  description,
+  price,
+  saleRatio,
+  salePrice,
+  image,
+  badge_karly,
+  badge_text,
+}) {
+  const template = /* html */ `
+      <li class="product_list"><a href="../../html/ProductDetail.html?id=${id}" class="product_link">
         <span class="product_info">
           <span class="tag" aria-label="상품태그 샛별배송">샛별배송</span>
           <span aria-label="${name}">${name}</span>
@@ -47,15 +42,17 @@ function createProductList(
 
         <figure class="img_box">
           <figcaption class="a11y" aria-hidden="true">${name}</figcaption>
-          <img src="../assets/${image.thumbnail}" class="product_img" alt="${image.alt}">
+          <img src="../assets/${image.thumbnail}" class="product_img" alt="${
+            image.alt
+          }">
 
         </figure>
         <span class="cart_icon"></span>
       </a></li>
-      `
-      return template;
-  }
+      `;
+  return template;
+}
 
-  export function renderProductList(target,data){
-    insertLast(target,createProductList(data))
-  }
+export function renderProductList(target, data) {
+  insertLast(target, createProductList(data));
+}
