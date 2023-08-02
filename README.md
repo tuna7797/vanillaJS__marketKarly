@@ -88,10 +88,17 @@
 ![execution Gif](./client/assets/images/executionGif/login.gif)
 ### 회원가입
 ![execution Gif](./client/assets/images/executionGif/register.gif)
+
 ### 프로덕트 리스트
 ![execution Gif](./client/assets/images/executionGif/nav.gif)
 ![execution Gif](./client/assets/images/executionGif/paging.gif)
 ![execution Gif](./client/assets/images/executionGif/floating_menu.gif)
+
+### 상품 상세 페이지
+![productDtail](https://github.com/FE-6-vanilla-JS-5/vanillaJS__marketKarly/assets/131199065/793a9810-bb1d-4f59-9b3e-9428a9bc8f99)
+### 장바구니 페이지
+![cart](https://github.com/FE-6-vanilla-JS-5/vanillaJS__marketKarly/assets/131199065/bf2c9e2e-0577-49bc-a6fc-7ff9c9fc068c)
+
 
 
 
