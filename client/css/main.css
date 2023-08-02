@@ -1232,24 +1232,12 @@ button[class*="mainPopup__close"] {
   gap: 0.5rem;
   padding-left: 0px;
   padding-right: 0px;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   flex-flow: column nowrap;
 }
 
 .brand_list:hover {
   background: #E1E1E1;
   transition: 0.3s;
-}
-
-.brand_link {
-  display: block;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-start;
-  flex-flow: row nowrap;
 }
 
 .gray_num {
@@ -1555,13 +1543,22 @@ button[class*="mainPopup__close"] {
           clip-path: inset(50%);
 }
 
-.brand_link::before {
+.brand_link{
   display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0.53rem 0;
+}
+
+.brand_link::before {
+  display: inline-block;
   content: '';
   background: url("../assets/icon/Check.svg");
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.5rem;
+  position: relative;
+  top: 7px;
 }
 
 .arrow_bottom {
@@ -1578,6 +1575,7 @@ button[class*="mainPopup__close"] {
   width: 1.125rem;
   flex-shrink: 0;
   background: url("../assets/icon/Arrow_top.svg") no-repeat;
+  transition: .3s;
 }
 
 .arrow_top_rotate{
@@ -1730,11 +1728,14 @@ button[class*="mainPopup__close"] {
   transform: scale(1.04);
 }
 
-.pagination-button-active{
+.pagination-button-active,
+.pagination-button-active button{
   font-weight: bold;
   background-color: #ececec;
+  cursor: default;
 }
 
+.disabled,
 .disabled button{
   opacity: .5;
   cursor: default;
