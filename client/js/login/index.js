@@ -1,3 +1,3 @@
-import { event_login } from './checkRegistered.js';
+import { eventLogin } from './checkRegistered.js';
 
-event_login();
+eventLogin();

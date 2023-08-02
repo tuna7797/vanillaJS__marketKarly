@@ -1,10 +1,10 @@
-import { event_check_usedId } from './check_usedId.js';
+import { eventCheckUsedId } from './checkUsedId.js';
 
 import {
-  event_regular_expression_pw,
-  event_doubleCheck_pw,
-} from './register_regular_expression.js';
+  eventDoubleCheckPw,
+  eventRegularExpressionPw,
+} from './registerRegularExpression.js';
 
-event_check_usedId();
-event_regular_expression_pw();
-event_doubleCheck_pw();
+eventCheckUsedId();
+eventDoubleCheckPw();
+eventRegularExpressionPw();
