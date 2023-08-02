@@ -1037,24 +1037,12 @@
   gap: 0.5rem;
   padding-left: 0px;
   padding-right: 0px;
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
   flex-flow: column nowrap;
 }
 
 .brand_list:hover {
   background: #E1E1E1;
   transition: 0.3s;
-}
-
-.brand_link {
-  display: block;
-  display: flex;
-  height: 100%;
-  width: 100%;
-  align-items: center;
-  justify-content: flex-start;
-  flex-flow: row nowrap;
 }
 
 .gray_num {
@@ -1105,11 +1093,12 @@
   color: rgb(51 51 51 / var(--tw-text-opacity));
 }
 
-.divider {
+.list_divider {
   font-size: 0.75rem;
   line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(225 225 225 / var(--tw-text-opacity));
+  margin: 0 -1px;
 }
 
 .recommend {
@@ -1270,6 +1259,7 @@
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(225 225 225 / var(--tw-border-opacity));
+  cursor: pointer;
 }
 
 .move_page_list:hover {
@@ -1358,13 +1348,22 @@
           clip-path: inset(50%);
 }
 
-.brand_link::before {
+.brand_link{
   display: block;
+  height: 100%;
+  width: 100%;
+  padding: 0.53rem 0;
+}
+
+.brand_link::before {
+  display: inline-block;
   content: '';
   background: url("../assets/icon/Check.svg");
   width: 1.5rem;
   height: 1.5rem;
   margin-right: 0.5rem;
+  position: relative;
+  top: 7px;
 }
 
 .arrow_bottom {
@@ -1381,6 +1380,7 @@
   width: 1.125rem;
   flex-shrink: 0;
   background: url("../assets/icon/Arrow_top.svg") no-repeat;
+  transition: .3s;
 }
 
 .arrow_top_rotate{
@@ -1533,6 +1533,19 @@
   transform: scale(1.04);
 }
 
+.pagination-button-active,
+.pagination-button-active button{
+  font-weight: bold;
+  background-color: #ececec;
+  cursor: default;
+}
+
+.disabled,
+.disabled button{
+  opacity: .5;
+  cursor: default;
+}
+
 /*최근 본 상품*/
 
 .recent_product_viewed {
@@ -1577,18 +1590,22 @@
   height: 1.125rem;
   position: absolute;
   border: none;
-  background: url('../assets/icon/Arrow_top.svg');
+  background: url('../assets/icon/Arrow_top.svg') no-repeat center;
 }
 
 .recent_product_viewed_up {
-  top: 4%;
-  right: 37%;
+  top: 2%;
+  right: 10%;
+  width: 65px;
+  height: 30px;
 }
 
 .recent_product_viewed_down {
   transform: rotate(180deg);
-  bottom: 4%;
-  right: 37%;
+  bottom: 1%;
+  right: 7%;
+  width: 65px;
+  height: 30px;
 }
 
 .recent_product_viewed_link{
@@ -1673,12 +1690,9 @@ footer {
 }
 
 .footer_top {
-  display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  padding-left: 20%;
-  padding-right: 20%;
   flex-flow: column nowrap;
+  width: 1050px;
+  margin: 0px auto;
 }
 
 .footer_info {
@@ -2228,6 +2242,7 @@ header {
   line-height: 1rem;
   --tw-text-opacity: 1;
   color: rgb(225 225 225 / var(--tw-text-opacity));
+  padding: 0 6px;
 }
 
 .bold {
@@ -2236,12 +2251,9 @@ header {
 
 .header_container {
   position: relative;
-  display: flex;
-  align-items: stretch;
-  justify-content: flex-start;
-  padding-left: 20%;
-  padding-right: 20%;
   flex-flow: column nowrap;
+  width: 1050px;
+  margin: 0px auto;
 }
 
 .search_container {
@@ -2257,8 +2269,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.75rem;
   flex-flow: row nowrap;
+  gap: 1.85rem;
 }
 
 .logo_karly {
@@ -2273,11 +2285,11 @@ header {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 0.75rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 700;
   flex-flow: row nowrap;
+  gap: 0.45rem;
 }
 
 .market_link {
@@ -2311,15 +2323,12 @@ header {
   width: 400px;
   align-items: center;
   justify-content: space-between;
-  border-radius: 3px;
+  border-radius: 6px;
   border-width: 1.5px;
   border-style: solid;
   --tw-border-opacity: 1;
   border-color: rgb(95 0 128 / var(--tw-border-opacity));
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
   padding-left: 15px;
-  padding-right: 0.625rem;
   font-size: 1.125rem;
   line-height: 1.75rem;
   flex-flow: row nowrap;
@@ -2467,7 +2476,7 @@ header {
 
 .member_only {
   position: absolute;
-  right: 20%;
+  right: 0%;
   top: 5%;
   display: flex;
   align-items: center;
@@ -2496,6 +2505,10 @@ header {
   --tw-content: "";
   content: var(--tw-content);
   background: url("../assets/images/Icon/down.svg");
+}
+
+.best_link{
+  color: rgb(95, 0, 128);
 }
 
 /* ! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com */
@@ -3042,48 +3055,6 @@ video {
   clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border-width: 0;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.from-cyan-500 {
-  --tw-gradient-from: #06b6d4 var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(6 182 212 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-indigo-700 {
-  --tw-gradient-to: #4338ca var(--tw-gradient-to-position);
-}
-
-.bg-clip-text {
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-
-.text-7xl {
-  font-size: 4.5rem;
-  line-height: 1;
-}
-
-.font-black {
-  font-weight: 900;
-}
-
-.text-transparent {
-  color: transparent;
-}
-
-.drop-shadow-lg {
-  --tw-drop-shadow: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 /* header */
