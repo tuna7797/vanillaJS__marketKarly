@@ -95,6 +95,7 @@ const minusButton = getNode(".product_detail_minus");
 
 const productTotalPrice = getNode(".product_detail_all_price");
 
+// 값에서 숫자만 찾아오는 코드
 const selectPrice = getNode(".product_total_price");
 const productPrice = parseInt(
   selectPrice.textContent
@@ -124,7 +125,10 @@ function countPlusNumber() {
     let totalProductPrice = countNumber * productPrice;
 
     clearContents(productTotalPrice);
-    insertLast(productTotalPrice, `총 상품금액: ${totalProductPrice} 원`);
+    insertLast(
+      productTotalPrice,
+      `총 상품금액: ${totalProductPrice.toLocaleString()} 원`,
+    );
   }
 
   totalPrice(countNumber);
@@ -151,7 +155,10 @@ function countMiusNumber() {
     let totalProductPrice = countNumber * productPrice;
 
     clearContents(productTotalPrice);
-    insertLast(productTotalPrice, `총 상품금액: ${totalProductPrice} 원`);
+    insertLast(
+      productTotalPrice,
+      `총 상품금액: ${totalProductPrice.toLocaleString()} 원`,
+    );
   }
   totalPrice(countNumber);
 }
