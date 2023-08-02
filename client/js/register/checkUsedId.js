@@ -1,7 +1,7 @@
-import { getNode, bindEvent, tiger, insertLast } from "./../../lib/index.js";
+import { getNode, bindEvent, tiger, insertLast } from "../../lib/index.js";
 
-const button_check_usedId = getNode("#button_check_usedId");
-const textInput_userId = getNode("#register_user_id");
+const buttonCheckUsedId = getNode("#button_check_usedId");
+const textInputUserId = getNode("#register_user_id");
 
 //data.json에서 id배열 가져오기
 async function getUsersDate() {
@@ -16,18 +16,18 @@ async function getUsersDate() {
 }
 
 //입력된 id가 회원가입된 id와 중복되는지 확인
-async function check_usedId() {
+async function checkUsedId() {
   const usedId = await getUsersDate();
-  let id_to_validate = textInput_userId.value;
+  let idToValidate = textInputUserId.value;
 
   let bool = usedId.some((item) => {
-    return item === id_to_validate;
+    return item === idToValidate;
   });
   return bool;
 }
 
 //id 사용가능/불가능 alert
-function createMessage_usableId(boolean) {
+function createMessageUsableId(boolean) {
   if (!boolean) {
     globalThis.alert("사용 가능한 id 입니다");
   } else {
@@ -36,15 +36,15 @@ function createMessage_usableId(boolean) {
 }
 
 //중복검사 버튼 클릭시 이벤트 생성
-async function handler_usedId(e) {
+async function handlerUsedId(e) {
   e.preventDefault();
 
-  let boolean_usedId = await check_usedId();
-  createMessage_usableId(boolean_usedId);
+  let booleanUsedId = await checkUsedId();
+  createMessageUsableId(booleanUsedId);
 }
 
-export function event_check_usedId(){
-  bindEvent(button_check_usedId, "click", handler_usedId);
+export function eventCheckUsedId(){
+  bindEvent(buttonCheckUsedId, "click", handlerUsedId);
 }
 
 //카멜+케밥으로 고치기
