@@ -9,10 +9,10 @@
 ---
 
 ## ⚙️기술 스택
-<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
-<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
-<img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
-<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/html5-%23E34F26?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/css-%231572B6?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/tailwindcss-%2306B6D4?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-%23F7DF1E?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
 
 
 ---
@@ -133,11 +133,13 @@
 ![productDtail](https://github.com/FE-6-vanilla-JS-5/vanillaJS__marketKarly/assets/131199065/793a9810-bb1d-4f59-9b3e-9428a9bc8f99)
 
 <br>
+
 ### 장바구니 페이지
 
 ![cart](https://github.com/FE-6-vanilla-JS-5/vanillaJS__marketKarly/assets/131199065/bf2c9e2e-0577-49bc-a6fc-7ff9c9fc068c)
 
 <br>
+
 ### 메인 페이지
 
 ![main](./client/assets/Penguin/main.gif)
