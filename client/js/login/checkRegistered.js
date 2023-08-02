@@ -1,20 +1,12 @@
-import { getNode, bindEvent, tiger, insertLast } from './../../lib/index.js';
+import { getNode, bindEvent, tiger, insertLast } from "./../../lib/index.js";
 
-const inputId = getNode('#login_inputId');
-const inputPw = getNode('#login_inputPw');
-const login_button = getNode('#login_button_submit');
-
-
-
-
-
-
-
-
+const inputId = getNode("#login_inputId");
+const inputPw = getNode("#login_inputPw");
+const login_button = getNode("#login_button_submit");
 
 //data.json 가져오기
 async function getUserDate() {
-  const response = await tiger.get('http://localhost:3000/registered_users');
+  const response = await tiger.get("http://localhost:3000/registered_users");
 
   const objUsers = response.data;
   return objUsers;
@@ -53,7 +45,6 @@ async function getUniqueIdArr() {
 }
 // console.log(await getUniqueIdArr());
 
-
 //id입력을 가져오기
 function getInputId() {
   return inputId.value;
@@ -64,7 +55,6 @@ function getInputId() {
 function getInputPw() {
   return inputPw.value;
 }
-
 
 //id input과 일치하는, id배열의 인덱스 반환
 async function get_idIndex() {
@@ -86,12 +76,6 @@ async function check_registeredPw(indexId) {
   return inputPw === arrPw[indexId];
 }
 
-
-
-
-
-
-
 //indexId에 해당하는 uniqueId를 반환
 async function getUniqueId(indexId) {
   let arrUniqueId = await getUniqueIdArr();
@@ -100,18 +84,10 @@ async function getUniqueId(indexId) {
 
 //로컬 스토리지에 로그인 상태를 저장
 async function localStorage_login(is_registered_user, indexId) {
-    let uniqueId = await getUniqueId(indexId);
-    console.log(uniqueId);
-    localStorage.setItem('currentUser_uniqueId', uniqueId);
+  let uniqueId = await getUniqueId(indexId);
+  console.log(uniqueId);
+  localStorage.setItem("currentUser_uniqueId", uniqueId);
 }
-
-
-
-
-
-
-
-
 
 //중복검사 버튼 클릭시 이벤트 생성
 async function handler_login(e) {
@@ -120,14 +96,13 @@ async function handler_login(e) {
   let is_registered_user = await check_registeredPw(indexId);
   console.log(indexId);
   console.log(is_registered_user);
-  if(is_registered_user){
+  if (is_registered_user) {
     localStorage_login(is_registered_user, indexId);
-
   }
 }
 
 function event_login() {
-  bindEvent(login_button, 'click', handler_login);
+  bindEvent(login_button, "click", handler_login);
 }
 // localStorage.clear()
 event_login();
