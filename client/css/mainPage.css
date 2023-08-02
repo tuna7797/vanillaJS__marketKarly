@@ -61,8 +61,8 @@
 .recommend_today_cart {
   cursor: pointer;
   position: absolute;
-  bottom: 30%;
-  right: 8%;
+  bottom: 31%;
+  right: 5%;
   background: #2a0038 url("../assets/icon/Cart_white.svg");
   background-position: center;
   opacity: 50%;
@@ -112,7 +112,7 @@
   @apply bottom-[4%] right-[37%] bg-[50%_35%];
 }
 .main_popup {
-  @apply fixed bottom-2.5 left-[0.4375rem] z-20 h-[33.125rem] w-[21.5625rem] rounded-2xl font-bold text-[#333333] shadow-[0_0.5rem_2.25rem_0_#c4c4c4];
+  @apply absolute -top-1 left-24 z-20 h-[33.125rem] w-[21.5625rem] rounded-2xl font-bold text-[#333333] shadow-[0_0.5rem_2.25rem_0_#c4c4c4];
   background: #ffffff;
 }
 .main_popup img {
