@@ -23,18 +23,32 @@
 ### 조희정
 
 - **UI**
-    - 페이지 : 쩌는 UI
+    - 페이지 : 마켓칼리 베스트 상품목록
 - **기능**
-    - 쩌는 기능
+    - 데이터를 이용한 상품목록 ui 렌더링
+    - Left navigation Drop/Down JS 애니메이션 구현
+    - localstorage를 이용한 최근 본 상품 floating menu 구현
+    - scrollTop floating menu 세로 슬라이드 JS 애니메이션 구현
+    - ajax 비동기 통신을 통한 페이징 넘버링 구현
 
 <br>
     
 ### 이재호
 
 - **UI**
-    - 페이지 : 쩌는 UI
+    - 페이지 : 메인, 헤더, 푸터
 - **기능**
-    - 쩌는 기능
+    - mainBanner
+        자동으로 2.5초 후 다음 슬라이드로 넘어가는 기능
+        현재 슬라이드 인덱스 출력하는 기능
+        버튼과 키보드 화살표를 이용해서 이전, 다음 슬라이드로 넘기는 기능
+        mainBanner 위에 마우스 호버 시 버튼 천천히 보이고 사라지는 애니메이션 기능
+    - productsList
+        버튼을 클릭하여 이전, 다음 슬라이드로 넘기는 기능
+        이미지에 호버 시 이미지 확대하는 애니메이션 기능
+        slide 4개 그룹으로 넘기는 기능
+    - 팝업창
+        닫기 버튼 누르면 사라지는 기능
 
 <br>
 
@@ -71,9 +85,13 @@
 ## 3. 페이지별 기능
 
 ### 로그인
-![execution Gif](./client/assets/images/executionGif/executionLogin.gif)
+![execution Gif](./client/assets/images/executionGif/login.gif)
 ### 회원가입
-![execution Gif](./client/assets/images/executionGif/executionRegister.gif)
+![execution Gif](./client/assets/images/executionGif/register.gif)
+### 프로덕트 리스트
+![execution Gif](./client/assets/images/executionGif/nav.gif)
+![execution Gif](./client/assets/images/executionGif/paging.gif)
+![execution Gif](./client/assets/images/executionGif/floating_menu.gif)
 
 
 
