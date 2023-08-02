@@ -30,14 +30,17 @@ renderBanner();
 renderProductImage();
 
 const images = getNodes(".recommend_today_image img");
+
+handelScrollPopup();
 //스와이퍼
 bannerSlide();
-goodPriceSlide();
 todayRecommendSlide();
+goodPriceSlide();
+
 
 
 //함수 실행
-handelScrollPopup();
+
 
 // 이벤트
 
