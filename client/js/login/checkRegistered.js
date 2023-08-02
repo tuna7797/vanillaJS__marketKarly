@@ -1,12 +1,12 @@
-import { getNode, bindEvent, tiger, insertLast } from "./../../lib/index.js";
+import { getNode, bindEvent, tiger, insertLast } from './../../lib/index.js';
 
-const inputId = getNode("#login_inputId");
-const inputPw = getNode("#login_inputPw");
-const login_button = getNode("#login_button_submit");
+const inputId = getNode('#login_inputId');
+const inputPw = getNode('#login_inputPw');
+const login_button = getNode('#login_button_submit');
 
 //data.json 가져오기
 async function getUserDate() {
-  const response = await tiger.get("http://localhost:3000/registered_users");
+  const response = await tiger.get('http://localhost:3000/registered_users');
 
   const objUsers = response.data;
   return objUsers;
@@ -86,7 +86,7 @@ async function getUniqueId(indexId) {
 async function localStorage_login(is_registered_user, indexId) {
   let uniqueId = await getUniqueId(indexId);
   console.log(uniqueId);
-  localStorage.setItem("currentUser_uniqueId", uniqueId);
+  localStorage.setItem('currentUser_uniqueId', uniqueId);
 }
 
 //중복검사 버튼 클릭시 이벤트 생성
@@ -101,9 +101,6 @@ async function handler_login(e) {
   }
 }
 
-function event_login() {
-  bindEvent(login_button, "click", handler_login);
+export function event_login() {
+  bindEvent(login_button, 'click', handler_login);
 }
-// localStorage.clear()
-event_login();
-//카멜+케밥으로 고치기
