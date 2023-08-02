@@ -74,8 +74,6 @@ productWrap.addEventListener("click", (event) => {
     .catch((error) => {
       console.error(`Error: ${error.message}`);
     });
-
-    savePageNumberToStorage(currentState.pageNumber);
 });
 
 
@@ -185,8 +183,8 @@ loadStorage('imageSrc')
     const products = response.data;
   
     // 한 페이지에 표시할 상품의 시작 인덱스와 종료 인덱스 설정
-    const startIndex = (pageNumber - 1) * 9;
-    const endIndex = startIndex + 9;
+    const startIndex = (pageNumber - 1) * 12;
+    const endIndex = startIndex + 12;
   
     // 주어진 범위 내의 상품들만 선택
     const productsToDisplay = products.slice(startIndex, endIndex);
@@ -281,23 +279,4 @@ function addActiveClassToListItem() {
 }
 
   // 페이지 로딩 후 초기 상태로 활성 클래스 지정
-  addActiveClassToListItem();
-
-  // 페이지 번호를 로컬 스토리지에 저장
-  function savePageNumberToStorage(pageNumber) {
-    localStorage.setItem("pageNumber", pageNumber);
-  }
-
-  // 로컬 스토리지에서 페이지 번호를 가져오는 함수
-  function getPageNumberFromStorage() {
-    return Number(localStorage.getItem("pageNumber")) || 1;
-  }
-
-    // 페이지 로딩 후 로컬 스토리지에서 페이지 번호 가져오기
-  currentState.pageNumber = getPageNumberFromStorage();
-
-  // 로컬 스토리지에서 가져온 페이지 번호에 해당하는 상품 불러오기 및 렌더링
-  loadAndRenderProductsForPage(currentState.pageNumber);
-
-  // 페이지 번호에 active 클래스 추가
   addActiveClassToListItem();
