@@ -6,6 +6,16 @@
 
 <br>
 
+---
+
+## ⚙️기술 스택
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/tailwindcss-06B6D4?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
+
+
+---
 
 
 ## 1. 팀원 구성
@@ -19,6 +29,8 @@
 </div>
 
 <br>
+
+---
 
 ## 2. 역할 분담
 
@@ -80,15 +92,18 @@
   - 회원가입 pw의 일치확인
   - 로그인 성공시 uniqueId를 localStorage에 저장
 
-<br>
 
-## 개발 기간
+---
+
+## 3. 개발 기간
 
 - 전체 개발 기간 : 2023-07-28 ~ 2022-08-02
 - UI 구현 : 2023-07-28 ~ 2023-07-30
 - 기능 구현 : 2023-07-30 ~ 2023-08-02
 
-## 3. 페이지별 기능
+---
+
+## 4. 페이지별 기능
 
 ### 로그인
 
@@ -123,3 +138,6 @@
 ![cart](https://github.com/FE-6-vanilla-JS-5/vanillaJS__marketKarly/assets/131199065/bf2c9e2e-0577-49bc-a6fc-7ff9c9fc068c)
 
 <br>
+### 메인 페이지
+
+![main](./client/assets/Penguin/main.gif)
