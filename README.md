@@ -1,136 +1,80 @@
-# JavaScript Project Scaffolding
-*자바스크립트 프로젝트 환경 구성 스케폴딩*
+# 까짓거 함 햅5조 - vanilla JS - marketKarly
 
-> **Note**: 해당 문서는 자바스크립트 프로젝트에 필요한 기본적인 환경 구성을 위한 [스케폴딩](https://www.wisewiredbooks.com/term-dict/common/scaffolding.html) 자료입니다. 
+- 배포 URL : https://github.com/FE-6-vanilla-JS-5/vanillaJS__marketKarly/tree/develop
+- Test ID : id_sample
+- Test PW : pw_sample
 
----
+<br>
 
+## 1. 팀원 구성
 
-패키지 설치 항목
-- [live-server](https://www.npmjs.com/package/live-server)
-- [json-server](https://www.npmjs.com/package/json-server)
-- [prettier](https://www.npmjs.com/package/prettier)
-- [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss)
-- [tailwindcss](https://www.npmjs.com/package/tailwindcss)
-- [postcss-import](https://www.npmjs.com/package/postcss-import)
-- [npm-run-all](https://www.npmjs.com/package/npm-run-all)
+<div align="center">
 
+| **조희정** | **이재호** | **양정아** | **백상호** |
+| :------: |  :------: | :------: | :------: |
+|
 
----
+</div>
 
-## live-server
+<br>
 
-```
-로컬 환경을 실제 서버처럼 작동시켜 웹 개발을 도와주는 패키지로서 사용자가 직접 호스트,포트번호 를 바꿔서 클라이언트 서버를 구동시키고자 할때 사용됩니다.
+## 2. 역할 분담
 
-```
+### 조희정
 
----
-## json-server
+- **UI**
+    - 페이지 : 쩌는 UI
+- **기능**
+    - 쩌는 기능
 
-```
-로컬 데이터 서버를 위한 패키지 모듈로서 DB와 API서버를 생성해주는 패키지 입니다.
-백엔드 개발에서 실제 DB와 API Server가 구축될 때까지 프론트엔드 개발에 임시적으로 사용할 mock data를 생성하기 위해 사용됩니다.
+<br>
+    
+### 이재호
 
-```
----
-## prettier
+- **UI**
+    - 페이지 : 쩌는 UI
+- **기능**
+    - 쩌는 기능
 
-```
-협업을 위해 formatter 기능을 활용해 코드의 통일성을 유지시켜주는 패키지 입니다.
-ESLint가 코드의 퀄리티를 일관적으로 유지시켜준다면, Prettier는 일관적인 코드 스타일을 유지할 수 있게 도와줍니다. 
+<br>
 
-```
----
-## prettier
+### 양정아
 
-```
-협업을 위해 formatter 기능을 활용해 코드의 통일성을 유지시켜주는 패키지 입니다.
-ESLint가 코드의 퀄리티를 일관적으로 유지시켜준다면, Prettier는 일관적인 코드 스타일을 유지할 수 있게 도와줍니다. 
+- **UI**
+  - 상품 상세 페이지
+  - 장바구니 페이지
+- **기능**
+  - 페이지 url에 data의 id 값을 가져와서 id에 해당하는 상품의 정보가 상품 상세 페이지에 렌더링되는 기능 구현
+  - 상품수량의 +, - 버튼을 누르면 상품수량이 카운트되는 기능 구현
+  - 상품 수량에 맞게 총 상품금액이 계산되어 나오는 기능 구현
+  - 장바구니 담기를 누르면 상품정보(상품명, 상품수량, 상품금액)가 로컬스토리지에 담기는 기능 구현
+  - 로컬스토리지에 담긴 상품정보들이 장바구니 목록에 나오는 기능 구현
+  - 장바구니 목록에 여러 상품들이 담기면 총 상품금액과 배송비를 합친 결제금액이 나오는 기능 구현
+  - 장바구니 목록에서 여러 상품들을 한번에 제거할 수 있는 기능 구현
+<br>
+    
+### 백상호
 
-```
+- **UI**
+    - 페이지 : 로그인, 회원가입
+- **기능**
+    - 스크럼 마스터
+    - 회원가입 id 중복여부 확인 
+    - 회원가입 pw의 정규식 부합 확인
+    - 회원가입 pw의 일치확인
+    - 로그인 성공시 uniqueId를 localStorage에 저장
 
----
-## prettier-plugin-tailwindcss
-
-```
-tailwind가 가지고 있는 Automatic class sorting 기능을 prettier의 기능을 활용해 자동 포멧이 일어날 수 있도록 도와주는 플러그인 패키지 입니다.
-
-```
-[Automatic class sorting](https://tailwindcss.com/blog/automatic-class-sorting-with-prettier)
-
----
-## tailwindcss
-
-```
-utility-first를 지향하는 CSS의 프레임워크으로 미리 세팅된 유틸리티 클래스를 활용하여 HTML 코드 내에서 스타일링을 가능하게 하는 style 패키지 입니다.
-tailwind가 제공하는 유틸리티 클래스들을 다양하게 조합하면 추가적인 CSS코드 작성 없이 스타일링이 가능합니다.
-
-```
-[Tailwind](https://tailwindcss.com/)
-
----
-## postcss-import
-
-```
-자바스크립트 기반의 플러그인을 사용하여 css 기능을 자동화 시키는 도구로 postcss가 가지고 있는 플러그인 환경을 사용해 css를 사용할 수 있습니다.
-css의 import 기능과 tailwind의 css 병합을 위해 사용됩니다.
-
-```
-[postcss](https://postcss.org/)
+<br>
 
 
 
----
+## 3. 페이지별 기능
 
-## START
-
-> **Note**: 해당 프리셋은 node_modules를 내장하고 있지 않습니다. 다운받아 그대로 사용할 경우 `npm install` 을 하신 후 사용해 주세요.
-
-<br/>
-
-### 백엔드 서버 실행
-```bash
-npm run serve:backend
-```
-<br/>
-
-### 프론트 서버 실행
-```bash
-npm run serve:frontend
-```
-<br/>
-
-### tailwind 실행
-```bash
-npm run tailwind
-```
-<br/>
-
-### 동시 실행
-```bash
-npm run start
-```
+### 로그인
+![execution Gif](./client/assets/images/executionGif/executionLogin.gif)
+### 회원가입
+![execution Gif](./client/assets/images/executionGif/executionRegister.gif)
 
 
 
-
-
-
-
-**[⬆ back to top](#JavaScript-Project-Scaffolding)**
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<br>
