@@ -10,7 +10,7 @@ import {
   insertLast,
 } from "../../lib/index.js";
 
-import { bannerData, productsData } from "./useData.js";
+import { bannerData, productsData } from "./manageDate/useData.js";
 // import {} from "./recommend.js";
 
 
