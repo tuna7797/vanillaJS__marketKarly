@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": "product-ekfk",
+      "id": "product-tangtang",
       "name": "[풀무원] 탱탱쫄면 (4개입)",
       "description": "튀기지 않아 부드럽고 매콤한",
       "price": "4,980",
@@ -17,7 +17,7 @@
       "stock": 10
     },
     {
-      "id": "product-zxcv",
+      "id": "product-egg",
       "name": "[KF365] 1+등급 무항생제 특란 20구",
       "description": "1구 당 판매가: 365원",
       "price": "7,300",
@@ -34,7 +34,7 @@
       "badge_text": "한정수량"
     },
     {
-      "id": "product-pzrn",
+      "id": "product-oatmeal",
       "name": "[플라하반] 오트밀 5종 (택1)",
       "description": "고급 아이리쉬 귀리로 만든 오트밀 [신제품 입고]",
       "price": "7,300",
@@ -52,7 +52,7 @@
       "badge_text": "한정수량"
     },
     {
-      "id": "product-lkjh",
+      "id": "product-apple",
       "name": "썸머킹 사과 1.3kg (4~8입)",
       "description": "여름에 만나는 풋풋한 매력",
       "price": "12,900",
@@ -68,7 +68,7 @@
       "stock": 5
     },
     {
-      "id": "product-rcws",
+      "id": "product-wetTissue",
       "name": "[Kurly's] 데일리 물티슈(100매 X 10팩)",
       "description": "믿고 쓰는 우리 집 물티슈",
       "price": "11,900",
@@ -85,7 +85,7 @@
       "badge_karly": "karly _only"
     },
     {
-      "id": "product-ljrz",
+      "id": "product-banana",
       "name": "[KF365] DOLE 실속 바나나 1kg (필리핀)",
       "description": "믿고 먹을 수 있는 상품을 합리적인 가격에, KF365",
       "price": "3,190",
@@ -102,7 +102,7 @@
       "badge_karly": "karly _only"
     },
     {
-      "id": "product-pzrn",
+      "id": "product-springRoll",
       "name": "[도리깨침] 월남쌈 밀키트",
       "description": "풍성한 재료에 담긴 다채로운 맛",
       "price": "20,900",
@@ -120,7 +120,7 @@
       "badge_text": "한정수량"
     },
     {
-      "id": "product-rmgd",
+      "id": "product-tomato",
       "name": "[KF365] 완숙토마토 2kg",
       "description": "최대혜택가 : 8,720원",
       "price": "11,900",
@@ -138,7 +138,7 @@
       "badge_text": "한정수량"
     },
     {
-      "id": "product-rksk",
+      "id": "product-ubuho",
       "name": "[대구 반할만떡] 유부호만두",
       "description": "유부로 속을 든든히 채운 군만두",
       "price": "6,900",
@@ -156,7 +156,7 @@
       "badge_text": "한정수량"
     },
     {
-      "id": "product-akqk",
+      "id": "product-jukkumi",
       "name": "[홍대주꾸미] 주꾸미 볶음 300g (냉동)",
       "description": "매콤달콤한 마력의 밥도둑",
       "price": "8,900",
@@ -173,7 +173,7 @@
       "badge_karly": "karly _only"
     },
     {
-      "id": "product-tkwk",
+      "id": "product-kangnam",
       "name": "[강남면옥] 소갈비찜",
       "description": "보는 맛과 먹는 맛 모두 푸짐",
       "price": "29,800",
@@ -191,7 +191,7 @@
       "badge_text": "한정수량"
     },
     {
-      "id": "product-ckzk",
+      "id": "product-bacon",
       "name": "[Kalry's] 한돈 삼겹 베이컨",
       "description": "무항생제 한돈 삼겹살의 고소한 풍미 그대로",
       "price": "4,500",
