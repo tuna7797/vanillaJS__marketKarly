@@ -9,7 +9,7 @@
 ---
 
 ## ⚙️기술 스택
-<img src="https://img.shields.io/badge/html5-%23E34F26?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white"> 
 <img src="https://img.shields.io/badge/css-%231572B6?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
 <img src="https://img.shields.io/badge/tailwindcss-%2306B6D4?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
 <img src="https://img.shields.io/badge/javascript-%23F7DF1E?style=for-the-badge&logo=기술스택아이콘&logoColor=white">
