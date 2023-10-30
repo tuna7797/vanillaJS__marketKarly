@@ -1,9 +1,5 @@
 # 까짓거 함 햅5조 - vanilla JS - marketKarly
 
-- 배포 URL : https://github.com/FE-6-vanilla-JS-5/vanillaJS__marketKarly/tree/develop
-- Test ID : id_sample
-- Test PW : pw_sample
-
 <br>
 
 ---
